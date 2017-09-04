@@ -1,0 +1,38 @@
+\documentclass[a4paper,12pt]{ThesisStyle}
+\include{formatAndDefs}
+\addbibresource{DEEP_LEARNING.bib}
+\begin{document}
+\def\layersep{2.5cm}
+\pgfmathsetseed{12}
+\newcommand{\midarrow}{\tikz \draw[-stealth] (0,0) -- +(.1,0);}
+\newcommand{\midarroww}{\tikz \draw[-stealth] (0,0.1) -- +(.1,0);}
+\newcommand{\orient}{\tikz \draw[-stealth] (0,0) -- +(0,.001);}
+\newcommand{\orientl}{\tikz \draw[-stealth] (0,0.15) -- +(.005,.01);}
+\newcommand{\orientr}{\tikz \draw[-stealth] (0,0.15) -- +(-.005,.01);}
+ 
+\thispagestyle{empty}
+\newgeometry{hmargin=0cm,vmargin=1cm}
+\begin{center}
+\begin{tikzpicture}
+\node[] at (0,0) {\includegraphics[scale=1]{cover_page-crop.pdf}};
+\end{tikzpicture}
+\end{center}
+
+\restoregeometry
+\dominitoc \tableofcontents
+
+\include{Preface}
+\include{Acknowledgements}
+\include{Introduction}
+
+%\part{Theoretical background} \label{Part1}
+
+
+
+\include{chapter1}
+\include{chapter2}
+\include{chapter3}
+
+\include{Conclusion}
+\printbibliography
+\end{document}

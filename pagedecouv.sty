@@ -1,0 +1,109 @@
+\NeedsTeXFormat{LaTeX2e}[1995/12/01]
+\ProvidesPackage{pagedecouv}[2012/06/24 2.10 Build coverpage for UPMC thesis (J.Hare)]
+\RequirePackage{graphicx}
+\RequirePackage{geometry}[2010/03/13]
+
+\def\head#1{\gdef\@head{#1}}
+\gdef\@head{\relax}
+\def\logos#1#2#3{\gdef\@logoone{#1}\gdef\@logotwo{#2}\gdef\@logothree{#3}}
+\def\lab#1{\gdef\@lab{#1}}
+\def\thesis#1{\gdef\@thesis{#1}}
+\def\ecoledoct#1{\gdef\@ecoledoct{#1}}
+\def\specialite#1{\gdef\@specialite{#1}}
+\def\@thesis{\@latex@error{No \noexpand\thesis given}\@ehc}
+\def\author#1{\gdef\@author{#1}}
+\def\@author{\@latex@warning@no@line{No \noexpand\author given}}
+\def\phdname#1{\gdef\@phdname{#1}}
+\def\@phdname{\@latex@warning@no@line{No \noexpand\phdname given}}
+\def\title#1{\gdef\@title{#1}}
+\def\@title{\@latex@error{No \noexpand\title given}\@ehc}
+\def\date#1{\gdef\@date{#1}}
+\gdef\@date{\today}
+\long\def\jury#1{\gdef\@jury{#1}}
+\def\@jury{\@latex@warning@no@line{No \noexpand\jury given}}
+\newlength{\th@skip}
+\newlength{\@hmargin}
+
+
+\def\pagedecouv{%
+    \begingroup
+    \setlength{\th@skip}{15mm plus 10mm minus 10mm}%
+    \newgeometry{left=12mm,right=12mm,bottom=12mm}%\flushbottom
+%    \newpage\flushbottom\enlargethispage{1cm}%
+    \thispagestyle{empty}%
+    \begin{center}%
+    \strut\vskip -3cm%
+    \ifx\empty\@head
+        \relax%
+    \else%
+        {\large\bfseries\@head\par}%
+    \fi
+    \ifx\empty\@logoone
+        \relax%
+    \else%
+        \centerline\bgroup\rlap{\includegraphics[height=2cm]{\@logoone}}\hfill%
+        \ifx\empty\@logotwo
+            \relax
+        \else%
+            \hfill\clap{\includegraphics[height=2cm]{\@logotwo}}\hfill%
+        \fi
+        \ifx\empty\@logothree
+            \hfill\par\egroup
+        \else%
+            \hfill\llap{\includegraphics[height=2cm]{\@logothree}}\par\egroup%
+        \fi
+    \fi
+    \vskip 0.5\th@skip%
+    \bfseries%
+   {\Large \@thesis \par}%
+   \vskip 0.5\th@skip%
+    \ifx\empty\@specialite
+        \bigskip
+    \else%
+        \medskip
+        {\Large\bfseries Spécialité~: \@specialite\par}%
+    \fi
+   \medskip%
+    \ifx\empty\@ecoledoct
+        \medskip%
+    \else%
+        \medskip
+        {\large\bfseries École doctorale~: \@ecoledoct\par}%
+    \fi
+   \vskip \th@skip%
+    \ifx\empty\@lab%
+        \bigskip
+    \else
+        réalisée\par%
+        \medskip%
+        {\Large\@lab\par}%
+    \fi
+    \vskip \th@skip%
+    présentée par\par%
+    \bigskip%
+    {\LARGE \@author\par}%
+     \vskip \th@skip%
+     pour obtenir le grade de~:\par%
+     \bigskip%
+     {\large\@phdname\par}%
+    \vskip \th@skip%
+    Sujet de la thèse~:\par%
+    {\LARGE\@title\par}%
+    \vskip \th@skip%
+    {\Large soutenue le \@date\par}%
+    \vskip \th@skip%
+    devant le jury composé de~:\par%
+   \vskip \th@skip%
+    \begin{Large}
+    \begin{tabular}{p{0.5in}p{2in}p{2in}}
+        \@jury
+    \end{tabular}
+    \end{Large}
+  \end{center}%
+  \par
+  \vskip \th@skip%
+  \restoregeometry
+  \endgroup
+}
+\endinput
+%end of pagedecouv package

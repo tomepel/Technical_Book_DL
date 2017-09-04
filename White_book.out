@@ -1,0 +1,51 @@
+\BOOKMARK [0][-]{chapter.1}{Preface}{}% 1
+\BOOKMARK [0][-]{chapter.2}{Acknowledgements}{}% 2
+\BOOKMARK [0][-]{chapter.3}{Introduction}{}% 3
+\BOOKMARK [0][-]{chapter.4}{Feedforward Neural Networks}{}% 4
+\BOOKMARK [1][-]{section.4.1}{Introduction}{chapter.4}% 5
+\BOOKMARK [1][-]{section.4.2}{FNN architecture}{chapter.4}% 6
+\BOOKMARK [1][-]{section.4.3}{Some notations}{chapter.4}% 7
+\BOOKMARK [1][-]{section.4.4}{Weight averaging}{chapter.4}% 8
+\BOOKMARK [1][-]{section.4.5}{Activation function}{chapter.4}% 9
+\BOOKMARK [1][-]{section.4.6}{FNN layers}{chapter.4}% 10
+\BOOKMARK [1][-]{section.4.7}{Loss function}{chapter.4}% 11
+\BOOKMARK [1][-]{section.4.8}{Regularization techniques}{chapter.4}% 12
+\BOOKMARK [1][-]{section.4.9}{Backpropagation}{chapter.4}% 13
+\BOOKMARK [1][-]{section.4.10}{Which data sample to use for gradient descent?}{chapter.4}% 14
+\BOOKMARK [1][-]{section.4.11}{Gradient optimization techniques}{chapter.4}% 15
+\BOOKMARK [1][-]{section.4.12}{Weight initialization}{chapter.4}% 16
+\BOOKMARK [1][-]{equation.4.12.73}{Appendices}{chapter.4}% 17
+\BOOKMARK [1][-]{section.1.4.A}{Backprop through the output layer}{chapter.4}% 18
+\BOOKMARK [1][-]{section.1.4.B}{Backprop through hidden layers}{chapter.4}% 19
+\BOOKMARK [1][-]{section.1.4.C}{Backprop through BatchNorm}{chapter.4}% 20
+\BOOKMARK [1][-]{section.1.4.D}{FNN ResNet \(non standard presentation\)}{chapter.4}% 21
+\BOOKMARK [1][-]{section.1.4.E}{FNN ResNet \(more standard presentation\)}{chapter.4}% 22
+\BOOKMARK [1][-]{section.1.4.F}{Matrix formulation}{chapter.4}% 23
+\BOOKMARK [0][-]{chapter.5}{Convolutional Neural Networks}{}% 24
+\BOOKMARK [1][-]{section.5.1}{Introduction}{chapter.5}% 25
+\BOOKMARK [1][-]{section.5.2}{CNN architecture}{chapter.5}% 26
+\BOOKMARK [1][-]{section.5.3}{CNN specificities}{chapter.5}% 27
+\BOOKMARK [1][-]{section.5.4}{Modification to Batch Normalization}{chapter.5}% 28
+\BOOKMARK [1][-]{section.5.5}{Network architectures}{chapter.5}% 29
+\BOOKMARK [1][-]{section.5.6}{Backpropagation}{chapter.5}% 30
+\BOOKMARK [1][-]{equation.5.6.43}{Appendices}{chapter.5}% 31
+\BOOKMARK [1][-]{section.2.5.A}{Backprop through BatchNorm}{chapter.5}% 32
+\BOOKMARK [1][-]{section.2.5.B}{Error rate updates: details}{chapter.5}% 33
+\BOOKMARK [1][-]{section.2.5.C}{Weight update: details}{chapter.5}% 34
+\BOOKMARK [1][-]{section.2.5.D}{Coefficient update: details}{chapter.5}% 35
+\BOOKMARK [1][-]{section.2.5.E}{Practical Simplification}{chapter.5}% 36
+\BOOKMARK [1][-]{section.2.5.F}{Batchpropagation through a ResNet module}{chapter.5}% 37
+\BOOKMARK [1][-]{section.2.5.G}{Convolution as a matrix multiplication}{chapter.5}% 38
+\BOOKMARK [1][-]{section.2.5.H}{Pooling as a row matrix maximum}{chapter.5}% 39
+\BOOKMARK [0][-]{chapter.6}{Recurrent Neural Networks}{}% 40
+\BOOKMARK [1][-]{section.6.1}{Introduction}{chapter.6}% 41
+\BOOKMARK [1][-]{section.6.2}{RNN-LSTM architecture}{chapter.6}% 42
+\BOOKMARK [1][-]{section.6.3}{Extreme Layers and loss function}{chapter.6}% 43
+\BOOKMARK [1][-]{section.6.4}{RNN specificities}{chapter.6}% 44
+\BOOKMARK [1][-]{section.6.5}{LSTM specificities}{chapter.6}% 45
+\BOOKMARK [1][-]{equation.6.5.49}{Appendices}{chapter.6}% 46
+\BOOKMARK [1][-]{section.3.6.A}{Backpropagation trough Batch Normalization}{chapter.6}% 47
+\BOOKMARK [1][-]{section.3.6.B}{RNN Backpropagation}{chapter.6}% 48
+\BOOKMARK [1][-]{section.3.6.C}{LSTM Backpropagation}{chapter.6}% 49
+\BOOKMARK [1][-]{section.3.6.D}{Peephole connexions}{chapter.6}% 50
+\BOOKMARK [0][-]{chapter.7}{Conclusion}{}% 51

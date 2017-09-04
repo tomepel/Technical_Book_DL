@@ -1,0 +1,2991 @@
+This is pdfTeX, Version 3.14159265-2.6-1.40.18 (MiKTeX 2.9.6350 64-bit) (preloaded format=pdflatex 2017.7.6)  4 SEP 2017 09:16
+entering extended mode
+**./White_book.tex
+(White_book.tex
+LaTeX2e <2017-04-15>
+Babel <3.12> and hyphenation patterns for 76 language(s) loaded.
+(ThesisStyle.cls
+Document Class: ThesisStyle 2004/02/16 v1.4f Standard LaTeX document class
+("C:\Program Files\MiKTeX 2.9\tex\latex\base\bk12.clo"
+File: bk12.clo 2014/09/29 v1.4h Standard LaTeX file (size option)
+)
+\c@part=\count79
+\c@chapter=\count80
+\c@section=\count81
+\c@subsection=\count82
+\c@subsubsection=\count83
+\c@paragraph=\count84
+\c@subparagraph=\count85
+\c@figure=\count86
+\c@table=\count87
+\abovecaptionskip=\skip41
+\belowcaptionskip=\skip42
+\bibindent=\dimen102
+)
+\@input{formatAndDefs.aux}
+\openout2 = `formatAndDefs.aux'.
+
+(formatAndDefs.tex ("C:\Program Files\MiKTeX 2.9\tex\latex\base\fontenc.sty"
+Package: fontenc 2017/04/05 v2.0i Standard LaTeX package
+
+("C:\Program Files\MiKTeX 2.9\tex\latex\base\t1enc.def"
+File: t1enc.def 2017/04/05 v2.0i Standard LaTeX file
+LaTeX Font Info:    Redeclaring font encoding T1 on input line 48.
+))
+("C:\Program Files\MiKTeX 2.9\tex\latex\tools\bm.sty"
+Package: bm 2017/01/16 v1.2c Bold Symbol Support (DPC/FMi)
+\symboldoperators=\mathgroup4
+\symboldletters=\mathgroup5
+\symboldsymbols=\mathgroup6
+LaTeX Font Info:    Redeclaring math alphabet \mathbf on input line 141.
+LaTeX Info: Redefining \bm on input line 207.
+)
+("C:\Program Files\MiKTeX 2.9\tex\latex\bbm\bbm.sty"
+Package: bbm 1999/03/15 V 1.2 provides fonts for set symbols - TH
+LaTeX Font Info:    Overwriting math alphabet `\mathbbm' in version `bold'
+(Font)                  U/bbm/m/n --> U/bbm/bx/n on input line 33.
+LaTeX Font Info:    Overwriting math alphabet `\mathbbmss' in version `bold'
+(Font)                  U/bbmss/m/n --> U/bbmss/bx/n on input line 35.
+)
+("C:\Program Files\MiKTeX 2.9\tex\latex\base\inputenc.sty"
+Package: inputenc 2015/03/17 v1.2c Input encoding file
+\inpenc@prehook=\toks14
+\inpenc@posthook=\toks15
+
+("C:\Program Files\MiKTeX 2.9\tex\latex\base\utf8.def"
+File: utf8.def 2017/01/28 v1.1t UTF-8 support for inputenc
+Now handling font encoding OML ...
+... no UTF-8 mapping file for font encoding OML
+Now handling font encoding T1 ...
+... processing UTF-8 mapping file for font encoding T1
+
+("C:\Program Files\MiKTeX 2.9\tex\latex\base\t1enc.dfu"
+File: t1enc.dfu 2017/01/28 v1.1t UTF-8 support for inputenc
+   defining Unicode char U+00A0 (decimal 160)
+   defining Unicode char U+00A1 (decimal 161)
+   defining Unicode char U+00A3 (decimal 163)
+   defining Unicode char U+00AB (decimal 171)
+   defining Unicode char U+00AD (decimal 173)
+   defining Unicode char U+00BB (decimal 187)
+   defining Unicode char U+00BF (decimal 191)
+   defining Unicode char U+00C0 (decimal 192)
+   defining Unicode char U+00C1 (decimal 193)
+   defining Unicode char U+00C2 (decimal 194)
+   defining Unicode char U+00C3 (decimal 195)
+   defining Unicode char U+00C4 (decimal 196)
+   defining Unicode char U+00C5 (decimal 197)
+   defining Unicode char U+00C6 (decimal 198)
+   defining Unicode char U+00C7 (decimal 199)
+   defining Unicode char U+00C8 (decimal 200)
+   defining Unicode char U+00C9 (decimal 201)
+   defining Unicode char U+00CA (decimal 202)
+   defining Unicode char U+00CB (decimal 203)
+   defining Unicode char U+00CC (decimal 204)
+   defining Unicode char U+00CD (decimal 205)
+   defining Unicode char U+00CE (decimal 206)
+   defining Unicode char U+00CF (decimal 207)
+   defining Unicode char U+00D0 (decimal 208)
+   defining Unicode char U+00D1 (decimal 209)
+   defining Unicode char U+00D2 (decimal 210)
+   defining Unicode char U+00D3 (decimal 211)
+   defining Unicode char U+00D4 (decimal 212)
+   defining Unicode char U+00D5 (decimal 213)
+   defining Unicode char U+00D6 (decimal 214)
+   defining Unicode char U+00D8 (decimal 216)
+   defining Unicode char U+00D9 (decimal 217)
+   defining Unicode char U+00DA (decimal 218)
+   defining Unicode char U+00DB (decimal 219)
+   defining Unicode char U+00DC (decimal 220)
+   defining Unicode char U+00DD (decimal 221)
+   defining Unicode char U+00DE (decimal 222)
+   defining Unicode char U+00DF (decimal 223)
+   defining Unicode char U+00E0 (decimal 224)
+   defining Unicode char U+00E1 (decimal 225)
+   defining Unicode char U+00E2 (decimal 226)
+   defining Unicode char U+00E3 (decimal 227)
+   defining Unicode char U+00E4 (decimal 228)
+   defining Unicode char U+00E5 (decimal 229)
+   defining Unicode char U+00E6 (decimal 230)
+   defining Unicode char U+00E7 (decimal 231)
+   defining Unicode char U+00E8 (decimal 232)
+   defining Unicode char U+00E9 (decimal 233)
+   defining Unicode char U+00EA (decimal 234)
+   defining Unicode char U+00EB (decimal 235)
+   defining Unicode char U+00EC (decimal 236)
+   defining Unicode char U+00ED (decimal 237)
+   defining Unicode char U+00EE (decimal 238)
+   defining Unicode char U+00EF (decimal 239)
+   defining Unicode char U+00F0 (decimal 240)
+   defining Unicode char U+00F1 (decimal 241)
+   defining Unicode char U+00F2 (decimal 242)
+   defining Unicode char U+00F3 (decimal 243)
+   defining Unicode char U+00F4 (decimal 244)
+   defining Unicode char U+00F5 (decimal 245)
+   defining Unicode char U+00F6 (decimal 246)
+   defining Unicode char U+00F8 (decimal 248)
+   defining Unicode char U+00F9 (decimal 249)
+   defining Unicode char U+00FA (decimal 250)
+   defining Unicode char U+00FB (decimal 251)
+   defining Unicode char U+00FC (decimal 252)
+   defining Unicode char U+00FD (decimal 253)
+   defining Unicode char U+00FE (decimal 254)
+   defining Unicode char U+00FF (decimal 255)
+   defining Unicode char U+0100 (decimal 256)
+   defining Unicode char U+0101 (decimal 257)
+   defining Unicode char U+0102 (decimal 258)
+   defining Unicode char U+0103 (decimal 259)
+   defining Unicode char U+0104 (decimal 260)
+   defining Unicode char U+0105 (decimal 261)
+   defining Unicode char U+0106 (decimal 262)
+   defining Unicode char U+0107 (decimal 263)
+   defining Unicode char U+0108 (decimal 264)
+   defining Unicode char U+0109 (decimal 265)
+   defining Unicode char U+010A (decimal 266)
+   defining Unicode char U+010B (decimal 267)
+   defining Unicode char U+010C (decimal 268)
+   defining Unicode char U+010D (decimal 269)
+   defining Unicode char U+010E (decimal 270)
+   defining Unicode char U+010F (decimal 271)
+   defining Unicode char U+0110 (decimal 272)
+   defining Unicode char U+0111 (decimal 273)
+   defining Unicode char U+0112 (decimal 274)
+   defining Unicode char U+0113 (decimal 275)
+   defining Unicode char U+0114 (decimal 276)
+   defining Unicode char U+0115 (decimal 277)
+   defining Unicode char U+0116 (decimal 278)
+   defining Unicode char U+0117 (decimal 279)
+   defining Unicode char U+0118 (decimal 280)
+   defining Unicode char U+0119 (decimal 281)
+   defining Unicode char U+011A (decimal 282)
+   defining Unicode char U+011B (decimal 283)
+   defining Unicode char U+011C (decimal 284)
+   defining Unicode char U+011D (decimal 285)
+   defining Unicode char U+011E (decimal 286)
+   defining Unicode char U+011F (decimal 287)
+   defining Unicode char U+0120 (decimal 288)
+   defining Unicode char U+0121 (decimal 289)
+   defining Unicode char U+0122 (decimal 290)
+   defining Unicode char U+0123 (decimal 291)
+   defining Unicode char U+0124 (decimal 292)
+   defining Unicode char U+0125 (decimal 293)
+   defining Unicode char U+0128 (decimal 296)
+   defining Unicode char U+0129 (decimal 297)
+   defining Unicode char U+012A (decimal 298)
+   defining Unicode char U+012B (decimal 299)
+   defining Unicode char U+012C (decimal 300)
+   defining Unicode char U+012D (decimal 301)
+   defining Unicode char U+012E (decimal 302)
+   defining Unicode char U+012F (decimal 303)
+   defining Unicode char U+0130 (decimal 304)
+   defining Unicode char U+0131 (decimal 305)
+   defining Unicode char U+0132 (decimal 306)
+   defining Unicode char U+0133 (decimal 307)
+   defining Unicode char U+0134 (decimal 308)
+   defining Unicode char U+0135 (decimal 309)
+   defining Unicode char U+0136 (decimal 310)
+   defining Unicode char U+0137 (decimal 311)
+   defining Unicode char U+0139 (decimal 313)
+   defining Unicode char U+013A (decimal 314)
+   defining Unicode char U+013B (decimal 315)
+   defining Unicode char U+013C (decimal 316)
+   defining Unicode char U+013D (decimal 317)
+   defining Unicode char U+013E (decimal 318)
+   defining Unicode char U+0141 (decimal 321)
+   defining Unicode char U+0142 (decimal 322)
+   defining Unicode char U+0143 (decimal 323)
+   defining Unicode char U+0144 (decimal 324)
+   defining Unicode char U+0145 (decimal 325)
+   defining Unicode char U+0146 (decimal 326)
+   defining Unicode char U+0147 (decimal 327)
+   defining Unicode char U+0148 (decimal 328)
+   defining Unicode char U+014A (decimal 330)
+   defining Unicode char U+014B (decimal 331)
+   defining Unicode char U+014C (decimal 332)
+   defining Unicode char U+014D (decimal 333)
+   defining Unicode char U+014E (decimal 334)
+   defining Unicode char U+014F (decimal 335)
+   defining Unicode char U+0150 (decimal 336)
+   defining Unicode char U+0151 (decimal 337)
+   defining Unicode char U+0152 (decimal 338)
+   defining Unicode char U+0153 (decimal 339)
+   defining Unicode char U+0154 (decimal 340)
+   defining Unicode char U+0155 (decimal 341)
+   defining Unicode char U+0156 (decimal 342)
+   defining Unicode char U+0157 (decimal 343)
+   defining Unicode char U+0158 (decimal 344)
+   defining Unicode char U+0159 (decimal 345)
+   defining Unicode char U+015A (decimal 346)
+   defining Unicode char U+015B (decimal 347)
+   defining Unicode char U+015C (decimal 348)
+   defining Unicode char U+015D (decimal 349)
+   defining Unicode char U+015E (decimal 350)
+   defining Unicode char U+015F (decimal 351)
+   defining Unicode char U+0160 (decimal 352)
+   defining Unicode char U+0161 (decimal 353)
+   defining Unicode char U+0162 (decimal 354)
+   defining Unicode char U+0163 (decimal 355)
+   defining Unicode char U+0164 (decimal 356)
+   defining Unicode char U+0165 (decimal 357)
+   defining Unicode char U+0168 (decimal 360)
+   defining Unicode char U+0169 (decimal 361)
+   defining Unicode char U+016A (decimal 362)
+   defining Unicode char U+016B (decimal 363)
+   defining Unicode char U+016C (decimal 364)
+   defining Unicode char U+016D (decimal 365)
+   defining Unicode char U+016E (decimal 366)
+   defining Unicode char U+016F (decimal 367)
+   defining Unicode char U+0170 (decimal 368)
+   defining Unicode char U+0171 (decimal 369)
+   defining Unicode char U+0172 (decimal 370)
+   defining Unicode char U+0173 (decimal 371)
+   defining Unicode char U+0174 (decimal 372)
+   defining Unicode char U+0175 (decimal 373)
+   defining Unicode char U+0176 (decimal 374)
+   defining Unicode char U+0177 (decimal 375)
+   defining Unicode char U+0178 (decimal 376)
+   defining Unicode char U+0179 (decimal 377)
+   defining Unicode char U+017A (decimal 378)
+   defining Unicode char U+017B (decimal 379)
+   defining Unicode char U+017C (decimal 380)
+   defining Unicode char U+017D (decimal 381)
+   defining Unicode char U+017E (decimal 382)
+   defining Unicode char U+01CD (decimal 461)
+   defining Unicode char U+01CE (decimal 462)
+   defining Unicode char U+01CF (decimal 463)
+   defining Unicode char U+01D0 (decimal 464)
+   defining Unicode char U+01D1 (decimal 465)
+   defining Unicode char U+01D2 (decimal 466)
+   defining Unicode char U+01D3 (decimal 467)
+   defining Unicode char U+01D4 (decimal 468)
+   defining Unicode char U+01E2 (decimal 482)
+   defining Unicode char U+01E3 (decimal 483)
+   defining Unicode char U+01E6 (decimal 486)
+   defining Unicode char U+01E7 (decimal 487)
+   defining Unicode char U+01E8 (decimal 488)
+   defining Unicode char U+01E9 (decimal 489)
+   defining Unicode char U+01EA (decimal 490)
+   defining Unicode char U+01EB (decimal 491)
+   defining Unicode char U+01F0 (decimal 496)
+   defining Unicode char U+01F4 (decimal 500)
+   defining Unicode char U+01F5 (decimal 501)
+   defining Unicode char U+0218 (decimal 536)
+   defining Unicode char U+0219 (decimal 537)
+   defining Unicode char U+021A (decimal 538)
+   defining Unicode char U+021B (decimal 539)
+   defining Unicode char U+0232 (decimal 562)
+   defining Unicode char U+0233 (decimal 563)
+   defining Unicode char U+1E02 (decimal 7682)
+   defining Unicode char U+1E03 (decimal 7683)
+   defining Unicode char U+200C (decimal 8204)
+   defining Unicode char U+2010 (decimal 8208)
+   defining Unicode char U+2011 (decimal 8209)
+   defining Unicode char U+2012 (decimal 8210)
+   defining Unicode char U+2013 (decimal 8211)
+   defining Unicode char U+2014 (decimal 8212)
+   defining Unicode char U+2015 (decimal 8213)
+   defining Unicode char U+2018 (decimal 8216)
+   defining Unicode char U+2019 (decimal 8217)
+   defining Unicode char U+201A (decimal 8218)
+   defining Unicode char U+201C (decimal 8220)
+   defining Unicode char U+201D (decimal 8221)
+   defining Unicode char U+201E (decimal 8222)
+   defining Unicode char U+2030 (decimal 8240)
+   defining Unicode char U+2031 (decimal 8241)
+   defining Unicode char U+2039 (decimal 8249)
+   defining Unicode char U+203A (decimal 8250)
+   defining Unicode char U+2423 (decimal 9251)
+   defining Unicode char U+1E20 (decimal 7712)
+   defining Unicode char U+1E21 (decimal 7713)
+)
+Now handling font encoding OT1 ...
+... processing UTF-8 mapping file for font encoding OT1
+
+("C:\Program Files\MiKTeX 2.9\tex\latex\base\ot1enc.dfu"
+File: ot1enc.dfu 2017/01/28 v1.1t UTF-8 support for inputenc
+   defining Unicode char U+00A0 (decimal 160)
+   defining Unicode char U+00A1 (decimal 161)
+   defining Unicode char U+00A3 (decimal 163)
+   defining Unicode char U+00AD (decimal 173)
+   defining Unicode char U+00B8 (decimal 184)
+   defining Unicode char U+00BF (decimal 191)
+   defining Unicode char U+00C5 (decimal 197)
+   defining Unicode char U+00C6 (decimal 198)
+   defining Unicode char U+00D8 (decimal 216)
+   defining Unicode char U+00DF (decimal 223)
+   defining Unicode char U+00E6 (decimal 230)
+   defining Unicode char U+00EC (decimal 236)
+   defining Unicode char U+00ED (decimal 237)
+   defining Unicode char U+00EE (decimal 238)
+   defining Unicode char U+00EF (decimal 239)
+   defining Unicode char U+00F8 (decimal 248)
+   defining Unicode char U+0131 (decimal 305)
+   defining Unicode char U+0141 (decimal 321)
+   defining Unicode char U+0142 (decimal 322)
+   defining Unicode char U+0152 (decimal 338)
+   defining Unicode char U+0153 (decimal 339)
+   defining Unicode char U+0174 (decimal 372)
+   defining Unicode char U+0175 (decimal 373)
+   defining Unicode char U+0176 (decimal 374)
+   defining Unicode char U+0177 (decimal 375)
+   defining Unicode char U+0218 (decimal 536)
+   defining Unicode char U+0219 (decimal 537)
+   defining Unicode char U+021A (decimal 538)
+   defining Unicode char U+021B (decimal 539)
+   defining Unicode char U+2013 (decimal 8211)
+   defining Unicode char U+2014 (decimal 8212)
+   defining Unicode char U+2018 (decimal 8216)
+   defining Unicode char U+2019 (decimal 8217)
+   defining Unicode char U+201C (decimal 8220)
+   defining Unicode char U+201D (decimal 8221)
+)
+Now handling font encoding OMS ...
+... processing UTF-8 mapping file for font encoding OMS
+
+("C:\Program Files\MiKTeX 2.9\tex\latex\base\omsenc.dfu"
+File: omsenc.dfu 2017/01/28 v1.1t UTF-8 support for inputenc
+   defining Unicode char U+00A7 (decimal 167)
+   defining Unicode char U+00B6 (decimal 182)
+   defining Unicode char U+00B7 (decimal 183)
+   defining Unicode char U+2020 (decimal 8224)
+   defining Unicode char U+2021 (decimal 8225)
+   defining Unicode char U+2022 (decimal 8226)
+)
+Now handling font encoding OMX ...
+... no UTF-8 mapping file for font encoding OMX
+Now handling font encoding U ...
+... no UTF-8 mapping file for font encoding U
+   defining Unicode char U+00A9 (decimal 169)
+   defining Unicode char U+00AA (decimal 170)
+   defining Unicode char U+00AE (decimal 174)
+   defining Unicode char U+00BA (decimal 186)
+   defining Unicode char U+02C6 (decimal 710)
+   defining Unicode char U+02DC (decimal 732)
+   defining Unicode char U+200C (decimal 8204)
+   defining Unicode char U+2026 (decimal 8230)
+   defining Unicode char U+2122 (decimal 8482)
+   defining Unicode char U+2423 (decimal 9251)
+))
+("C:\Program Files\MiKTeX 2.9\tex\latex\base\latexsym.sty"
+Package: latexsym 1998/08/17 v2.2e Standard LaTeX package (lasy symbols)
+\symlasy=\mathgroup7
+LaTeX Font Info:    Overwriting symbol font `lasy' in version `bold'
+(Font)                  U/lasy/m/n --> U/lasy/b/n on input line 52.
+)
+("C:\Program Files\MiKTeX 2.9\tex\generic\babel\babel.sty"
+Package: babel 2017/06/29 3.12 The Babel package
+
+("C:\Program Files\MiKTeX 2.9\tex\generic\babel\switch.def"
+File: switch.def 2017/06/29 3.12 Babel switching mechanism
+)
+*************************************
+* Local config file bblopts.cfg used
+*
+("C:\Program Files\MiKTeX 2.9\tex\latex\arabi\bblopts.cfg"
+File: bblopts.cfg 2005/09/08 v0.1 add Arabic and Farsi to "declared" options of
+ babel
+)
+("C:\Program Files\MiKTeX 2.9\tex\latex\babel-english\english.ldf"
+Language: english 2017/06/06 v3.3r English support from the babel system
+
+("C:\Program Files\MiKTeX 2.9\tex\generic\babel\babel.def"
+File: babel.def 2017/06/29 3.12 Babel common definitions
+
+("C:\Program Files\MiKTeX 2.9\tex\generic\babel\switch.def"
+File: switch.def 2017/06/29 3.12 Babel switching mechanism
+)
+\babel@savecnt=\count88
+\U@D=\dimen103
+)
+\l@canadian = a dialect from \language\l@american 
+\l@australian = a dialect from \language\l@british 
+\l@newzealand = a dialect from \language\l@british 
+))
+("C:\Program Files\MiKTeX 2.9\tex\latex\tools\indentfirst.sty"
+Package: indentfirst 1995/11/23 v1.03 Indent first paragraph (DPC)
+)
+("C:\Program Files\MiKTeX 2.9\tex\latex\graphics\graphicx.sty"
+Package: graphicx 2017/06/01 v1.1a Enhanced LaTeX Graphics (DPC,SPQR)
+
+("C:\Program Files\MiKTeX 2.9\tex\latex\graphics\keyval.sty"
+Package: keyval 2014/10/28 v1.15 key=value parser (DPC)
+\KV@toks@=\toks16
+)
+("C:\Program Files\MiKTeX 2.9\tex\latex\graphics\graphics.sty"
+Package: graphics 2017/06/25 v1.2c Standard LaTeX Graphics (DPC,SPQR)
+
+("C:\Program Files\MiKTeX 2.9\tex\latex\graphics\trig.sty"
+Package: trig 2016/01/03 v1.10 sin cos tan (DPC)
+)
+("C:\Program Files\MiKTeX 2.9\tex\latex\graphics-cfg\graphics.cfg"
+File: graphics.cfg 2016/06/04 v1.11 sample graphics configuration
+)
+Package graphics Info: Driver file: pdftex.def on input line 99.
+
+("C:\Program Files\MiKTeX 2.9\tex\latex\graphics-def\pdftex.def"
+File: pdftex.def 2017/06/24 v1.0g Graphics/color driver for pdftex
+))
+\Gin@req@height=\dimen104
+\Gin@req@width=\dimen105
+)
+("C:\Program Files\MiKTeX 2.9\tex\latex\lm\lmodern.sty"
+Package: lmodern 2009/10/30 v1.6 Latin Modern Fonts
+LaTeX Font Info:    Overwriting symbol font `operators' in version `normal'
+(Font)                  OT1/cmr/m/n --> OT1/lmr/m/n on input line 22.
+LaTeX Font Info:    Overwriting symbol font `letters' in version `normal'
+(Font)                  OML/cmm/m/it --> OML/lmm/m/it on input line 23.
+LaTeX Font Info:    Overwriting symbol font `symbols' in version `normal'
+(Font)                  OMS/cmsy/m/n --> OMS/lmsy/m/n on input line 24.
+LaTeX Font Info:    Overwriting symbol font `largesymbols' in version `normal'
+(Font)                  OMX/cmex/m/n --> OMX/lmex/m/n on input line 25.
+LaTeX Font Info:    Overwriting symbol font `operators' in version `bold'
+(Font)                  OT1/cmr/bx/n --> OT1/lmr/bx/n on input line 26.
+LaTeX Font Info:    Overwriting symbol font `letters' in version `bold'
+(Font)                  OML/cmm/b/it --> OML/lmm/b/it on input line 27.
+LaTeX Font Info:    Overwriting symbol font `symbols' in version `bold'
+(Font)                  OMS/cmsy/b/n --> OMS/lmsy/b/n on input line 28.
+LaTeX Font Info:    Overwriting symbol font `largesymbols' in version `bold'
+(Font)                  OMX/cmex/m/n --> OMX/lmex/m/n on input line 29.
+LaTeX Font Info:    Overwriting math alphabet `\mathbf' in version `normal'
+(Font)                  OT1/cmr/bx/n --> OT1/lmr/bx/n on input line 31.
+LaTeX Font Info:    Overwriting math alphabet `\mathsf' in version `normal'
+(Font)                  OT1/cmss/m/n --> OT1/lmss/m/n on input line 32.
+LaTeX Font Info:    Overwriting math alphabet `\mathit' in version `normal'
+(Font)                  OT1/cmr/m/it --> OT1/lmr/m/it on input line 33.
+LaTeX Font Info:    Overwriting math alphabet `\mathtt' in version `normal'
+(Font)                  OT1/cmtt/m/n --> OT1/lmtt/m/n on input line 34.
+LaTeX Font Info:    Overwriting math alphabet `\mathbf' in version `bold'
+(Font)                  OT1/cmr/bx/n --> OT1/lmr/bx/n on input line 35.
+LaTeX Font Info:    Overwriting math alphabet `\mathsf' in version `bold'
+(Font)                  OT1/cmss/bx/n --> OT1/lmss/bx/n on input line 36.
+LaTeX Font Info:    Overwriting math alphabet `\mathit' in version `bold'
+(Font)                  OT1/cmr/bx/it --> OT1/lmr/bx/it on input line 37.
+LaTeX Font Info:    Overwriting math alphabet `\mathtt' in version `bold'
+(Font)                  OT1/cmtt/m/n --> OT1/lmtt/m/n on input line 38.
+) (mathpazo.sty
+Package: mathpazo 2005/04/12 PSNFSS-v9.2a Palatino w/ Pazo Math (D.Puga, WaS) 
+\symupright=\mathgroup8
+)
+("C:\Program Files\MiKTeX 2.9\tex\latex\geometry\geometry.sty"
+Package: geometry 2010/09/12 v5.6 Page Geometry
+
+("C:\Program Files\MiKTeX 2.9\tex\generic\oberdiek\ifpdf.sty"
+Package: ifpdf 2017/03/15 v3.2 Provides the ifpdf switch
+)
+("C:\Program Files\MiKTeX 2.9\tex\generic\oberdiek\ifvtex.sty"
+Package: ifvtex 2016/05/16 v1.6 Detect VTeX and its facilities (HO)
+Package ifvtex Info: VTeX not detected.
+)
+("C:\Program Files\MiKTeX 2.9\tex\generic\ifxetex\ifxetex.sty"
+Package: ifxetex 2010/09/12 v0.6 Provides ifxetex conditional
+)
+\Gm@cnth=\count89
+\Gm@cntv=\count90
+\c@Gm@tempcnt=\count91
+\Gm@bindingoffset=\dimen106
+\Gm@wd@mp=\dimen107
+\Gm@odd@mp=\dimen108
+\Gm@even@mp=\dimen109
+\Gm@layoutwidth=\dimen110
+\Gm@layoutheight=\dimen111
+\Gm@layouthoffset=\dimen112
+\Gm@layoutvoffset=\dimen113
+\Gm@dimlist=\toks17
+
+("C:\Program Files\MiKTeX 2.9\tex\latex\geometry\geometry.cfg"))
+("C:\Program Files\MiKTeX 2.9\tex\latex\initials\Kramer.fd"
+File: Kramer.fd 2003/04/02 Font definition file for U/Kramer
+)
+("C:\Program Files\MiKTeX 2.9\tex\latex\yfonts\yfonts.sty"
+Package: yfonts 2003/01/08 v1.3 (WaS)
+Now handling font encoding LY ...
+... no UTF-8 mapping file for font encoding LY
+Now handling font encoding LYG ...
+... no UTF-8 mapping file for font encoding LYG
+LaTeX Info: Composite with undeclared \" in encoding LYG on input line 58.
+)
+("C:\Program Files\MiKTeX 2.9\tex\latex\graphics\color.sty"
+Package: color 2016/07/10 v1.1e Standard LaTeX Color (DPC)
+
+("C:\Program Files\MiKTeX 2.9\tex\latex\graphics-cfg\color.cfg"
+File: color.cfg 2016/01/02 v1.6 sample color configuration
+)
+Package color Info: Driver file: pdftex.def on input line 147.
+)
+("C:\Program Files\MiKTeX 2.9\tex\latex\minitoc\minitoc.sty"
+Package: minitoc 2015/07/13 v61 Package minitoc
+
+("C:\Program Files\MiKTeX 2.9\tex\latex\minitoc\mtcmess.sty"
+Package: mtcmess 2006/03/14
+)
+Package minitoc Info: I0001
+(minitoc)             *** minitoc package, version 61 ***.
+\tf@mtc=\write3
+\mtcindent=\skip43
+\mtcskipamount=\skip44
+Package minitoc Info: I0005
+(minitoc)             compatible with hyperref.
+Package minitoc Info: I0023
+(minitoc)             part level macros available.
+Package minitoc Info: I0003
+(minitoc)             chapter level macros available.
+\mtc@toks=\toks18
+\mtc@strutbox=\box26
+\mtc@hstrutbox=\box27
+Package minitoc Info: I0002
+(minitoc)             Autoconfiguration of extensions.
+\openout3 = `White_book.mtc0'.
+
+\openout3 = `White_book.mtc'.
+
+ (White_book.mtc0)
+Package minitoc Info: I0012
+(minitoc)             Long extensions (Unix-like) will be used.
+Package minitoc Info: I0031
+(minitoc)             ==> this version is configured for UNIX-like 
+(minitoc)                 (long extensions) file names.
+\openout3 = `White_book.mtc'.
+
+\openout3 = `White_book.mtc0'.
+
+\c@mtc=\count92
+\c@minitocdepth=\count93
+\c@ptc=\count94
+\c@parttocdepth=\count95
+\ptcindent=\skip45
+Package minitoc Info: I0010
+(minitoc)             The english language is selected.
+(minitoc)              on input line 4909.
+("C:\Program Files\MiKTeX 2.9\tex\latex\minitoc\english.mld"
+File: english.mld 2006/01/13
+)
+("C:\Program Files\MiKTeX 2.9\tex\latex\minitoc\english.mld"
+File: english.mld 2006/01/13
+))
+("C:\Program Files\MiKTeX 2.9\tex\latex\titlesec\titlesec.sty"
+Package: titlesec 2016/03/21 v2.10.2 Sectioning titles
+\ttl@box=\box28
+\beforetitleunit=\skip46
+\aftertitleunit=\skip47
+\ttl@plus=\dimen114
+\ttl@minus=\dimen115
+\ttl@toksa=\toks19
+\titlewidth=\dimen116
+\titlewidthlast=\dimen117
+\titlewidthfirst=\dimen118
+)
+("C:\Program Files\MiKTeX 2.9\tex\latex\subfigure\subfigure.sty"
+Package: subfigure 2002/07/30 v2.1.4 subfigure package
+\subfigtopskip=\skip48
+\subfigcapskip=\skip49
+\subfigcaptopadj=\dimen119
+\subfigbottomskip=\skip50
+\subfigcapmargin=\dimen120
+\subfiglabelskip=\skip51
+\c@subfigure=\count96
+\c@lofdepth=\count97
+\c@subtable=\count98
+\c@lotdepth=\count99
+
+****************************************
+* Local config file subfigure.cfg used *
+****************************************
+("C:\Program Files\MiKTeX 2.9\tex\latex\subfigure\subfigure.cfg")
+\subfig@top=\skip52
+\subfig@bottom=\skip53
+)
+("C:\Program Files\MiKTeX 2.9\tex\latex\amsmath\amsmath.sty"
+Package: amsmath 2016/11/05 v2.16a AMS math features
+\@mathmargin=\skip54
+
+For additional information on amsmath, use the `?' option.
+("C:\Program Files\MiKTeX 2.9\tex\latex\amsmath\amstext.sty"
+Package: amstext 2000/06/29 v2.01 AMS text
+
+("C:\Program Files\MiKTeX 2.9\tex\latex\amsmath\amsgen.sty"
+File: amsgen.sty 1999/11/30 v2.0 generic functions
+\@emptytoks=\toks20
+\ex@=\dimen121
+))
+("C:\Program Files\MiKTeX 2.9\tex\latex\amsmath\amsbsy.sty"
+Package: amsbsy 1999/11/29 v1.2d Bold Symbols
+LaTeX Info: Redefining \boldsymbol on input line 28.
+\pmbraise@=\dimen122
+)
+("C:\Program Files\MiKTeX 2.9\tex\latex\amsmath\amsopn.sty"
+Package: amsopn 2016/03/08 v2.02 operator names
+)
+\inf@bad=\count100
+LaTeX Info: Redefining \frac on input line 213.
+\uproot@=\count101
+\leftroot@=\count102
+LaTeX Info: Redefining \overline on input line 375.
+\classnum@=\count103
+\DOTSCASE@=\count104
+LaTeX Info: Redefining \ldots on input line 472.
+LaTeX Info: Redefining \dots on input line 475.
+LaTeX Info: Redefining \cdots on input line 596.
+\Mathstrutbox@=\box29
+\strutbox@=\box30
+\big@size=\dimen123
+LaTeX Font Info:    Redeclaring font encoding OML on input line 712.
+LaTeX Font Info:    Redeclaring font encoding OMS on input line 713.
+\macc@depth=\count105
+\c@MaxMatrixCols=\count106
+\dotsspace@=\muskip10
+\c@parentequation=\count107
+\dspbrk@lvl=\count108
+\tag@help=\toks21
+\row@=\count109
+\column@=\count110
+\maxfields@=\count111
+\andhelp@=\toks22
+\eqnshift@=\dimen124
+\alignsep@=\dimen125
+\tagshift@=\dimen126
+\tagwidth@=\dimen127
+\totwidth@=\dimen128
+\lineht@=\dimen129
+\@envbody=\toks23
+\multlinegap=\skip55
+\multlinetaggap=\skip56
+\mathdisplay@stack=\toks24
+LaTeX Info: Redefining \[ on input line 2817.
+LaTeX Info: Redefining \] on input line 2818.
+)
+("C:\Program Files\MiKTeX 2.9\tex\latex\amsfonts\amssymb.sty"
+Package: amssymb 2013/01/14 v3.01 AMS font symbols
+
+("C:\Program Files\MiKTeX 2.9\tex\latex\amsfonts\amsfonts.sty"
+Package: amsfonts 2013/01/14 v3.01 Basic AMSFonts support
+\symAMSa=\mathgroup9
+\symAMSb=\mathgroup10
+LaTeX Font Info:    Overwriting math alphabet `\mathfrak' in version `bold'
+(Font)                  U/euf/m/n --> U/euf/b/n on input line 106.
+))
+("C:\Program Files\MiKTeX 2.9\tex\latex\stmaryrd\stmaryrd.sty"
+Package: stmaryrd 1994/03/03 St Mary's Road symbol package
+\symstmry=\mathgroup11
+LaTeX Font Info:    Overwriting symbol font `stmry' in version `bold'
+(Font)                  U/stmry/m/n --> U/stmry/b/n on input line 89.
+)
+("C:\Program Files\MiKTeX 2.9\tex\latex\url\url.sty"
+\Urlmuskip=\muskip11
+Package: url 2013/09/16  ver 3.4  Verb mode for urls, etc.
+)
+("C:\Program Files\MiKTeX 2.9\tex\latex\pgfplots\pgfplots.sty"
+("C:\Program Files\MiKTeX 2.9\tex\generic\pgfplots\pgfplots.revision.tex")
+Package: pgfplots 2017/06/05 v1.15 Data Visualization (1.15)
+
+("C:\Program Files\MiKTeX 2.9\tex\latex\pgf\frontendlayer\tikz.sty"
+("C:\Program Files\MiKTeX 2.9\tex\latex\pgf\basiclayer\pgf.sty"
+("C:\Program Files\MiKTeX 2.9\tex\latex\pgf\utilities\pgfrcs.sty"
+("C:\Program Files\MiKTeX 2.9\tex\generic\pgf\utilities\pgfutil-common.tex"
+\pgfutil@everybye=\toks25
+\pgfutil@tempdima=\dimen130
+\pgfutil@tempdimb=\dimen131
+
+("C:\Program Files\MiKTeX 2.9\tex\generic\pgf\utilities\pgfutil-common-lists.te
+x")) ("C:\Program Files\MiKTeX 2.9\tex\generic\pgf\utilities\pgfutil-latex.def"
+\pgfutil@abb=\box31
+("C:\Program Files\MiKTeX 2.9\tex\latex\ms\everyshi.sty"
+Package: everyshi 2001/05/15 v3.00 EveryShipout Package (MS)
+))
+("C:\Program Files\MiKTeX 2.9\tex\generic\pgf\utilities\pgfrcs.code.tex"
+Package: pgfrcs 2015/08/07 v3.0.1a (rcs-revision 1.31)
+))
+Package: pgf 2015/08/07 v3.0.1a (rcs-revision 1.15)
+
+("C:\Program Files\MiKTeX 2.9\tex\latex\pgf\basiclayer\pgfcore.sty"
+("C:\Program Files\MiKTeX 2.9\tex\latex\pgf\systemlayer\pgfsys.sty"
+("C:\Program Files\MiKTeX 2.9\tex\generic\pgf\systemlayer\pgfsys.code.tex"
+Package: pgfsys 2014/07/09 v3.0.1a (rcs-revision 1.48)
+
+("C:\Program Files\MiKTeX 2.9\tex\generic\pgf\utilities\pgfkeys.code.tex"
+\pgfkeys@pathtoks=\toks26
+\pgfkeys@temptoks=\toks27
+
+("C:\Program Files\MiKTeX 2.9\tex\generic\pgf\utilities\pgfkeysfiltered.code.te
+x"
+\pgfkeys@tmptoks=\toks28
+))
+\pgf@x=\dimen132
+\pgf@y=\dimen133
+\pgf@xa=\dimen134
+\pgf@ya=\dimen135
+\pgf@xb=\dimen136
+\pgf@yb=\dimen137
+\pgf@xc=\dimen138
+\pgf@yc=\dimen139
+\w@pgf@writea=\write4
+\r@pgf@reada=\read1
+\c@pgf@counta=\count112
+\c@pgf@countb=\count113
+\c@pgf@countc=\count114
+\c@pgf@countd=\count115
+\t@pgf@toka=\toks29
+\t@pgf@tokb=\toks30
+\t@pgf@tokc=\toks31
+ ("C:\Program Files\MiKTeX 2.9\tex\generic\pgf\systemlayer\pgf.cfg"
+File: pgf.cfg 2008/05/14  (rcs-revision 1.7)
+)
+Driver file for pgf: pgfsys-pdftex.def
+
+("C:\Program Files\MiKTeX 2.9\tex\generic\pgf\systemlayer\pgfsys-pdftex.def"
+File: pgfsys-pdftex.def 2014/10/11  (rcs-revision 1.35)
+
+("C:\Program Files\MiKTeX 2.9\tex\generic\pgf\systemlayer\pgfsys-common-pdf.def
+"
+File: pgfsys-common-pdf.def 2013/10/10  (rcs-revision 1.13)
+)))
+("C:\Program Files\MiKTeX 2.9\tex\generic\pgf\systemlayer\pgfsyssoftpath.code.t
+ex"
+File: pgfsyssoftpath.code.tex 2013/09/09  (rcs-revision 1.9)
+\pgfsyssoftpath@smallbuffer@items=\count116
+\pgfsyssoftpath@bigbuffer@items=\count117
+)
+("C:\Program Files\MiKTeX 2.9\tex\generic\pgf\systemlayer\pgfsysprotocol.code.t
+ex"
+File: pgfsysprotocol.code.tex 2006/10/16  (rcs-revision 1.4)
+)) ("C:\Program Files\MiKTeX 2.9\tex\latex\xcolor\xcolor.sty"
+Package: xcolor 2016/05/11 v2.12 LaTeX color extensions (UK)
+
+("C:\Program Files\MiKTeX 2.9\tex\latex\graphics-cfg\color.cfg"
+File: color.cfg 2016/01/02 v1.6 sample color configuration
+)
+Package xcolor Info: Driver file: pdftex.def on input line 225.
+LaTeX Info: Redefining \color on input line 709.
+Package xcolor Info: Model `cmy' substituted by `cmy0' on input line 1348.
+Package xcolor Info: Model `hsb' substituted by `rgb' on input line 1352.
+Package xcolor Info: Model `RGB' extended on input line 1364.
+Package xcolor Info: Model `HTML' substituted by `rgb' on input line 1366.
+Package xcolor Info: Model `Hsb' substituted by `hsb' on input line 1367.
+Package xcolor Info: Model `tHsb' substituted by `hsb' on input line 1368.
+Package xcolor Info: Model `HSB' substituted by `hsb' on input line 1369.
+Package xcolor Info: Model `Gray' substituted by `gray' on input line 1370.
+Package xcolor Info: Model `wave' substituted by `hsb' on input line 1371.
+)
+("C:\Program Files\MiKTeX 2.9\tex\generic\pgf\basiclayer\pgfcore.code.tex"
+Package: pgfcore 2010/04/11 v3.0.1a (rcs-revision 1.7)
+
+("C:\Program Files\MiKTeX 2.9\tex\generic\pgf\math\pgfmath.code.tex"
+("C:\Program Files\MiKTeX 2.9\tex\generic\pgf\math\pgfmathcalc.code.tex"
+("C:\Program Files\MiKTeX 2.9\tex\generic\pgf\math\pgfmathutil.code.tex")
+("C:\Program Files\MiKTeX 2.9\tex\generic\pgf\math\pgfmathparser.code.tex"
+\pgfmath@dimen=\dimen140
+\pgfmath@count=\count118
+\pgfmath@box=\box32
+\pgfmath@toks=\toks32
+\pgfmath@stack@operand=\toks33
+\pgfmath@stack@operation=\toks34
+)
+("C:\Program Files\MiKTeX 2.9\tex\generic\pgf\math\pgfmathfunctions.code.tex"
+("C:\Program Files\MiKTeX 2.9\tex\generic\pgf\math\pgfmathfunctions.basic.code.
+tex")
+("C:\Program Files\MiKTeX 2.9\tex\generic\pgf\math\pgfmathfunctions.trigonometr
+ic.code.tex")
+("C:\Program Files\MiKTeX 2.9\tex\generic\pgf\math\pgfmathfunctions.random.code
+.tex")
+("C:\Program Files\MiKTeX 2.9\tex\generic\pgf\math\pgfmathfunctions.comparison.
+code.tex")
+("C:\Program Files\MiKTeX 2.9\tex\generic\pgf\math\pgfmathfunctions.base.code.t
+ex")
+("C:\Program Files\MiKTeX 2.9\tex\generic\pgf\math\pgfmathfunctions.round.code.
+tex")
+("C:\Program Files\MiKTeX 2.9\tex\generic\pgf\math\pgfmathfunctions.misc.code.t
+ex")
+("C:\Program Files\MiKTeX 2.9\tex\generic\pgf\math\pgfmathfunctions.integerarit
+hmetics.code.tex")))
+("C:\Program Files\MiKTeX 2.9\tex\generic\pgf\math\pgfmathfloat.code.tex"
+\c@pgfmathroundto@lastzeros=\count119
+))
+("C:\Program Files\MiKTeX 2.9\tex\generic\pgf\basiclayer\pgfcorepoints.code.tex
+"
+File: pgfcorepoints.code.tex 2013/10/07  (rcs-revision 1.27)
+\pgf@picminx=\dimen141
+\pgf@picmaxx=\dimen142
+\pgf@picminy=\dimen143
+\pgf@picmaxy=\dimen144
+\pgf@pathminx=\dimen145
+\pgf@pathmaxx=\dimen146
+\pgf@pathminy=\dimen147
+\pgf@pathmaxy=\dimen148
+\pgf@xx=\dimen149
+\pgf@xy=\dimen150
+\pgf@yx=\dimen151
+\pgf@yy=\dimen152
+\pgf@zx=\dimen153
+\pgf@zy=\dimen154
+)
+("C:\Program Files\MiKTeX 2.9\tex\generic\pgf\basiclayer\pgfcorepathconstruct.c
+ode.tex"
+File: pgfcorepathconstruct.code.tex 2013/10/07  (rcs-revision 1.29)
+\pgf@path@lastx=\dimen155
+\pgf@path@lasty=\dimen156
+)
+("C:\Program Files\MiKTeX 2.9\tex\generic\pgf\basiclayer\pgfcorepathusage.code.
+tex"
+File: pgfcorepathusage.code.tex 2014/11/02  (rcs-revision 1.24)
+\pgf@shorten@end@additional=\dimen157
+\pgf@shorten@start@additional=\dimen158
+)
+("C:\Program Files\MiKTeX 2.9\tex\generic\pgf\basiclayer\pgfcorescopes.code.tex
+"
+File: pgfcorescopes.code.tex 2015/05/08  (rcs-revision 1.46)
+\pgfpic=\box33
+\pgf@hbox=\box34
+\pgf@layerbox@main=\box35
+\pgf@picture@serial@count=\count120
+)
+("C:\Program Files\MiKTeX 2.9\tex\generic\pgf\basiclayer\pgfcoregraphicstate.co
+de.tex"
+File: pgfcoregraphicstate.code.tex 2014/11/02  (rcs-revision 1.12)
+\pgflinewidth=\dimen159
+)
+("C:\Program Files\MiKTeX 2.9\tex\generic\pgf\basiclayer\pgfcoretransformations
+.code.tex"
+File: pgfcoretransformations.code.tex 2015/08/07  (rcs-revision 1.20)
+\pgf@pt@x=\dimen160
+\pgf@pt@y=\dimen161
+\pgf@pt@temp=\dimen162
+)
+("C:\Program Files\MiKTeX 2.9\tex\generic\pgf\basiclayer\pgfcorequick.code.tex"
+File: pgfcorequick.code.tex 2008/10/09  (rcs-revision 1.3)
+)
+("C:\Program Files\MiKTeX 2.9\tex\generic\pgf\basiclayer\pgfcoreobjects.code.te
+x"
+File: pgfcoreobjects.code.tex 2006/10/11  (rcs-revision 1.2)
+)
+("C:\Program Files\MiKTeX 2.9\tex\generic\pgf\basiclayer\pgfcorepathprocessing.
+code.tex"
+File: pgfcorepathprocessing.code.tex 2013/09/09  (rcs-revision 1.9)
+)
+("C:\Program Files\MiKTeX 2.9\tex\generic\pgf\basiclayer\pgfcorearrows.code.tex
+"
+File: pgfcorearrows.code.tex 2015/05/14  (rcs-revision 1.43)
+\pgfarrowsep=\dimen163
+)
+("C:\Program Files\MiKTeX 2.9\tex\generic\pgf\basiclayer\pgfcoreshade.code.tex"
+File: pgfcoreshade.code.tex 2013/07/15  (rcs-revision 1.15)
+\pgf@max=\dimen164
+\pgf@sys@shading@range@num=\count121
+) ("C:\Program Files\MiKTeX 2.9\tex\generic\pgf\basiclayer\pgfcoreimage.code.te
+x"
+File: pgfcoreimage.code.tex 2013/07/15  (rcs-revision 1.18)
+
+("C:\Program Files\MiKTeX 2.9\tex\generic\pgf\basiclayer\pgfcoreexternal.code.t
+ex"
+File: pgfcoreexternal.code.tex 2014/07/09  (rcs-revision 1.21)
+\pgfexternal@startupbox=\box36
+))
+("C:\Program Files\MiKTeX 2.9\tex\generic\pgf\basiclayer\pgfcorelayers.code.tex
+"
+File: pgfcorelayers.code.tex 2013/07/18  (rcs-revision 1.7)
+)
+("C:\Program Files\MiKTeX 2.9\tex\generic\pgf\basiclayer\pgfcoretransparency.co
+de.tex"
+File: pgfcoretransparency.code.tex 2013/09/30  (rcs-revision 1.5)
+)
+("C:\Program Files\MiKTeX 2.9\tex\generic\pgf\basiclayer\pgfcorepatterns.code.t
+ex"
+File: pgfcorepatterns.code.tex 2013/11/07  (rcs-revision 1.5)
+)))
+("C:\Program Files\MiKTeX 2.9\tex\generic\pgf\modules\pgfmoduleshapes.code.tex"
+File: pgfmoduleshapes.code.tex 2014/03/21  (rcs-revision 1.35)
+\pgfnodeparttextbox=\box37
+) ("C:\Program Files\MiKTeX 2.9\tex\generic\pgf\modules\pgfmoduleplot.code.tex"
+File: pgfmoduleplot.code.tex 2015/08/03  (rcs-revision 1.13)
+)
+("C:\Program Files\MiKTeX 2.9\tex\latex\pgf\compatibility\pgfcomp-version-0-65.
+sty"
+Package: pgfcomp-version-0-65 2007/07/03 v3.0.1a (rcs-revision 1.7)
+\pgf@nodesepstart=\dimen165
+\pgf@nodesepend=\dimen166
+)
+("C:\Program Files\MiKTeX 2.9\tex\latex\pgf\compatibility\pgfcomp-version-1-18.
+sty"
+Package: pgfcomp-version-1-18 2007/07/23 v3.0.1a (rcs-revision 1.1)
+)) ("C:\Program Files\MiKTeX 2.9\tex\latex\pgf\utilities\pgffor.sty"
+("C:\Program Files\MiKTeX 2.9\tex\latex\pgf\utilities\pgfkeys.sty"
+("C:\Program Files\MiKTeX 2.9\tex\generic\pgf\utilities\pgfkeys.code.tex"))
+("C:\Program Files\MiKTeX 2.9\tex\latex\pgf\math\pgfmath.sty"
+("C:\Program Files\MiKTeX 2.9\tex\generic\pgf\math\pgfmath.code.tex"))
+("C:\Program Files\MiKTeX 2.9\tex\generic\pgf\utilities\pgffor.code.tex"
+Package: pgffor 2013/12/13 v3.0.1a (rcs-revision 1.25)
+
+("C:\Program Files\MiKTeX 2.9\tex\generic\pgf\math\pgfmath.code.tex")
+\pgffor@iter=\dimen167
+\pgffor@skip=\dimen168
+\pgffor@stack=\toks35
+\pgffor@toks=\toks36
+))
+("C:\Program Files\MiKTeX 2.9\tex\generic\pgf\frontendlayer\tikz\tikz.code.tex"
+Package: tikz 2015/08/07 v3.0.1a (rcs-revision 1.151)
+
+("C:\Program Files\MiKTeX 2.9\tex\generic\pgf\libraries\pgflibraryplothandlers.
+code.tex"
+File: pgflibraryplothandlers.code.tex 2013/08/31 v3.0.1a (rcs-revision 1.20)
+\pgf@plot@mark@count=\count122
+\pgfplotmarksize=\dimen169
+)
+\tikz@lastx=\dimen170
+\tikz@lasty=\dimen171
+\tikz@lastxsaved=\dimen172
+\tikz@lastysaved=\dimen173
+\tikzleveldistance=\dimen174
+\tikzsiblingdistance=\dimen175
+\tikz@figbox=\box38
+\tikz@figbox@bg=\box39
+\tikz@tempbox=\box40
+\tikz@tempbox@bg=\box41
+\tikztreelevel=\count123
+\tikznumberofchildren=\count124
+\tikznumberofcurrentchild=\count125
+\tikz@fig@count=\count126
+
+("C:\Program Files\MiKTeX 2.9\tex\generic\pgf\modules\pgfmodulematrix.code.tex"
+File: pgfmodulematrix.code.tex 2013/09/17  (rcs-revision 1.8)
+\pgfmatrixcurrentrow=\count127
+\pgfmatrixcurrentcolumn=\count128
+\pgf@matrix@numberofcolumns=\count129
+)
+\tikz@expandcount=\count130
+
+("C:\Program Files\MiKTeX 2.9\tex\generic\pgf\frontendlayer\tikz\libraries\tikz
+librarytopaths.code.tex"
+File: tikzlibrarytopaths.code.tex 2008/06/17 v3.0.1a (rcs-revision 1.2)
+)))
+("C:\Program Files\MiKTeX 2.9\tex\generic\pgfplots\pgfplots.code.tex"
+("C:\Program Files\MiKTeX 2.9\tex\generic\pgfplots\pgfplotscore.code.tex"
+\t@pgfplots@toka=\toks37
+\t@pgfplots@tokb=\toks38
+\t@pgfplots@tokc=\toks39
+\pgfplots@tmpa=\dimen176
+\c@pgfplots@coordindex=\count131
+\c@pgfplots@scanlineindex=\count132
+
+("C:\Program Files\MiKTeX 2.9\tex\generic\pgfplots\sys\pgfplotssysgeneric.code.
+tex"))
+("C:\Program Files\MiKTeX 2.9\tex\generic\pgfplots\libs\pgfplotslibrary.code.te
+x")
+("C:\Program Files\MiKTeX 2.9\tex\generic\pgfplots\oldpgfcompatib\pgfplotsoldpg
+fsupp_loader.code.tex"
+("C:\Program Files\MiKTeX 2.9\tex\generic\pgf\libraries\pgflibraryfpu.code.tex"
+)
+Package pgfplots: loading complementary arithmetics for your pgf version...
+
+("C:\Program Files\MiKTeX 2.9\tex\generic\pgfplots\oldpgfcompatib\pgfplotsoldpg
+fsupp_pgflibraryfpu.code.tex")
+("C:\Program Files\MiKTeX 2.9\tex\generic\pgfplots\oldpgfcompatib\pgfplotsoldpg
+fsupp_pgfmathfloat.code.tex"
+\c@pgfmathroundto@lastzeros=\count133
+))
+("C:\Program Files\MiKTeX 2.9\tex\generic\pgfplots\util\pgfplotsutil.code.tex"
+("C:\Program Files\MiKTeX 2.9\tex\generic\pgfplots\liststructure\pgfplotslistst
+ructure.code.tex")
+("C:\Program Files\MiKTeX 2.9\tex\generic\pgfplots\liststructure\pgfplotslistst
+ructureext.code.tex")
+("C:\Program Files\MiKTeX 2.9\tex\generic\pgfplots\liststructure\pgfplotsarray.
+code.tex"
+\c@pgfplotsarray@tmp=\count134
+)
+("C:\Program Files\MiKTeX 2.9\tex\generic\pgfplots\liststructure\pgfplotsmatrix
+.code.tex")
+("C:\Program Files\MiKTeX 2.9\tex\generic\pgfplots\numtable\pgfplotstableshared
+.code.tex"
+\c@pgfplotstable@counta=\count135
+\t@pgfplotstable@a=\toks40
+)
+("C:\Program Files\MiKTeX 2.9\tex\generic\pgfplots\liststructure\pgfplotsdeque.
+code.tex")
+("C:\Program Files\MiKTeX 2.9\tex\generic\pgfplots\util\pgfplotsbinary.code.tex
+"
+("C:\Program Files\MiKTeX 2.9\tex\generic\pgfplots\util\pgfplotsbinary.data.cod
+e.tex"))
+("C:\Program Files\MiKTeX 2.9\tex\generic\pgfplots\util\pgfplotsutil.verb.code.
+tex")
+("C:\Program Files\MiKTeX 2.9\tex\generic\pgfplots\libs\pgflibrarypgfplots.surf
+shading.code.tex"
+\c@pgfplotslibrarysurf@no=\count136
+
+("C:\Program Files\MiKTeX 2.9\tex\generic\pgfplots\sys\pgflibrarypgfplots.surfs
+hading.pgfsys-pdftex.def")))
+("C:\Program Files\MiKTeX 2.9\tex\generic\pgfplots\util\pgfplotscolormap.code.t
+ex"
+("C:\Program Files\MiKTeX 2.9\tex\generic\pgfplots\util\pgfplotscolor.code.tex"
+))
+("C:\Program Files\MiKTeX 2.9\tex\generic\pgfplots\pgfplotsstackedplots.code.te
+x")
+("C:\Program Files\MiKTeX 2.9\tex\generic\pgfplots\pgfplotsplothandlers.code.te
+x"
+("C:\Program Files\MiKTeX 2.9\tex\generic\pgfplots\pgfplotsmeshplothandler.code
+.tex"
+("C:\Program Files\MiKTeX 2.9\tex\generic\pgfplots\pgfplotsmeshplotimage.code.t
+ex")))
+("C:\Program Files\MiKTeX 2.9\tex\generic\pgfplots\pgfplots.scaling.code.tex")
+("C:\Program Files\MiKTeX 2.9\tex\generic\pgfplots\pgfplotscoordprocessing.code
+.tex")
+("C:\Program Files\MiKTeX 2.9\tex\generic\pgfplots\pgfplots.errorbars.code.tex"
+) ("C:\Program Files\MiKTeX 2.9\tex\generic\pgfplots\pgfplots.markers.code.tex"
+) ("C:\Program Files\MiKTeX 2.9\tex\generic\pgfplots\pgfplotsticks.code.tex")
+("C:\Program Files\MiKTeX 2.9\tex\generic\pgfplots\pgfplots.paths.code.tex")
+("C:\Program Files\MiKTeX 2.9\tex\generic\pgf\frontendlayer\tikz\libraries\tikz
+librarydecorations.code.tex"
+("C:\Program Files\MiKTeX 2.9\tex\generic\pgf\modules\pgfmoduledecorations.code
+.tex"
+\pgfdecoratedcompleteddistance=\dimen177
+\pgfdecoratedremainingdistance=\dimen178
+\pgfdecoratedinputsegmentcompleteddistance=\dimen179
+\pgfdecoratedinputsegmentremainingdistance=\dimen180
+\pgf@decorate@distancetomove=\dimen181
+\pgf@decorate@repeatstate=\count137
+\pgfdecorationsegmentamplitude=\dimen182
+\pgfdecorationsegmentlength=\dimen183
+)
+\tikz@lib@dec@box=\box42
+)
+("C:\Program Files\MiKTeX 2.9\tex\generic\pgf\frontendlayer\tikz\libraries\tikz
+librarydecorations.pathmorphing.code.tex"
+("C:\Program Files\MiKTeX 2.9\tex\generic\pgf\libraries\decorations\pgflibraryd
+ecorations.pathmorphing.code.tex"))
+("C:\Program Files\MiKTeX 2.9\tex\generic\pgf\frontendlayer\tikz\libraries\tikz
+librarydecorations.pathreplacing.code.tex"
+("C:\Program Files\MiKTeX 2.9\tex\generic\pgf\libraries\decorations\pgflibraryd
+ecorations.pathreplacing.code.tex"))
+\pgfplots@numplots=\count138
+\pgfplots@xmin@reg=\dimen184
+\pgfplots@xmax@reg=\dimen185
+\pgfplots@ymin@reg=\dimen186
+\pgfplots@ymax@reg=\dimen187
+\pgfplots@zmin@reg=\dimen188
+\pgfplots@zmax@reg=\dimen189
+)
+("C:\Program Files\MiKTeX 2.9\tex\generic\pgf\frontendlayer\tikz\libraries\tikz
+libraryplotmarks.code.tex"
+File: tikzlibraryplotmarks.code.tex 2008/01/09 v3.0.1a (rcs-revision 1.1)
+
+("C:\Program Files\MiKTeX 2.9\tex\generic\pgf\libraries\pgflibraryplotmarks.cod
+e.tex"
+File: pgflibraryplotmarks.code.tex 2015/08/03 v3.0.1a (rcs-revision 1.14)
+))) ("C:\Program Files\MiKTeX 2.9\tex\latex\hyperref\hyperref.sty"
+Package: hyperref 2017/03/14 v6.85a Hypertext links for LaTeX
+
+("C:\Program Files\MiKTeX 2.9\tex\generic\oberdiek\hobsub-hyperref.sty"
+Package: hobsub-hyperref 2016/05/16 v1.14 Bundle oberdiek, subset hyperref (HO)
+
+
+("C:\Program Files\MiKTeX 2.9\tex\generic\oberdiek\hobsub-generic.sty"
+Package: hobsub-generic 2016/05/16 v1.14 Bundle oberdiek, subset generic (HO)
+Package: hobsub 2016/05/16 v1.14 Construct package bundles (HO)
+Package: infwarerr 2016/05/16 v1.4 Providing info/warning/error messages (HO)
+Package: ltxcmds 2016/05/16 v1.23 LaTeX kernel commands for general use (HO)
+Package: ifluatex 2016/05/16 v1.4 Provides the ifluatex switch (HO)
+Package ifluatex Info: LuaTeX not detected.
+Package hobsub Info: Skipping package `ifvtex' (already loaded).
+Package: intcalc 2016/05/16 v1.2 Expandable calculations with integers (HO)
+Package hobsub Info: Skipping package `ifpdf' (already loaded).
+Package: etexcmds 2016/05/16 v1.6 Avoid name clashes with e-TeX commands (HO)
+Package etexcmds Info: Could not find \expanded.
+(etexcmds)             That can mean that you are not using pdfTeX 1.50 or
+(etexcmds)             that some package has redefined \expanded.
+(etexcmds)             In the latter case, load this package earlier.
+Package: kvsetkeys 2016/05/16 v1.17 Key value parser (HO)
+Package: kvdefinekeys 2016/05/16 v1.4 Define keys (HO)
+Package: pdftexcmds 2017/03/19 v0.25 Utility functions of pdfTeX for LuaTeX (HO
+)
+Package pdftexcmds Info: LuaTeX not detected.
+Package pdftexcmds Info: \pdf@primitive is available.
+Package pdftexcmds Info: \pdf@ifprimitive is available.
+Package pdftexcmds Info: \pdfdraftmode found.
+Package: pdfescape 2016/05/16 v1.14 Implements pdfTeX's escape features (HO)
+Package: bigintcalc 2016/05/16 v1.4 Expandable calculations on big integers (HO
+)
+Package: bitset 2016/05/16 v1.2 Handle bit-vector datatype (HO)
+Package: uniquecounter 2016/05/16 v1.3 Provide unlimited unique counter (HO)
+)
+Package hobsub Info: Skipping package `hobsub' (already loaded).
+Package: letltxmacro 2016/05/16 v1.5 Let assignment for LaTeX macros (HO)
+Package: hopatch 2016/05/16 v1.3 Wrapper for package hooks (HO)
+Package: xcolor-patch 2016/05/16 xcolor patch
+Package: atveryend 2016/05/16 v1.9 Hooks at the very end of document (HO)
+Package atveryend Info: \enddocument detected (standard20110627).
+Package: atbegshi 2016/06/09 v1.18 At begin shipout hook (HO)
+Package: refcount 2016/05/16 v3.5 Data extraction from label references (HO)
+Package: hycolor 2016/05/16 v1.8 Color options for hyperref/bookmark (HO)
+)
+("C:\Program Files\MiKTeX 2.9\tex\latex\oberdiek\auxhook.sty"
+Package: auxhook 2016/05/16 v1.4 Hooks for auxiliary files (HO)
+)
+("C:\Program Files\MiKTeX 2.9\tex\latex\oberdiek\kvoptions.sty"
+Package: kvoptions 2016/05/16 v3.12 Key value format for package options (HO)
+)
+\@linkdim=\dimen190
+\Hy@linkcounter=\count139
+\Hy@pagecounter=\count140
+
+("C:\Program Files\MiKTeX 2.9\tex\latex\hyperref\pd1enc.def"
+File: pd1enc.def 2017/03/14 v6.85a Hyperref: PDFDocEncoding definition (HO)
+Now handling font encoding PD1 ...
+... no UTF-8 mapping file for font encoding PD1
+)
+\Hy@SavedSpaceFactor=\count141
+
+("C:\Program Files\MiKTeX 2.9\tex\latex\00miktex\hyperref.cfg"
+File: hyperref.cfg 2002/06/06 v1.2 hyperref configuration of TeXLive
+)
+Package hyperref Info: Option `colorlinks' set `true' on input line 4374.
+Package hyperref Info: Option `pdfpagelabels' set `true' on input line 4374.
+Package hyperref Info: Option `hyperindex' set `true' on input line 4374.
+Package hyperref Info: Hyper figures OFF on input line 4498.
+Package hyperref Info: Link nesting OFF on input line 4503.
+Package hyperref Info: Hyper index ON on input line 4506.
+Package hyperref Info: Plain pages OFF on input line 4513.
+Package hyperref Info: Backreferencing OFF on input line 4518.
+Package hyperref Info: Implicit mode ON; LaTeX internals redefined.
+Package hyperref Info: Bookmarks ON on input line 4751.
+\c@Hy@tempcnt=\count142
+LaTeX Info: Redefining \url on input line 5104.
+\XeTeXLinkMargin=\dimen191
+\Fld@menulength=\count143
+\Field@Width=\dimen192
+\Fld@charsize=\dimen193
+Package hyperref Info: Hyper figures OFF on input line 6358.
+Package hyperref Info: Link nesting OFF on input line 6363.
+Package hyperref Info: Hyper index ON on input line 6366.
+Package hyperref Info: backreferencing OFF on input line 6373.
+Package hyperref Info: Link coloring ON on input line 6376.
+Package hyperref Info: Link coloring with OCG OFF on input line 6383.
+Package hyperref Info: PDF/A mode OFF on input line 6388.
+LaTeX Info: Redefining \ref on input line 6428.
+LaTeX Info: Redefining \pageref on input line 6432.
+\Hy@abspage=\count144
+\c@Item=\count145
+\c@Hfootnote=\count146
+)
+
+Package hyperref Message: Driver (autodetected): hpdftex.
+
+("C:\Program Files\MiKTeX 2.9\tex\latex\hyperref\hpdftex.def"
+File: hpdftex.def 2017/03/14 v6.85a Hyperref driver for pdfTeX
+\Fld@listcount=\count147
+\c@bookmark@seq@number=\count148
+
+("C:\Program Files\MiKTeX 2.9\tex\latex\oberdiek\rerunfilecheck.sty"
+Package: rerunfilecheck 2016/05/16 v1.8 Rerun checks for auxiliary files (HO)
+Package uniquecounter Info: New unique counter `rerunfilecheck' on input line 2
+82.
+)
+\Hy@SectionHShift=\skip57
+)
+Package hyperref Info: Option `colorlinks' set `true' on input line 49.
+
+("C:\Program Files\MiKTeX 2.9\tex\latex\csquotes\csquotes.sty"
+Package: csquotes 2017/03/11 v5.2b context-sensitive quotations (JAW)
+
+("C:\Program Files\MiKTeX 2.9\tex\latex\etoolbox\etoolbox.sty"
+Package: etoolbox 2017/01/02 v2.4 e-TeX tools for LaTeX (JAW)
+\etb@tempcnta=\count149
+)
+\csq@reset=\count150
+\csq@gtype=\count151
+\csq@glevel=\count152
+\csq@qlevel=\count153
+\csq@maxlvl=\count154
+\csq@tshold=\count155
+\csq@ltx@everypar=\toks41
+
+("C:\Program Files\MiKTeX 2.9\tex\latex\csquotes\csquotes.def"
+File: csquotes.def 2017/03/11 v5.2b csquotes generic definitions (JAW)
+)
+Package csquotes Info: Trying to load configuration file 'csquotes.cfg'...
+Package csquotes Info: ... configuration file loaded successfully.
+
+("C:\Program Files\MiKTeX 2.9\tex\latex\csquotes\csquotes.cfg"
+File: csquotes.cfg 
+))
+("C:\Program Files\MiKTeX 2.9\tex\latex\biblatex\biblatex.sty"
+Package: biblatex 2016/12/05 v3.7 programmable bibliographies (PK/JW/AB)
+
+("C:\Program Files\MiKTeX 2.9\tex\latex\logreq\logreq.sty"
+Package: logreq 2010/08/04 v1.0 xml request logger
+\lrq@indent=\count156
+
+("C:\Program Files\MiKTeX 2.9\tex\latex\logreq\logreq.def"
+File: logreq.def 2010/08/04 v1.0 logreq spec v1.0
+))
+("C:\Program Files\MiKTeX 2.9\tex\latex\base\ifthen.sty"
+Package: ifthen 2014/09/29 v1.1c Standard LaTeX ifthen package (DPC)
+)
+("C:\Program Files\MiKTeX 2.9\tex\latex\xstring\xstring.sty"
+("C:\Program Files\MiKTeX 2.9\tex\generic\xstring\xstring.tex"
+\@xs@message=\write5
+\integerpart=\count157
+\decimalpart=\count158
+)
+Package: xstring 2013/10/13  v1.7c  String manipulations (C Tellechea)
+)
+\c@tabx@nest=\count159
+\c@listtotal=\count160
+\c@listcount=\count161
+\c@liststart=\count162
+\c@liststop=\count163
+\c@citecount=\count164
+\c@citetotal=\count165
+\c@multicitecount=\count166
+\c@multicitetotal=\count167
+\c@instcount=\count168
+\c@maxnames=\count169
+\c@minnames=\count170
+\c@maxitems=\count171
+\c@minitems=\count172
+\c@citecounter=\count173
+\c@savedcitecounter=\count174
+\c@uniquelist=\count175
+\c@uniquename=\count176
+\c@refsection=\count177
+\c@refsegment=\count178
+\c@maxextratitle=\count179
+\c@maxextratitleyear=\count180
+\c@maxextrayear=\count181
+\c@maxextraalpha=\count182
+\c@abbrvpenalty=\count183
+\c@highnamepenalty=\count184
+\c@lownamepenalty=\count185
+\c@maxparens=\count186
+\c@parenlevel=\count187
+\blx@tempcnta=\count188
+\blx@tempcntb=\count189
+\blx@tempcntc=\count190
+\blx@maxsection=\count191
+\blx@maxsegment@0=\count192
+\blx@notetype=\count193
+\blx@parenlevel@text=\count194
+\blx@parenlevel@foot=\count195
+\blx@sectionciteorder@0=\count196
+\labelnumberwidth=\skip58
+\labelalphawidth=\skip59
+\biblabelsep=\skip60
+\bibitemsep=\skip61
+\bibnamesep=\skip62
+\bibinitsep=\skip63
+\bibparsep=\skip64
+\bibhang=\skip65
+\blx@bcfin=\read2
+\blx@bcfout=\write6
+\c@mincomprange=\count197
+\c@maxcomprange=\count198
+\c@mincompwidth=\count199
+Package biblatex Info: Trying to load biblatex default data model...
+Package biblatex Info: ... file 'blx-dm.def' found.
+
+("C:\Program Files\MiKTeX 2.9\tex\latex\biblatex\blx-dm.def")
+Package biblatex Info: Trying to load biblatex style data model...
+Package biblatex Info: ... file 'numeric-comp.dbx' not found.
+Package biblatex Info: Trying to load biblatex custom data model...
+Package biblatex Info: ... file 'biblatex-dm.cfg' not found.
+\c@afterword=\count266
+\c@savedafterword=\count267
+\c@annotator=\count268
+\c@savedannotator=\count269
+\c@author=\count270
+\c@savedauthor=\count271
+\c@bookauthor=\count272
+\c@savedbookauthor=\count273
+\c@commentator=\count274
+\c@savedcommentator=\count275
+\c@editor=\count276
+\c@savededitor=\count277
+\c@editora=\count278
+\c@savededitora=\count279
+\c@editorb=\count280
+\c@savededitorb=\count281
+\c@editorc=\count282
+\c@savededitorc=\count283
+\c@foreword=\count284
+\c@savedforeword=\count285
+\c@holder=\count286
+\c@savedholder=\count287
+\c@introduction=\count288
+\c@savedintroduction=\count289
+\c@namea=\count290
+\c@savednamea=\count291
+\c@nameb=\count292
+\c@savednameb=\count293
+\c@namec=\count294
+\c@savednamec=\count295
+\c@translator=\count296
+\c@savedtranslator=\count297
+\c@shortauthor=\count298
+\c@savedshortauthor=\count299
+\c@shorteditor=\count300
+\c@savedshorteditor=\count301
+\c@labelname=\count302
+\c@savedlabelname=\count303
+\c@institution=\count304
+\c@savedinstitution=\count305
+\c@lista=\count306
+\c@savedlista=\count307
+\c@listb=\count308
+\c@savedlistb=\count309
+\c@listc=\count310
+\c@savedlistc=\count311
+\c@listd=\count312
+\c@savedlistd=\count313
+\c@liste=\count314
+\c@savedliste=\count315
+\c@listf=\count316
+\c@savedlistf=\count317
+\c@location=\count318
+\c@savedlocation=\count319
+\c@organization=\count320
+\c@savedorganization=\count321
+\c@origlocation=\count322
+\c@savedoriglocation=\count323
+\c@origpublisher=\count324
+\c@savedorigpublisher=\count325
+\c@publisher=\count326
+\c@savedpublisher=\count327
+\c@language=\count328
+\c@savedlanguage=\count329
+\c@pageref=\count330
+\c@savedpageref=\count331
+\shorthandwidth=\skip66
+\shortjournalwidth=\skip67
+\shortserieswidth=\skip68
+\shorttitlewidth=\skip69
+\shortauthorwidth=\skip70
+\shorteditorwidth=\skip71
+Package biblatex Info: Trying to load compatibility code...
+Package biblatex Info: ... file 'blx-compat.def' found.
+
+("C:\Program Files\MiKTeX 2.9\tex\latex\biblatex\blx-compat.def"
+File: blx-compat.def 2016/12/05 v3.7 biblatex compatibility (PK/JW/AB)
+)
+Package biblatex Info: Trying to load BibTeX backend compatibility...
+Package biblatex Info: ... file 'blx-bibtex.def' found.
+
+("C:\Program Files\MiKTeX 2.9\tex\latex\biblatex\blx-bibtex.def"
+File: blx-bibtex.def 2016/12/05 v3.7 biblatex compatibility (PK/JW/AB)
+
+
+Package biblatex Warning: Using fall-back BibTeX(8) backend:
+(biblatex)                functionality may be reduced/unavailable.
+
+)
+Package biblatex Info: Trying to load generic definitions...
+Package biblatex Info: ... file 'biblatex.def' found.
+ ("C:\Program Files\MiKTeX 2.9\tex\latex\biblatex\biblatex.def"
+File: biblatex.def 2016/12/05 v3.7 biblatex compatibility (PK/JW/AB)
+\c@textcitecount=\count332
+\c@textcitetotal=\count333
+\c@textcitemaxnames=\count334
+\c@biburlnumpenalty=\count335
+\c@biburlucpenalty=\count336
+\c@biburllcpenalty=\count337
+\c@smartand=\count338
+)
+Package biblatex Info: Trying to load bibliography style 'numeric-comp'...
+Package biblatex Info: ... file 'numeric-comp.bbx' found.
+
+("C:\Program Files\MiKTeX 2.9\tex\latex\biblatex\bbx\numeric-comp.bbx"
+File: numeric-comp.bbx 2016/12/05 v3.7 biblatex bibliography style (PK/JW/AB)
+Package biblatex Info: Trying to load bibliography style 'numeric'...
+Package biblatex Info: ... file 'numeric.bbx' found.
+
+("C:\Program Files\MiKTeX 2.9\tex\latex\biblatex\bbx\numeric.bbx"
+File: numeric.bbx 2016/12/05 v3.7 biblatex bibliography style (PK/JW/AB)
+Package biblatex Info: Trying to load bibliography style 'standard'...
+Package biblatex Info: ... file 'standard.bbx' found.
+
+("C:\Program Files\MiKTeX 2.9\tex\latex\biblatex\bbx\standard.bbx"
+File: standard.bbx 2016/12/05 v3.7 biblatex bibliography style (PK/JW/AB)
+\c@bbx:relatedcount=\count339
+\c@bbx:relatedtotal=\count340
+)))
+Package biblatex Info: Trying to load citation style 'numeric-comp'...
+Package biblatex Info: ... file 'numeric-comp.cbx' found.
+
+("C:\Program Files\MiKTeX 2.9\tex\latex\biblatex\cbx\numeric-comp.cbx"
+File: numeric-comp.cbx 2016/12/05 v3.7 biblatex citation style (PK/JW/AB)
+\c@cbx@tempcnta=\count341
+\c@cbx@tempcntb=\count342
+Package biblatex Info: Redefining '\cite'.
+Package biblatex Info: Redefining '\parencite'.
+Package biblatex Info: Redefining '\footcite'.
+Package biblatex Info: Redefining '\footcitetext'.
+Package biblatex Info: Redefining '\smartcite'.
+Package biblatex Info: Redefining '\supercite'.
+Package biblatex Info: Redefining '\textcite'.
+Package biblatex Info: Redefining '\textcites'.
+Package biblatex Info: Redefining '\cites'.
+Package biblatex Info: Redefining '\parencites'.
+Package biblatex Info: Redefining '\smartcites'.
+)
+Package biblatex Info: Trying to load configuration file...
+Package biblatex Info: ... file 'biblatex.cfg' found.
+
+("C:\Program Files\MiKTeX 2.9\tex\latex\biblatex\biblatex.cfg"
+File: biblatex.cfg 
+))
+("C:\Program Files\MiKTeX 2.9\tex\latex\cancel\cancel.sty"
+Package: cancel 2013/04/12 v2.2 Cancel math terms
+)
+("C:\Program Files\MiKTeX 2.9\tex\latex\psnfss\pifont.sty"
+Package: pifont 2005/04/12 PSNFSS-v9.2a Pi font support (SPQR) 
+LaTeX Font Info:    Try loading font information for U+pzd on input line 63.
+
+("C:\Program Files\MiKTeX 2.9\tex\latex\psnfss\upzd.fd"
+File: upzd.fd 2001/06/04 font definitions for U/pzd.
+)
+LaTeX Font Info:    Try loading font information for U+psy on input line 64.
+
+("C:\Program Files\MiKTeX 2.9\tex\latex\psnfss\upsy.fd"
+File: upsy.fd 2001/06/04 font definitions for U/psy.
+))
+("C:\Program Files\MiKTeX 2.9\tex\generic\pgf\frontendlayer\tikz\libraries\tikz
+librarymatrix.code.tex"
+File: tikzlibrarymatrix.code.tex 2013/07/12 v3.0.1a (rcs-revision 1.4)
+)
+("C:\Program Files\MiKTeX 2.9\tex\generic\pgf\frontendlayer\tikz\libraries\tikz
+libraryarrows.code.tex"
+File: tikzlibraryarrows.code.tex 2008/01/09 v3.0.1a (rcs-revision 1.1)
+
+("C:\Program Files\MiKTeX 2.9\tex\generic\pgf\libraries\pgflibraryarrows.code.t
+ex"
+File: pgflibraryarrows.code.tex 2013/09/23 v3.0.1a (rcs-revision 1.16)
+\arrowsize=\dimen194
+))
+("C:\Program Files\MiKTeX 2.9\tex\generic\pgf\frontendlayer\tikz\libraries\tikz
+librarybackgrounds.code.tex"
+File: tikzlibrarybackgrounds.code.tex 2013/07/18 v3.0.1a (rcs-revision 1.3)
+\pgf@layerbox@background=\box43
+\pgf@layerboxsaved@background=\box44
+)
+("C:\Program Files\MiKTeX 2.9\tex\generic\pgf\frontendlayer\tikz\libraries\tikz
+libraryshapes.code.tex"
+File: tikzlibraryshapes.code.tex 2008/01/09 v3.0.1a (rcs-revision 1.1)
+
+("C:\Program Files\MiKTeX 2.9\tex\generic\pgf\frontendlayer\tikz\libraries\tikz
+libraryshapes.geometric.code.tex"
+File: tikzlibraryshapes.geometric.code.tex 2008/01/09 v3.0.1a (rcs-revision 1.1
+)
+
+("C:\Program Files\MiKTeX 2.9\tex\generic\pgf\libraries\shapes\pgflibraryshapes
+.geometric.code.tex"
+File: pgflibraryshapes.geometric.code.tex 2008/06/26 v3.0.1a (rcs-revision 1.1)
+
+))
+("C:\Program Files\MiKTeX 2.9\tex\generic\pgf\frontendlayer\tikz\libraries\tikz
+libraryshapes.misc.code.tex"
+File: tikzlibraryshapes.misc.code.tex 2008/01/09 v3.0.1a (rcs-revision 1.1)
+
+("C:\Program Files\MiKTeX 2.9\tex\generic\pgf\libraries\shapes\pgflibraryshapes
+.misc.code.tex"
+File: pgflibraryshapes.misc.code.tex 2013/07/18 v3.0.1a (rcs-revision 1.5)
+))
+("C:\Program Files\MiKTeX 2.9\tex\generic\pgf\frontendlayer\tikz\libraries\tikz
+libraryshapes.symbols.code.tex"
+File: tikzlibraryshapes.symbols.code.tex 2008/01/09 v3.0.1a (rcs-revision 1.1)
+
+("C:\Program Files\MiKTeX 2.9\tex\generic\pgf\libraries\shapes\pgflibraryshapes
+.symbols.code.tex"
+File: pgflibraryshapes.symbols.code.tex 2013/09/11 v3.0.1a (rcs-revision 1.6)
+))
+("C:\Program Files\MiKTeX 2.9\tex\generic\pgf\frontendlayer\tikz\libraries\tikz
+libraryshapes.arrows.code.tex"
+File: tikzlibraryshapes.arrows.code.tex 2008/01/09 v3.0.1a (rcs-revision 1.1)
+
+("C:\Program Files\MiKTeX 2.9\tex\generic\pgf\libraries\shapes\pgflibraryshapes
+.arrows.code.tex"
+File: pgflibraryshapes.arrows.code.tex 2008/06/26 v3.0.1a (rcs-revision 1.1)
+))
+("C:\Program Files\MiKTeX 2.9\tex\generic\pgf\frontendlayer\tikz\libraries\tikz
+libraryshapes.callouts.code.tex"
+("C:\Program Files\MiKTeX 2.9\tex\generic\pgf\libraries\shapes\pgflibraryshapes
+.callouts.code.tex"))
+("C:\Program Files\MiKTeX 2.9\tex\generic\pgf\frontendlayer\tikz\libraries\tikz
+libraryshapes.multipart.code.tex"
+File: tikzlibraryshapes.multipart.code.tex 2008/01/09 v3.0.1a (rcs-revision 1.1
+)
+
+("C:\Program Files\MiKTeX 2.9\tex\generic\pgf\libraries\shapes\pgflibraryshapes
+.multipart.code.tex"
+File: pgflibraryshapes.multipart.code.tex 2010/01/07 v3.0.1a (rcs-revision 1.2)
+
+\pgfnodepartlowerbox=\box45
+\pgfnodeparttwobox=\box46
+\pgfnodepartthreebox=\box47
+\pgfnodepartfourbox=\box48
+\pgfnodeparttwentybox=\box49
+\pgfnodepartnineteenbox=\box50
+\pgfnodeparteighteenbox=\box51
+\pgfnodepartseventeenbox=\box52
+\pgfnodepartsixteenbox=\box53
+\pgfnodepartfifteenbox=\box54
+\pgfnodepartfourteenbox=\box55
+\pgfnodepartthirteenbox=\box56
+\pgfnodeparttwelvebox=\box57
+\pgfnodepartelevenbox=\box58
+\pgfnodeparttenbox=\box59
+\pgfnodepartninebox=\box60
+\pgfnodeparteightbox=\box61
+\pgfnodepartsevenbox=\box62
+\pgfnodepartsixbox=\box63
+\pgfnodepartfivebox=\box64
+)))
+("C:\Program Files\MiKTeX 2.9\tex\generic\pgf\frontendlayer\tikz\libraries\tikz
+librarycalc.code.tex"
+File: tikzlibrarycalc.code.tex 2013/07/15 v3.0.1a (rcs-revision 1.9)
+)
+("C:\Program Files\MiKTeX 2.9\tex\generic\pgf\frontendlayer\tikz\libraries\tikz
+libraryfit.code.tex"
+File: tikzlibraryfit.code.tex 2013/07/12 v3.0.1a (rcs-revision 1.5)
+)
+("C:\Program Files\MiKTeX 2.9\tex\generic\pgf\frontendlayer\tikz\libraries\tikz
+libraryfadings.code.tex"
+File: tikzlibraryfadings.code.tex 2009/11/15 v3.0.1a (rcs-revision 1.2)
+
+("C:\Program Files\MiKTeX 2.9\tex\generic\pgf\libraries\pgflibraryfadings.code.
+tex"
+File: pgflibraryfadings.code.tex 2008/02/07 v3.0.1a (rcs-revision 1.3)
+))
+("C:\Program Files\MiKTeX 2.9\tex\generic\pgf\frontendlayer\tikz\libraries\tikz
+librarydecorations.markings.code.tex"
+("C:\Program Files\MiKTeX 2.9\tex\generic\pgf\libraries\decorations\pgflibraryd
+ecorations.markings.code.tex"))
+("C:\Program Files\MiKTeX 2.9\tex\latex\carlisle\slashed.sty"
+Package: slashed 1997/01/16 v0.01 Feynman Slashed Character Notation (DPC)
+)
+("C:\Program Files\MiKTeX 2.9\tex\latex\fancybox\fancybox.sty"
+Package: fancybox 2010/05/15 1.4
+
+Style option: `fancybox' v1.4 <2010/05/15> (tvz)
+\@fancybox=\box65
+\shadowsize=\dimen195
+\@Sbox=\box66
+\do@VerbBox=\toks42
+\the@fancyput=\toks43
+\this@fancyput=\toks44
+\EndVerbatimTokens=\toks45
+\Verbatim@Outfile=\write7
+\Verbatim@Infile=\read3
+) ("C:\Program Files\MiKTeX 2.9\tex\latex\fancyhdr\fancyhdr.sty"
+Package: fancyhdr 2017/06/30 v3.9a Extensive control of page headers and footer
+s
+\f@nch@headwidth=\skip72
+\f@nch@O@elh=\skip73
+\f@nch@O@erh=\skip74
+\f@nch@O@olh=\skip75
+\f@nch@O@orh=\skip76
+\f@nch@O@elf=\skip77
+\f@nch@O@erf=\skip78
+\f@nch@O@olf=\skip79
+\f@nch@O@orf=\skip80
+)
+\longueurAdHoc=\skip81
+LaTeX Font Info:    Try loading font information for OT1+pplx on input line 223
+.
+
+("C:\Program Files\MiKTeX 2.9\tex\latex\psnfss\ot1pplx.fd"
+File: ot1pplx.fd 2004/09/06 font definitions for OT1/pplx.
+)
+LaTeX Font Info:    Try loading font information for OML+zplm on input line 223
+.
+
+("C:\Program Files\MiKTeX 2.9\tex\latex\psnfss\omlzplm.fd"
+File: omlzplm.fd 2002/09/08 Fontinst v1.914 font definitions for OML/zplm.
+)
+LaTeX Font Info:    Try loading font information for OMS+zplm on input line 223
+.
+
+("C:\Program Files\MiKTeX 2.9\tex\latex\psnfss\omszplm.fd"
+File: omszplm.fd 2002/09/08 Fontinst v1.914 font definitions for OMS/zplm.
+)
+LaTeX Font Info:    Try loading font information for OMX+zplm on input line 223
+.
+
+("C:\Program Files\MiKTeX 2.9\tex\latex\psnfss\omxzplm.fd"
+File: omxzplm.fd 2002/09/08 Fontinst v1.914 font definitions for OMX/zplm.
+)
+LaTeX Font Info:    Try loading font information for U+lasy on input line 223.
+
+("C:\Program Files\MiKTeX 2.9\tex\latex\base\ulasy.fd"
+File: ulasy.fd 1998/08/17 v2.2e LaTeX symbol font definitions
+)
+LaTeX Font Info:    Try loading font information for OT1+zplm on input line 223
+.
+
+("C:\Program Files\MiKTeX 2.9\tex\latex\psnfss\ot1zplm.fd"
+File: ot1zplm.fd 2002/09/08 Fontinst v1.914 font definitions for OT1/zplm.
+)
+LaTeX Font Info:    Try loading font information for U+msa on input line 223.
+
+("C:\Program Files\MiKTeX 2.9\tex\latex\amsfonts\umsa.fd"
+File: umsa.fd 2013/01/14 v3.01 AMS symbols A
+)
+LaTeX Font Info:    Try loading font information for U+msb on input line 223.
+
+("C:\Program Files\MiKTeX 2.9\tex\latex\amsfonts\umsb.fd"
+File: umsb.fd 2013/01/14 v3.01 AMS symbols B
+)
+LaTeX Font Info:    Try loading font information for U+stmry on input line 223.
+
+
+("C:\Program Files\MiKTeX 2.9\tex\latex\stmaryrd\ustmry.fd")
+("C:\Program Files\MiKTeX 2.9\tex\latex\setspace\setspace.sty"
+Package: setspace 2011/12/19 v6.7a set line spacing
+) (pagedecouv.sty
+Package: pagedecouv 2012/06/24 2.10 Build coverpage for UPMC thesis (J.Hare)
+\th@skip=\skip82
+\@hmargin=\skip83
+) ("C:\Program Files\MiKTeX 2.9\tex\latex\algorithm2e\algorithm2e.sty"
+Package: algorithm2e 2013/01/06 v5.00 algorithms environments
+\c@AlgoLine=\count343
+\algocf@hangindent=\skip84
+
+("C:\Program Files\MiKTeX 2.9\tex\latex\tools\xspace.sty"
+Package: xspace 2014/10/28 v1.13 Space after command names (DPC,MH)
+)
+("C:\Program Files\MiKTeX 2.9\tex\latex\ltxmisc\relsize.sty"
+Package: relsize 2003/07/04 ver 3.1
+)
+********************************************************
+Package `algorithm2e' Release 5.1 -- october 19 2015 --
+- algorithm2e-announce@lirmm.fr mailing list for announcement about releases
+- algorithm2e-discussion@lirmm.fr mailing list for discussion about package
+subscribe by emailing sympa@lirmm.fr with 'subscribe <list> <firstname name>'
+- Author: Christophe Fiorio (christophe.fiorio@umontpellier.fr)
+********************************************************
+\skiptotal=\skip85
+\skiplinenumber=\skip86
+\skiprule=\skip87
+\skiphlne=\skip88
+\skiptext=\skip89
+\skiplength=\skip90
+\algomargin=\skip91
+\skipalgocfslide=\skip92
+\algowidth=\dimen196
+\inoutsize=\dimen197
+\inoutindent=\dimen198
+\interspacetitleruled=\dimen199
+\interspacealgoruled=\dimen256
+\interspacetitleboxruled=\dimen257
+\algocf@ruledwidth=\skip93
+\algocf@inoutbox=\box67
+\algocf@inputbox=\box68
+\AlCapSkip=\skip94
+\AlCapHSkip=\skip95
+\algoskipindent=\skip96
+\algocf@nlbox=\box69
+\algocf@hangingbox=\box70
+\algocf@untilbox=\box71
+\algocf@skipuntil=\skip97
+\algocf@capbox=\box72
+\algoheightruledefault=\skip98
+\algoheightrule=\skip99
+\algotitleheightruledefault=\skip100
+\algotitleheightrule=\skip101
+\c@algocfline=\count344
+\c@algocfproc=\count345
+\c@algocf=\count346
+\algocf@algoframe=\box73
+\algocf@algobox=\box74
+) ("C:\Program Files\MiKTeX 2.9\tex\latex\float\float.sty"
+Package: float 2001/11/08 v1.3d Float enhancements (AL)
+\c@float@type=\count347
+\float@exts=\toks46
+\float@box=\box75
+\@float@everytoks=\toks47
+\@floatcapt=\box76
+)
+\@float@every@myalgo=\toks48
+\c@myalgo=\count348
+\c@subsubsubsection=\count349
+
+("C:\Program Files\MiKTeX 2.9\tex\latex\appendix\appendix.sty"
+Package: appendix 2009/09/02 v1.2b extra appendix facilities
+\c@@pps=\count350
+\c@@ppsavesec=\count351
+\c@@ppsaveapp=\count352
+)
+("C:\Program Files\MiKTeX 2.9\tex\latex\lipsum\lipsum.sty"
+Package: lipsum 2014/07/27 v1.3 150 paragraphs of Lorem Ipsum dummy text
+\c@lips@count=\count353
+))
+Package csquotes Info: Checking for multilingual support...
+Package csquotes Info: ... found 'babel' package.
+Package csquotes Info: Adjusting default style.
+Package csquotes Info: Redefining alias 'default' -> 'english'.
+Package biblatex Info: Trying to load language 'english'...
+Package biblatex Info: ... file 'english.lbx' found.
+
+("C:\Program Files\MiKTeX 2.9\tex\latex\biblatex\lbx\english.lbx"
+File: english.lbx 2016/12/05 v3.7 biblatex localization (PK/JW/AB)
+)
+(White_book.aux (Preface.aux) (Acknowledgements.aux) (Introduction.aux)
+(chapter1.aux) (chapter2.aux) (chapter3.aux) (Conclusion.aux))
+\openout1 = `White_book.aux'.
+
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 4.
+LaTeX Font Info:    ... okay on input line 4.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 4.
+LaTeX Font Info:    ... okay on input line 4.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 4.
+LaTeX Font Info:    ... okay on input line 4.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 4.
+LaTeX Font Info:    ... okay on input line 4.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 4.
+LaTeX Font Info:    ... okay on input line 4.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 4.
+LaTeX Font Info:    ... okay on input line 4.
+LaTeX Font Info:    Checking defaults for LY/yfrak/m/n on input line 4.
+LaTeX Font Info:    ... okay on input line 4.
+LaTeX Font Info:    Checking defaults for LYG/ygoth/m/n on input line 4.
+LaTeX Font Info:    ... okay on input line 4.
+LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 4.
+LaTeX Font Info:    ... okay on input line 4.
+LaTeX Font Info:    Try loading font information for T1+pplx on input line 4.
+
+("C:\Program Files\MiKTeX 2.9\tex\latex\psnfss\t1pplx.fd"
+File: t1pplx.fd 2004/09/06 font definitions for T1/pplx.
+)
+("C:\Program Files\MiKTeX 2.9\tex\context\base\supp-pdf.mkii"
+[Loading MPS to PDF converter (version 2006.09.02).]
+\scratchcounter=\count354
+\scratchdimen=\dimen258
+\scratchbox=\box77
+\nofMPsegments=\count355
+\nofMParguments=\count356
+\everyMPshowfont=\toks49
+\MPscratchCnt=\count357
+\MPscratchDim=\dimen259
+\MPnumerator=\count358
+\makeMPintoPDFobject=\count359
+\everyMPtoPDFconversion=\toks50
+) ("C:\Program Files\MiKTeX 2.9\tex\latex\oberdiek\epstopdf-base.sty"
+Package: epstopdf-base 2016/05/15 v2.6 Base part for package epstopdf
+
+("C:\Program Files\MiKTeX 2.9\tex\latex\oberdiek\grfext.sty"
+Package: grfext 2016/05/16 v1.2 Manage graphics extensions (HO)
+)
+Package epstopdf-base Info: Redefining graphics rule for `.eps' on input line 4
+38.
+Package grfext Info: Graphics extension search list:
+(grfext)             [.pdf,.png,.jpg,.mps,.jpeg,.jbig2,.jb2,.PDF,.PNG,.JPG,.JPE
+G,.JBIG2,.JB2,.eps]
+(grfext)             \AppendGraphicsExtensions on input line 456.
+)
+*geometry* driver: auto-detecting
+*geometry* detected driver: pdftex
+*geometry* verbose mode - [ preamble ] result:
+* driver: pdftex
+* paper: a4paper
+* layout: <same size as paper>
+* layoutoffset:(h,v)=(0.0pt,0.0pt)
+* modes: twoside 
+* h-part:(L,W,R)=(71.70166pt, 418.25368pt, 107.55254pt)
+* v-part:(T,H,B)=(101.40665pt, 591.5302pt, 152.11pt)
+* \paperwidth=597.50787pt
+* \paperheight=845.04684pt
+* \textwidth=418.25368pt
+* \textheight=591.5302pt
+* \oddsidemargin=-0.56833pt
+* \evensidemargin=35.28255pt
+* \topmargin=-2.73714pt
+* \headheight=12.0pt
+* \headsep=19.8738pt
+* \topskip=12.0pt
+* \footskip=30.0pt
+* \marginparwidth=88.0pt
+* \marginparsep=7.0pt
+* \columnsep=10.0pt
+* \skip\footins=10.8pt plus 4.0pt minus 2.0pt
+* \hoffset=0.0pt
+* \voffset=0.0pt
+* \mag=1000
+* \@twocolumnfalse
+* \@twosidetrue
+* \@mparswitchtrue
+* \@reversemarginfalse
+* (1in=72.27pt=25.4mm, 1cm=28.453pt)
+
+\c@minilofdepth=\count360
+\c@minilotdepth=\count361
+\c@partlofdepth=\count362
+\c@partlotdepth=\count363
+\c@sectlofdepth=\count364
+\c@sectlotdepth=\count365
+Package minitoc(hints) Info: I0049
+(minitoc(hints))             ==> You requested the hints option. 
+(minitoc(hints))             Some hints are eventually given below.
+Package minitoc(hints) Info: I0042
+(minitoc(hints))             --- The appendix package is loaded. 
+(minitoc(hints))             See the minitoc package documentation 
+(minitoc(hints))             for specific precautions.
+
+Package minitoc(hints) Warning: W0099
+(minitoc(hints))                --- The titlesec package is loaded. 
+(minitoc(hints))                It is incompatible 
+(minitoc(hints))                with the minitoc package.
+
+
+Package minitoc(hints) Warning: W0030
+(minitoc(hints))                --- The \part command is altered 
+(minitoc(hints))                after minitoc.
+
+
+Package minitoc(hints) Warning: W0023
+(minitoc(hints))                --- It may be the consequence 
+(minitoc(hints))                of loading the ``hyperref'' package.
+
+
+Package minitoc(hints) Warning: W0028
+(minitoc(hints))                --- The \chapter command is altered 
+(minitoc(hints))                after minitoc.
+
+
+Package minitoc(hints) Warning: W0023
+(minitoc(hints))                --- It may be the consequence 
+(minitoc(hints))                of loading the ``hyperref'' package.
+
+ABD: EveryShipout initializing macros
+Package pgfplots notification 'compat/show suggested version=true': you might b
+enefit from \pgfplotsset{compat=1.15} (current compat level: 1.5).
+
+\AtBeginShipoutBox=\box78
+Package hyperref Info: Link coloring ON on input line 4.
+("C:\Program Files\MiKTeX 2.9\tex\latex\hyperref\nameref.sty"
+Package: nameref 2016/05/21 v2.44 Cross-referencing by name of section
+
+("C:\Program Files\MiKTeX 2.9\tex\generic\oberdiek\gettitlestring.sty"
+Package: gettitlestring 2016/05/16 v1.5 Cleanup title references (HO)
+)
+\c@section@level=\count366
+)
+LaTeX Info: Redefining \ref on input line 4.
+LaTeX Info: Redefining \pageref on input line 4.
+LaTeX Info: Redefining \nameref on input line 4.
+
+(White_book.out) (White_book.out)
+\@outlinefile=\write8
+\openout8 = `White_book.out'.
+
+Package biblatex Info: Input encoding 'utf8' detected.
+Package biblatex Info: Automatic encoding selection.
+(biblatex)             Assuming data encoding 'utf8'.
+Package biblatex Info: Input encoding 'utf8' specified.
+Package biblatex Info: Data encoding 'utf8' specified.
+(biblatex)             No need to reencode data.
+\openout6 = `White_book-blx.bib'.
+
+Package biblatex Info: Trying to load bibliographic data...
+Package biblatex Info: ... file 'White_book.bbl' found.
+ (White_book.bbl)
+Package biblatex Info: Reference section=0 on input line 4.
+Package biblatex Info: Reference segment=0 on input line 4.
+*geometry* verbose mode - [ newgeometry ] result:
+* driver: pdftex
+* paper: a4paper
+* layout: <same size as paper>
+* layoutoffset:(h,v)=(0.0pt,0.0pt)
+* modes: twoside 
+* h-part:(L,W,R)=(0.0pt, 597.50787pt, 0.0pt)
+* v-part:(T,H,B)=(28.45274pt, 788.14136pt, 28.45274pt)
+* \paperwidth=597.50787pt
+* \paperheight=845.04684pt
+* \textwidth=597.50787pt
+* \textheight=788.14136pt
+* \oddsidemargin=-72.26999pt
+* \evensidemargin=-72.26999pt
+* \topmargin=-75.69104pt
+* \headheight=12.0pt
+* \headsep=19.8738pt
+* \topskip=12.0pt
+* \footskip=30.0pt
+* \marginparwidth=88.0pt
+* \marginparsep=7.0pt
+* \columnsep=10.0pt
+* \skip\footins=10.8pt plus 4.0pt minus 2.0pt
+* \hoffset=0.0pt
+* \voffset=0.0pt
+* \mag=1000
+* \@twocolumnfalse
+* \@twosidetrue
+* \@mparswitchtrue
+* \@reversemarginfalse
+* (1in=72.27pt=25.4mm, 1cm=28.453pt)
+
+<cover_page-crop.pdf, id=237, pagebox=cropbox, 533.995pt x 722.7pt>
+File: cover_page-crop.pdf Graphic file (type pdf)
+<use cover_page-crop.pdf>
+Package pdftex.def Info: cover_page-crop.pdf  used on input line 17. on input l
+ine 17.
+Package pdftex.def Info: Requested size: 533.9937pt x 722.69823pt on input line
+ 17.
+ [1
+
+
+
+
+ <./cover_page-crop.pdf>]
+Package minitoc Info: I0024
+(minitoc)             PREPARING MINITOCS FROM White_book.toc on input line 22.
+Package minitoc Info: I0033
+(minitoc)             Writing White_book.mtc1.
+\openout3 = `White_book.mtc1'.
+
+Package minitoc Info: I0033
+(minitoc)             Writing White_book.mtc2.
+\openout3 = `White_book.mtc2'.
+
+Package minitoc Info: I0033
+(minitoc)             Writing White_book.mtc3.
+\openout3 = `White_book.mtc3'.
+
+Package minitoc Info: I0033
+(minitoc)             Writing White_book.mtc4.
+\openout3 = `White_book.mtc4'.
+
+Package minitoc Info: I0033
+(minitoc)             Writing White_book.mtc5.
+\openout3 = `White_book.mtc5'.
+
+Package minitoc Info: I0033
+(minitoc)             Writing White_book.mtc6.
+\openout3 = `White_book.mtc6'.
+
+Package minitoc Info: I0033
+(minitoc)             Writing White_book.mtc7.
+\openout3 = `White_book.mtc7'.
+
+LaTeX Font Info:    Font shape `T1/pplx/m/sl' in size <12> not available
+(Font)              Font shape `T1/pplx/m/it' tried instead on input line 22.
+
+[2{C:/ProgramData/MiKTeX/2.9/pdftex/config/pdftex.map}
+
+
+]
+LaTeX Font Info:    Font shape `T1/pplx/bx/n' in size <24.88> not available
+(Font)              Font shape `T1/pplx/b/n' tried instead on input line 22.
+ (White_book.toc
+LaTeX Font Info:    Font shape `T1/pplx/bx/n' in size <12> not available
+(Font)              Font shape `T1/pplx/b/n' tried instead on input line 5.
+
+[3])
+\tf@toc=\write9
+\openout9 = `White_book.toc'.
+
+ [4]
+\openout2 = `Preface.aux'.
+
+ (Preface.tex
+Chapter 1.
+
+LaTeX Font Warning: Font shape `T1/pplx/bx/sc' undefined
+(Font)              using `T1/pplx/bx/n' instead on input line 1.
+
+<VGG-conv.pdf, id=493, pagebox=cropbox, 333.245pt x 160.6pt>
+File: VGG-conv.pdf Graphic file (type pdf)
+<use VGG-conv.pdf>
+Package pdftex.def Info: VGG-conv.pdf  used on input line 1. on input line 1.
+Package pdftex.def Info: Requested size: 24.9923pt x 12.04448pt on input line 1
+.
+LaTeX Font Info:    Font shape `T1/pplx/bx/sc' in size <24.88> not available
+(Font)              Font shape `T1/pplx/b/n' tried instead on input line 1.
+File: VGG-conv.pdf Graphic file (type pdf)
+<use VGG-conv.pdf>
+Package pdftex.def Info: VGG-conv.pdf  used on input line 1. on input line 1.
+Package pdftex.def Info: Requested size: 24.9923pt x 12.04448pt on input line 1
+.
+LaTeX Font Info:    External font `yinitas at46.39pt' loaded for size
+(Font)              <12> on input line 3.
+[5
+
+
+ <./VGG-conv.pdf>]) [6]
+\openout2 = `Acknowledgements.aux'.
+
+ (Acknowledgements.tex
+Chapter 2.
+File: VGG-conv.pdf Graphic file (type pdf)
+<use VGG-conv.pdf>
+Package pdftex.def Info: VGG-conv.pdf  used on input line 1. on input line 1.
+Package pdftex.def Info: Requested size: 24.9923pt x 12.04448pt on input line 1
+.
+File: VGG-conv.pdf Graphic file (type pdf)
+<use VGG-conv.pdf>
+Package pdftex.def Info: VGG-conv.pdf  used on input line 1. on input line 1.
+Package pdftex.def Info: Requested size: 24.9923pt x 12.04448pt on input line 1
+.
+[7
+
+
+
+]) [8]
+\openout2 = `Introduction.aux'.
+
+ (Introduction.tex
+Chapter 3.
+File: VGG-conv.pdf Graphic file (type pdf)
+<use VGG-conv.pdf>
+Package pdftex.def Info: VGG-conv.pdf  used on input line 1. on input line 1.
+Package pdftex.def Info: Requested size: 24.9923pt x 12.04448pt on input line 1
+.
+File: VGG-conv.pdf Graphic file (type pdf)
+<use VGG-conv.pdf>
+Package pdftex.def Info: VGG-conv.pdf  used on input line 1. on input line 1.
+Package pdftex.def Info: Requested size: 24.9923pt x 12.04448pt on input line 1
+.
+) [9
+
+
+
+] [10]
+\openout2 = `chapter1.aux'.
+
+ (chapter1.tex
+Chapter 4.
+File: VGG-conv.pdf Graphic file (type pdf)
+<use VGG-conv.pdf>
+Package pdftex.def Info: VGG-conv.pdf  used on input line 1. on input line 1.
+Package pdftex.def Info: Requested size: 24.9923pt x 12.04448pt on input line 1
+.
+File: VGG-conv.pdf Graphic file (type pdf)
+<use VGG-conv.pdf>
+Package pdftex.def Info: VGG-conv.pdf  used on input line 1. on input line 1.
+Package pdftex.def Info: Requested size: 24.9923pt x 12.04448pt on input line 1
+.
+\openout3 = `White_book.mtc'.
+
+\openout3 = `White_book.mtc'.
+
+LaTeX Font Info:    Font shape `U/msa/m/n' will be
+(Font)              scaled to size 11.40997pt on input line 4.
+LaTeX Font Info:    Font shape `U/msa/m/n' will be
+(Font)              scaled to size 8.33606pt on input line 4.
+LaTeX Font Info:    Font shape `U/msa/m/n' will be
+(Font)              scaled to size 6.25204pt on input line 4.
+LaTeX Font Info:    Font shape `U/msb/m/n' will be
+(Font)              scaled to size 11.40997pt on input line 4.
+LaTeX Font Info:    Font shape `U/msb/m/n' will be
+(Font)              scaled to size 8.33606pt on input line 4.
+LaTeX Font Info:    Font shape `U/msb/m/n' will be
+(Font)              scaled to size 6.25204pt on input line 4.
+LaTeX Font Info:    Font shape `T1/pplx/bx/n' in size <14.4> not available
+(Font)              Font shape `T1/pplx/b/n' tried instead on input line 4.
+(White_book.mtc4
+LaTeX Font Info:    Font shape `T1/pplx/bx/n' in size <10.95> not available
+(Font)              Font shape `T1/pplx/b/n' tried instead on input line 1.
+ [11
+
+
+
+])
+LaTeX Font Info:    Font shape `T1/pplx/bx/n' in size <17.28> not available
+(Font)              Font shape `T1/pplx/b/n' tried instead on input line 5.
+ [12]
+Missing character: There is no ; in font nullfont!
+Missing character: There is no ; in font nullfont!
+Missing character: There is no ; in font nullfont!
+ [13pdfTeX warning (ext4): destination with the same identifier (name{figure.4.
+1}) has been already used, duplicate ignored
+
+\@EveryShipout@Output ...@Org@Shipout \box \@cclv 
+                                                  
+l.84 \item[$\bullet$]
+                      $N$ the number of layers (not counting the input) in t...
+]
+Missing character: There is no ; in font nullfont!
+Missing character: There is no ; in font nullfont!
+Missing character: There is no ; in font nullfont!
+ [14] [15pdfTeX warning (ext4): destination with the same identifier (name{figu
+re.4.2}) has been already used, duplicate ignored
+
+\@EveryShipout@Output ...@Org@Shipout \box \@cclv 
+                                                  
+l.171 \end{align}
+                 ]
+<sigmoid.pdf, id=670, pagebox=cropbox, 233.87375pt x 202.7575pt>
+File: sigmoid.pdf Graphic file (type pdf)
+<use sigmoid.pdf>
+Package pdftex.def Info: sigmoid.pdf  used on input line 177. on input line 177
+.
+Package pdftex.def Info: Requested size: 233.87315pt x 202.757pt on input line 
+177.
+<tanh2.pdf, id=671, pagebox=cropbox, 241.90375pt x 200.75pt>
+File: tanh2.pdf Graphic file (type pdf)
+<use tanh2.pdf>
+Package pdftex.def Info: tanh2.pdf  used on input line 198. on input line 198.
+Package pdftex.def Info: Requested size: 241.90315pt x 200.7495pt on input line
+ 198.
+ [16pdfTeX warning (ext4): destination with the same identifier (name{figure.4.
+3}) has been already used, duplicate ignored
+
+\@EveryShipout@Output ...@Org@Shipout \box \@cclv 
+                                                  
+l.203 
+       <./sigmoid.pdf>]
+<ReLU.pdf, id=708, pagebox=cropbox, 231.86626pt x 200.75pt>
+File: ReLU.pdf Graphic file (type pdf)
+<use ReLU.pdf>
+Package pdftex.def Info: ReLU.pdf  used on input line 227. on input line 227.
+Package pdftex.def Info: Requested size: 231.86568pt x 200.7495pt on input line
+ 227.
+
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [17pdfTeX warning (ext4): destination with the same identifier (name{figure.4.
+4}) has been already used, duplicate ignored
+
+\@EveryShipout@Output ...@Org@Shipout \box \@cclv 
+                                                  
+l.232 
+       <./tanh2.pdf>]
+<lReLU.pdf, id=748, pagebox=cropbox, 231.86626pt x 202.7575pt>
+File: lReLU.pdf Graphic file (type pdf)
+<use lReLU.pdf>
+Package pdftex.def Info: lReLU.pdf  used on input line 259. on input line 259.
+Package pdftex.def Info: Requested size: 231.86568pt x 202.757pt on input line 
+259.
+
+Underfull \vbox (badness 1082) has occurred while \output is active []
+
+ [18pdfTeX warning (ext4): destination with the same identifier (name{figure.4.
+5}) has been already used, duplicate ignored
+
+\@EveryShipout@Output ...@Org@Shipout \box \@cclv 
+                                                  
+l.264 
+       <./ReLU.pdf>]
+<ELU.pdf, id=779, pagebox=cropbox, 231.86626pt x 200.75pt>
+File: ELU.pdf Graphic file (type pdf)
+<use ELU.pdf>
+Package pdftex.def Info: ELU.pdf  used on input line 301. on input line 301.
+Package pdftex.def Info: Requested size: 231.86568pt x 200.7495pt on input line
+ 301.
+ [19pdfTeX warning (ext4): destination with the same identifier (name{figure.4.
+6}) has been already used, duplicate ignored
+
+\@EveryShipout@Output ...@Org@Shipout \box \@cclv 
+                                                  
+l.306 
+       <./lReLU.pdf>]
+LaTeX Font Info:    Font shape `U/msa/m/n' will be
+(Font)              scaled to size 10.42007pt on input line 320.
+LaTeX Font Info:    Font shape `U/msa/m/n' will be
+(Font)              scaled to size 7.91925pt on input line 320.
+LaTeX Font Info:    Font shape `U/msb/m/n' will be
+(Font)              scaled to size 10.42007pt on input line 320.
+LaTeX Font Info:    Font shape `U/msb/m/n' will be
+(Font)              scaled to size 7.91925pt on input line 320.
+ [20pdfTeX warning (ext4): destination with the same identifier (name{figure.4.
+7}) has been already used, duplicate ignored
+
+\@EveryShipout@Output ...@Org@Shipout \box \@cclv 
+                                                  
+l.332 \end{align}
+                  <./ELU.pdf>] [21] [22] [23]
+Missing character: There is no ; in font nullfont!
+Missing character: There is no ; in font nullfont!
+Missing character: There is no ; in font nullfont!
+Missing character: There is no ; in font nullfont!
+
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [24]
+Underfull \vbox (badness 1831) has occurred while \output is active []
+
+ [25pdfTeX warning (ext4): destination with the same identifier (name{figure.4.
+8}) has been already used, duplicate ignored
+
+\@EveryShipout@Output ...@Org@Shipout \box \@cclv 
+                                                  
+l.569 \end{align}
+                 ]
+LaTeX Font Info:    Try loading font information for U+fplmbb on input line 594
+.
+ ("C:\Program Files\MiKTeX 2.9\tex\latex\psnfss\ufplmbb.fd"
+File: ufplmbb.fd 2003/10/30 Fontinst v1.914 font definitions for U/fplmbb.
+)
+[26] [27]
+Overfull \hbox (2.72711pt too wide) in paragraph at lines 680--681
+[]\T1/pplx/m/n/12 The up-date rule for the Batch-norm co-ef-fi-cient can eas-il
+y be com-puted thanks
+ []
+
+[28] [29]
+Overfull \hbox (8.91035pt too wide) in paragraph at lines 731--733
+\T1/pplx/m/n/12 where $\OML/zplm/m/it/12 $ \T1/pplx/m/n/12 is a free pa-ram-e-
+ter that is gen-er-ally ini-tial-ized thanks to cross-validation.
+ []
+
+[30] [31]
+Overfull \hbox (2.69576pt too wide) in paragraph at lines 817--819
+$\OML/zplm/m/it/12 []$ \T1/pplx/m/n/12 de-ter-minde by cross-validation, and $
+\OML/zplm/m/it/12 []$ \T1/pplx/m/n/12 usu-ally ini-tial-ized in the range $\OT
+1/pplx/m/n/12 10[] \OMS/zplm/m/n/12  
+ []
+
+[32] [33] [34]
+<fc_equiv.pdf, id=998, pagebox=cropbox, 74.2775pt x 24.09pt>
+File: fc_equiv.pdf Graphic file (type pdf)
+<use fc_equiv.pdf>
+Package pdftex.def Info: fc_equiv.pdf  used on input line 967. on input line 96
+7.
+Package pdftex.def Info: Requested size: 74.27731pt x 24.08992pt on input line 
+967.
+ [35]
+<fc_resnet_2.pdf, id=1008, pagebox=cropbox, 88.33pt x 92.345pt>
+File: fc_resnet_2.pdf Graphic file (type pdf)
+<use fc_resnet_2.pdf>
+Package pdftex.def Info: fc_resnet_2.pdf  used on input line 979. on input line
+ 979.
+Package pdftex.def Info: Requested size: 88.32977pt x 92.34476pt on input line 
+979.
+ [36pdfTeX warning (ext4): destination with the same identifier (name{figure.4.
+9}) has been already used, duplicate ignored
+
+\@EveryShipout@Output ...@Org@Shipout \box \@cclv 
+                                                  
+l.1005 \end{align}
+                  pdfTeX warning (ext4): destination with the same identifier (
+name{figure.4.10}) has been already used, duplicate ignored
+
+\@EveryShipout@Output ...@Org@Shipout \box \@cclv 
+                                                  
+l.1005 \end{align}
+                   <./fc_equiv.pdf> <./fc_resnet_2.pdf>]
+<fc_resnet_3.pdf, id=1044, pagebox=cropbox, 90.3375pt x 98.3675pt>
+File: fc_resnet_3.pdf Graphic file (type pdf)
+<use fc_resnet_3.pdf>
+Package pdftex.def Info: fc_resnet_3.pdf  used on input line 1056. on input lin
+e 1056.
+Package pdftex.def Info: Requested size: 90.33727pt x 98.36723pt on input line 
+1056.
+ [37]) [38pdfTeX warning (ext4): destination with the same identifier (name{fig
+ure.4.11}) has been already used, duplicate ignored
+
+\@EveryShipout@Output ...@Org@Shipout \box \@cclv 
+                                                  
+l.32 \include{chapter1}
+                        <./fc_resnet_3.pdf>] [39]
+\openout2 = `chapter2.aux'.
+
+ (chapter2.tex [40
+
+
+
+]
+Chapter 5.
+File: VGG-conv.pdf Graphic file (type pdf)
+<use VGG-conv.pdf>
+Package pdftex.def Info: VGG-conv.pdf  used on input line 1. on input line 1.
+Package pdftex.def Info: Requested size: 24.9923pt x 12.04448pt on input line 1
+.
+File: VGG-conv.pdf Graphic file (type pdf)
+<use VGG-conv.pdf>
+Package pdftex.def Info: VGG-conv.pdf  used on input line 1. on input line 1.
+Package pdftex.def Info: Requested size: 24.9923pt x 12.04448pt on input line 1
+.
+\openout3 = `White_book.mtc'.
+
+\openout3 = `White_book.mtc'.
+
+(White_book.mtc5 [41]) [42]
+<CNN_MM_unpixels.pdf, id=1154, pagebox=cropbox, 759.83875pt x 149.55875pt>
+File: CNN_MM_unpixels.pdf Graphic file (type pdf)
+<use CNN_MM_unpixels.pdf>
+Package pdftex.def Info: CNN_MM_unpixels.pdf  used on input line 19. on input l
+ine 19.
+Package pdftex.def Info: Requested size: 379.91844pt x 74.77919pt on input line
+ 19.
+ [43pdfTeX warning (ext4): destination with the same identifier (name{figure.5.
+1}) has been already used, duplicate ignored
+
+\@EveryShipout@Output ...@Org@Shipout \box \@cclv 
+                                                  
+l.41 \end{align}
+                 <./CNN_MM_unpixels.pdf>]
+<input_layer.pdf, id=1180, pagebox=cropbox, 148.555pt x 160.6pt>
+File: input_layer.pdf Graphic file (type pdf)
+<use input_layer.pdf>
+Package pdftex.def Info: input_layer.pdf  used on input line 55. on input line 
+55.
+Package pdftex.def Info: Requested size: 148.55463pt x 160.5996pt on input line
+ 55.
+<padding.pdf, id=1181, pagebox=cropbox, 174.6525pt x 160.6pt>
+File: padding.pdf Graphic file (type pdf)
+<use padding.pdf>
+Package pdftex.def Info: padding.pdf  used on input line 68. on input line 68.
+Package pdftex.def Info: Requested size: 174.65207pt x 160.5996pt on input line
+ 68.
+ [44pdfTeX warning (ext4): destination with the same identifier (name{figure.5.
+2}) has been already used, duplicate ignored
+
+\@EveryShipout@Output ...@Org@Shipout \box \@cclv 
+                                                  
+l.73 
+      <./input_layer.pdf>]
+File: VGG-conv.pdf Graphic file (type pdf)
+<use VGG-conv.pdf>
+Package pdftex.def Info: VGG-conv.pdf  used on input line 81. on input line 81.
+
+Package pdftex.def Info: Requested size: 333.24417pt x 160.5996pt on input line
+ 81.
+
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [45pdfTeX warning (ext4): destination with the same identifier (name{figure.5.
+3}) has been already used, duplicate ignored
+
+\@EveryShipout@Output ...@Org@Shipout \box \@cclv 
+                                                  
+l.86 
+      <./padding.pdf>] [46pdfTeX warning (ext4): destination with the same iden
+tifier (name{figure.5.4}) has been already used, duplicate ignored
+
+\@EveryShipout@Output ...@Org@Shipout \box \@cclv 
+                                                  
+l.112 
+      ]
+<VGG-pool.pdf, id=1235, pagebox=cropbox, 190.7125pt x 102.3825pt>
+File: VGG-pool.pdf Graphic file (type pdf)
+<use VGG-pool.pdf>
+Package pdftex.def Info: VGG-pool.pdf  used on input line 117. on input line 11
+7.
+Package pdftex.def Info: Requested size: 190.71202pt x 102.38225pt on input lin
+e 117.
+ [47pdfTeX warning (ext4): destination with the same identifier (name{figure.5.
+5}) has been already used, duplicate ignored
+
+\@EveryShipout@Output ...@Org@Shipout \box \@cclv 
+                                                  
+l.141 
+       <./VGG-pool.pdf>]
+<VGG-pool-fc.pdf, id=1261, pagebox=cropbox, 167.62625pt x 68.255pt>
+File: VGG-pool-fc.pdf Graphic file (type pdf)
+<use VGG-pool-fc.pdf>
+Package pdftex.def Info: VGG-pool-fc.pdf  used on input line 146. on input line
+ 146.
+Package pdftex.def Info: Requested size: 167.62582pt x 68.25482pt on input line
+ 146.
+<VGG-fc.pdf, id=1262, pagebox=cropbox, 225.84375pt x 139.52126pt>
+File: VGG-fc.pdf Graphic file (type pdf)
+<use VGG-fc.pdf>
+Package pdftex.def Info: VGG-fc.pdf  used on input line 177. on input line 177.
+
+Package pdftex.def Info: Requested size: 225.84319pt x 139.5209pt on input line
+ 177.
+ [48pdfTeX warning (ext4): destination with the same identifier (name{figure.5.
+6}) has been already used, duplicate ignored
+
+\@EveryShipout@Output ...@Org@Shipout \box \@cclv 
+                                                  
+l.182 
+       <./VGG-pool-fc.pdf>]
+Underfull \vbox (badness 1303) has occurred while \output is active []
+
+ [49pdfTeX warning (ext4): destination with the same identifier (name{figure.5.
+7}) has been already used, duplicate ignored
+
+\@EveryShipout@Output ...@Org@Shipout \box \@cclv 
+                                                  
+l.211 \end{align}
+                  <./VGG-fc.pdf>]
+File: input_layer.pdf Graphic file (type pdf)
+<use input_layer.pdf>
+Package pdftex.def Info: input_layer.pdf  used on input line 270. on input line
+ 270.
+Package pdftex.def Info: Requested size: 74.27731pt x 80.29979pt on input line 
+270.
+File: VGG-conv.pdf Graphic file (type pdf)
+<use VGG-conv.pdf>
+Package pdftex.def Info: VGG-conv.pdf  used on input line 270. on input line 27
+0.
+Package pdftex.def Info: Requested size: 166.62209pt x 80.29979pt on input line
+ 270.
+File: VGG-pool.pdf Graphic file (type pdf)
+<use VGG-pool.pdf>
+Package pdftex.def Info: VGG-pool.pdf  used on input line 270. on input line 27
+0.
+Package pdftex.def Info: Requested size: 95.356pt x 51.19112pt on input line 27
+0.
+File: VGG-fc.pdf Graphic file (type pdf)
+<use VGG-fc.pdf>
+Package pdftex.def Info: VGG-fc.pdf  used on input line 270. on input line 270.
+
+Package pdftex.def Info: Requested size: 112.92159pt x 69.76045pt on input line
+ 270.
+File: input_layer.pdf Graphic file (type pdf)
+<use input_layer.pdf>
+Package pdftex.def Info: input_layer.pdf  used on input line 270. on input line
+ 270.
+Package pdftex.def Info: Requested size: 74.27731pt x 80.29979pt on input line 
+270.
+File: VGG-conv.pdf Graphic file (type pdf)
+<use VGG-conv.pdf>
+Package pdftex.def Info: VGG-conv.pdf  used on input line 270. on input line 27
+0.
+Package pdftex.def Info: Requested size: 166.62209pt x 80.29979pt on input line
+ 270.
+File: VGG-pool.pdf Graphic file (type pdf)
+<use VGG-pool.pdf>
+Package pdftex.def Info: VGG-pool.pdf  used on input line 270. on input line 27
+0.
+Package pdftex.def Info: Requested size: 95.356pt x 51.19112pt on input line 27
+0.
+File: VGG-fc.pdf Graphic file (type pdf)
+<use VGG-fc.pdf>
+Package pdftex.def Info: VGG-fc.pdf  used on input line 270. on input line 270.
+
+Package pdftex.def Info: Requested size: 112.92159pt x 69.76045pt on input line
+ 270.
+
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [50]
+File: fc_equiv.pdf Graphic file (type pdf)
+<use fc_equiv.pdf>
+Package pdftex.def Info: fc_equiv.pdf  used on input line 283. on input line 28
+3.
+Package pdftex.def Info: Requested size: 111.41597pt x 36.13487pt on input line
+ 283.
+<Conv_equiv.pdf, id=1324, pagebox=cropbox, 74.2775pt x 24.09pt>
+File: Conv_equiv.pdf Graphic file (type pdf)
+<use Conv_equiv.pdf>
+Package pdftex.def Info: Conv_equiv.pdf  used on input line 292. on input line 
+292.
+Package pdftex.def Info: Requested size: 111.41597pt x 36.13487pt on input line
+ 292.
+
+[51pdfTeX warning (ext4): destination with the same identifier (name{figure.5.8
+}) has been already used, duplicate ignored
+
+\@EveryShipout@Output ...@Org@Shipout \box \@cclv 
+                                                  
+l.299 
+      pdfTeX warning (ext4): destination with the same identifier (name{figure.
+5.9}) has been already used, duplicate ignored
+
+\@EveryShipout@Output ...@Org@Shipout \box \@cclv 
+                                                  
+l.299 
+      pdfTeX warning (ext4): destination with the same identifier (name{figure.
+5.10}) has been already used, duplicate ignored
+
+\@EveryShipout@Output ...@Org@Shipout \box \@cclv 
+                                                  
+l.299 
+       <./Conv_equiv.pdf>]
+<LeNet.pdf, id=1348, pagebox=cropbox, 129.48375pt x 58.2175pt>
+File: LeNet.pdf Graphic file (type pdf)
+<use LeNet.pdf>
+Package pdftex.def Info: LeNet.pdf  used on input line 306. on input line 306.
+Package pdftex.def Info: Requested size: 129.48341pt x 58.21735pt on input line
+ 306.
+<AlexNet.pdf, id=1350, pagebox=cropbox, 222.8325pt x 58.2175pt>
+File: AlexNet.pdf Graphic file (type pdf)
+<use AlexNet.pdf>
+Package pdftex.def Info: AlexNet.pdf  used on input line 321. on input line 321
+.
+Package pdftex.def Info: Requested size: 222.83195pt x 58.21735pt on input line
+ 321.
+ [52pdfTeX warning (ext4): destination with the same identifier (name{figure.5.
+11}) has been already used, duplicate ignored
+
+\@EveryShipout@Output ...@Org@Shipout \box \@cclv 
+                                                  
+l.329 \subsection{VGG}
+                      pdfTeX warning (ext4): destination with the same identifi
+er (name{figure.5.12}) has been already used, duplicate ignored
+
+\@EveryShipout@Output ...@Org@Shipout \box \@cclv 
+                                                  
+l.329 \subsection{VGG}
+                       <./LeNet.pdf> <./AlexNet.pdf>]
+<VGG.pdf, id=1376, pagebox=cropbox, 382.42876pt x 58.2175pt>
+File: VGG.pdf Graphic file (type pdf)
+<use VGG.pdf>
+Package pdftex.def Info: VGG.pdf  used on input line 336. on input line 336.
+Package pdftex.def Info: Requested size: 382.42781pt x 58.21735pt on input line
+ 336.
+<Inception.pdf, id=1378, pagebox=cropbox, 202.7575pt x 78.2925pt>
+File: Inception.pdf Graphic file (type pdf)
+<use Inception.pdf>
+Package pdftex.def Info: Inception.pdf  used on input line 351. on input line 3
+51.
+Package pdftex.def Info: Requested size: 202.757pt x 78.2923pt on input line 35
+1.
+<GoogleNet.pdf, id=1379, pagebox=cropbox, 339.2675pt x 58.2175pt>
+File: GoogleNet.pdf Graphic file (type pdf)
+<use GoogleNet.pdf>
+Package pdftex.def Info: GoogleNet.pdf  used on input line 363. on input line 3
+63.
+Package pdftex.def Info: Requested size: 339.26666pt x 58.21735pt on input line
+ 363.
+ [53pdfTeX warning (ext4): destination with the same identifier (name{figure.5.
+13}) has been already used, duplicate ignored
+
+\@EveryShipout@Output ...@Org@Shipout \box \@cclv 
+                                                  
+l.367 \end{figure}
+                  pdfTeX warning (ext4): destination with the same identifier (
+name{figure.5.14}) has been already used, duplicate ignored
+
+\@EveryShipout@Output ...@Org@Shipout \box \@cclv 
+                                                  
+l.367 \end{figure}
+                   <./VGG.pdf> <./Inception.pdf>]
+<Bottleneck.pdf, id=1403, pagebox=cropbox, 88.33pt x 104.39pt>
+File: Bottleneck.pdf Graphic file (type pdf)
+<use Bottleneck.pdf>
+Package pdftex.def Info: Bottleneck.pdf  used on input line 383. on input line 
+383.
+Package pdftex.def Info: Requested size: 114.82896pt x 135.70695pt on input lin
+e 383.
+<Bottleneck_BN.pdf, id=1404, pagebox=cropbox, 97.36375pt x 129.48375pt>
+File: Bottleneck_BN.pdf Graphic file (type pdf)
+<use Bottleneck_BN.pdf>
+Package pdftex.def Info: Bottleneck_BN.pdf  used on input line 383. on input li
+ne 383.
+Package pdftex.def Info: Requested size: 97.3635pt x 129.48341pt on input line 
+383.
+File: Bottleneck.pdf Graphic file (type pdf)
+<use Bottleneck.pdf>
+Package pdftex.def Info: Bottleneck.pdf  used on input line 383. on input line 
+383.
+Package pdftex.def Info: Requested size: 114.82896pt x 135.70695pt on input lin
+e 383.
+File: Bottleneck_BN.pdf Graphic file (type pdf)
+<use Bottleneck_BN.pdf>
+Package pdftex.def Info: Bottleneck_BN.pdf  used on input line 383. on input li
+ne 383.
+Package pdftex.def Info: Requested size: 97.3635pt x 129.48341pt on input line 
+383.
+ [54pdfTeX warning (ext4): destination with the same identifier (name{figure.5.
+15}) has been already used, duplicate ignored
+
+\@EveryShipout@Output ...@Org@Shipout \box \@cclv 
+                                                  
+l.389 
+      pdfTeX warning (ext4): destination with the same identifier (name{figure.
+5.16}) has been already used, duplicate ignored
+
+\@EveryShipout@Output ...@Org@Shipout \box \@cclv 
+                                                  
+l.389 
+       <./GoogleNet.pdf> <./Bottleneck.pdf> <./Bottleneck_BN.pdf>] [55]
+<ResNet.pdf, id=1444, pagebox=cropbox, 385.44pt x 58.2175pt>
+File: ResNet.pdf Graphic file (type pdf)
+<use ResNet.pdf>
+Package pdftex.def Info: ResNet.pdf  used on input line 441. on input line 441.
+
+Package pdftex.def Info: Requested size: 385.43906pt x 58.21735pt on input line
+ 441.
+
+[56pdfTeX warning (ext4): destination with the same identifier (name{figure.5.1
+7}) has been already used, duplicate ignored
+
+\@EveryShipout@Output ...@Org@Shipout \box \@cclv 
+                                                  
+l.462 \end{align}
+                  <./ResNet.pdf>]
+Overfull \hbox (7.31038pt too wide) in paragraph at lines 478--479
+[]\T1/pplx/m/n/12 We will call the spe-cific CNN er-ror rates (de-pend-ing weth
+er we need padding
+ []
+
+[57pdfTeX warning (ext4): destination with the same identifier (name{figure.5.1
+8}) has been already used, duplicate ignored
+
+\@EveryShipout@Output ...@Org@Shipout \box \@cclv 
+                                                  
+l.507 \end{align}
+                 ] [58pdfTeX warning (ext4): destination with the same identifi
+er (name{figure.5.19}) has been already used, duplicate ignored
+
+\@EveryShipout@Output ...@Org@Shipout \box \@cclv 
+                                                  
+l.568 \end{figure}
+                  pdfTeX warning (ext4): destination with the same identifier (
+name{figure.5.20}) has been already used, duplicate ignored
+
+\@EveryShipout@Output ...@Org@Shipout \box \@cclv 
+                                                  
+l.568 \end{figure}
+                  ] [59pdfTeX warning (ext4): destination with the same identif
+ier (name{figure.5.21}) has been already used, duplicate ignored
+
+\@EveryShipout@Output ...@Org@Shipout \box \@cclv 
+                                                  
+l.622 \end{figure}
+                  pdfTeX warning (ext4): destination with the same identifier (
+name{figure.5.22}) has been already used, duplicate ignored
+
+\@EveryShipout@Output ...@Org@Shipout \box \@cclv 
+                                                  
+l.622 \end{figure}
+                  ] [60pdfTeX warning (ext4): destination with the same identif
+ier (name{figure.5.23}) has been already used, duplicate ignored
+
+\@EveryShipout@Output ...@Org@Shipout \box \@cclv 
+                                                  
+l.676 
+      pdfTeX warning (ext4): destination with the same identifier (name{figure.
+5.24}) has been already used, duplicate ignored
+
+\@EveryShipout@Output ...@Org@Shipout \box \@cclv 
+                                                  
+l.676 
+      ] [61pdfTeX warning (ext4): destination with the same identifier (name{fi
+gure.5.25}) has been already used, duplicate ignored
+
+\@EveryShipout@Output ...@Org@Shipout \box \@cclv 
+                                                  
+l.728 \begin{align}
+                   pdfTeX warning (ext4): destination with the same identifier 
+(name{figure.5.26}) has been already used, duplicate ignored
+
+\@EveryShipout@Output ...@Org@Shipout \box \@cclv 
+                                                  
+l.728 \begin{align}
+                   ] [62pdfTeX warning (ext4): destination with the same identi
+fier (name{figure.5.27}) has been already used, duplicate ignored
+
+\@EveryShipout@Output ...@Org@Shipout \box \@cclv 
+                                                  
+l.791 
+      pdfTeX warning (ext4): destination with the same identifier (name{figure.
+5.28}) has been already used, duplicate ignored
+
+\@EveryShipout@Output ...@Org@Shipout \box \@cclv 
+                                                  
+l.791 
+      ] [63pdfTeX warning (ext4): destination with the same identifier (name{fi
+gure.5.29}) has been already used, duplicate ignored
+
+\@EveryShipout@Output ...@Org@Shipout \box \@cclv 
+                                                  
+l.852 \end{align}
+                 pdfTeX warning (ext4): destination with the same identifier (n
+ame{figure.5.30}) has been already used, duplicate ignored
+
+\@EveryShipout@Output ...@Org@Shipout \box \@cclv 
+                                                  
+l.852 \end{align}
+                 ]
+Overfull \hbox (2.22188pt too wide) in paragraph at lines 886--886
+[] 
+ []
+
+[64]
+Overfull \hbox (33.40816pt too wide) in paragraph at lines 958--958
+[] 
+ []
+
+
+Underfull \vbox (badness 2111) has occurred while \output is active []
+
+ [65]
+[66]
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [67]
+Overfull \hbox (0.90363pt too wide) in paragraph at lines 1148--1148
+[] 
+ []
+
+[68]
+Underfull \vbox (badness 1033) has occurred while \output is active []
+
+ [69]
+[70]
+Overfull \hbox (6.78029pt too wide) in paragraph at lines 1258--1258
+[] 
+ []
+
+
+Overfull \hbox (6.09909pt too wide) in paragraph at lines 1273--1274
+[]\T1/pplx/m/n/12 For ped-a-gog-i-cal rea-sons, we in-tro-duced the ResNet stru
+c-ture with-out "break-
+ []
+
+<Bottleneck_BN_backprop_2.pdf, id=1598, pagebox=cropbox, 98.3675pt x 135.50626p
+t>
+File: Bottleneck_BN_backprop_2.pdf Graphic file (type pdf)
+<use Bottleneck_BN_backprop_2.pdf>
+Package pdftex.def Info: Bottleneck_BN_backprop_2.pdf  used on input line 1278.
+ on input line 1278.
+Package pdftex.def Info: Requested size: 98.36723pt x 135.5059pt on input line 
+1278.
+[71] [72pdfTeX warning (ext4): destination with the same identifier (name{figur
+e.5.31}) has been already used, duplicate ignored
+
+\@EveryShipout@Output ...@Org@Shipout \box \@cclv 
+                                                  
+l.1317 
+        <./Bottleneck_BN_backprop_2.pdf>]
+<conv_2d-crop.pdf, id=1626, pagebox=cropbox, 333.245pt x 400.49625pt>
+File: conv_2d-crop.pdf Graphic file (type pdf)
+<use conv_2d-crop.pdf>
+Package pdftex.def Info: conv_2d-crop.pdf  used on input line 1324. on input li
+ne 1324.
+Package pdftex.def Info: Requested size: 266.59634pt x 320.39743pt on input lin
+e 1324.
+ [73pdfTeX warning (ext4): destination with the same identifier (name{figure.5.
+32}) has been already used, duplicate ignored
+
+\@EveryShipout@Output ...@Org@Shipout \box \@cclv 
+                                                  
+l.1336 
+        <./conv_2d-crop.pdf>]
+<conv_4d-crop.pdf, id=1674, pagebox=cropbox, 395.4775pt x 428.60126pt>
+File: conv_4d-crop.pdf Graphic file (type pdf)
+<use conv_4d-crop.pdf>
+Package pdftex.def Info: conv_4d-crop.pdf  used on input line 1342. on input li
+ne 1342.
+Package pdftex.def Info: Requested size: 296.60739pt x 321.45015pt on input lin
+e 1342.
+ [74pdfTeX warning (ext4): destination with the same identifier (name{figure.5.
+33}) has been already used, duplicate ignored
+
+\@EveryShipout@Output ...@Org@Shipout \box \@cclv 
+                                                  
+l.1355 \end{align}
+                   <./conv_4d-crop.pdf>]
+<pool_4d-crop.pdf, id=1724, pagebox=cropbox, 414.54875pt x 428.60126pt>
+File: pool_4d-crop.pdf Graphic file (type pdf)
+<use pool_4d-crop.pdf>
+Package pdftex.def Info: pool_4d-crop.pdf  used on input line 1363. on input li
+ne 1363.
+Package pdftex.def Info: Requested size: 310.9108pt x 321.45015pt on input line
+ 1363.
+) [75pdfTeX warning (ext4): destination with the same identifier (name{figure.5
+.34}) has been already used, duplicate ignored
+
+\@EveryShipout@Output ...@Org@Shipout \box \@cclv 
+                                                  
+l.33 \include{chapter2}
+                        <./pool_4d-crop.pdf>]
+\openout2 = `chapter3.aux'.
+
+ (chapter3.tex [76
+
+
+
+]
+Chapter 6.
+File: VGG-conv.pdf Graphic file (type pdf)
+<use VGG-conv.pdf>
+Package pdftex.def Info: VGG-conv.pdf  used on input line 1. on input line 1.
+Package pdftex.def Info: Requested size: 24.9923pt x 12.04448pt on input line 1
+.
+File: VGG-conv.pdf Graphic file (type pdf)
+<use VGG-conv.pdf>
+Package pdftex.def Info: VGG-conv.pdf  used on input line 1. on input line 1.
+Package pdftex.def Info: Requested size: 24.9923pt x 12.04448pt on input line 1
+.
+\openout3 = `White_book.mtc'.
+
+\openout3 = `White_book.mtc'.
+
+(White_book.mtc6 [77])
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [78]
+[79pdfTeX warning (ext4): destination with the same identifier (name{figure.6.1
+}) has been already used, duplicate ignored
+
+\@EveryShipout@Output ...@Org@Shipout \box \@cclv 
+                                                  
+l.150 \begin{align}
+                   ] [80pdfTeX warning (ext4): destination with the same identi
+fier (name{figure.6.2}) has been already used, duplicate ignored
+
+\@EveryShipout@Output ...@Org@Shipout \box \@cclv 
+                                                  
+l.292 \end{align}
+                 ]
+<RNN_structure.pdf, id=1841, pagebox=cropbox, 204.765pt x 129.48375pt>
+File: RNN_structure.pdf Graphic file (type pdf)
+<use RNN_structure.pdf>
+Package pdftex.def Info: RNN_structure.pdf  used on input line 328. on input li
+ne 328.
+Package pdftex.def Info: Requested size: 307.14671pt x 194.22511pt on input lin
+e 328.
+ [81]
+<RNN_structure-tot.pdf, id=1851, pagebox=cropbox, 376.40625pt x 249.93375pt>
+File: RNN_structure-tot.pdf Graphic file (type pdf)
+<use RNN_structure-tot.pdf>
+Package pdftex.def Info: RNN_structure-tot.pdf  used on input line 339. on inpu
+t line 339.
+Package pdftex.def Info: Requested size: 301.1254pt x 199.94727pt on input line
+ 339.
+ [82pdfTeX warning (ext4): destination with the same identifier (name{figure.6.
+3}) has been already used, duplicate ignored
+
+\@EveryShipout@Output ...@Org@Shipout \box \@cclv 
+                                                  
+l.352 \begin{align}
+                   pdfTeX warning (ext4): destination with the same identifier 
+(name{figure.6.4}) has been already used, duplicate ignored
+
+\@EveryShipout@Output ...@Org@Shipout \box \@cclv 
+                                                  
+l.352 \begin{align}
+                    <./RNN_structure.pdf> <./RNN_structure-tot.pdf>] [83]
+[84]
+<LSTM_structure.pdf, id=1970, pagebox=cropbox, 204.765pt x 129.48375pt>
+File: LSTM_structure.pdf Graphic file (type pdf)
+<use LSTM_structure.pdf>
+Package pdftex.def Info: LSTM_structure.pdf  used on input line 453. on input l
+ine 453.
+Package pdftex.def Info: Requested size: 348.09898pt x 220.1214pt on input line
+ 453.
+<LSTM_structure-tot.pdf, id=1971, pagebox=cropbox, 390.45876pt x 249.93375pt>
+File: LSTM_structure-tot.pdf Graphic file (type pdf)
+<use LSTM_structure-tot.pdf>
+Package pdftex.def Info: LSTM_structure-tot.pdf  used on input line 464. on inp
+ut line 464.
+Package pdftex.def Info: Requested size: 312.36742pt x 199.94727pt on input lin
+e 464.
+ [85pdfTeX warning (ext4): destination with the same identifier (name{figure.6.
+5}) has been already used, duplicate ignored
+
+\@EveryShipout@Output ...@Org@Shipout \box \@cclv 
+                                                  
+l.468 \end{figure}
+                   <./LSTM_structure.pdf>] [86pdfTeX warning (ext4): destinatio
+n with the same identifier (name{figure.6.6}) has been already used, duplicate 
+ignored
+
+\@EveryShipout@Output ...@Org@Shipout \box \@cclv 
+                                                  
+l.505 \end{align}
+                  <./LSTM_structure-tot.pdf>] [87] [88] [89] [90] [91] [92]
+[93] [94] [95] [96] [97] [98] [99] [100]
+<LSTM_structure-peephole.pdf, id=2220, pagebox=cropbox, 204.765pt x 157.58875pt
+>
+File: LSTM_structure-peephole.pdf Graphic file (type pdf)
+<use LSTM_structure-peephole.pdf>
+Package pdftex.def Info: LSTM_structure-peephole.pdf  used on input line 1255. 
+on input line 1255.
+Package pdftex.def Info: Requested size: 286.66902pt x 220.62271pt on input lin
+e 1255.
+
+Overfull \hbox (21.07315pt too wide) in paragraph at lines 1281--1281
+[] 
+ []
+
+[101pdfTeX warning (ext4): destination with the same identifier (name{figure.6.
+7}) has been already used, duplicate ignored
+
+\@EveryShipout@Output ...@Org@Shipout \box \@cclv 
+                                                  
+l.1283 
+        <./LSTM_structure-peephole.pdf>]) [102]
+\openout2 = `Conclusion.aux'.
+
+ (Conclusion.tex
+Chapter 7.
+File: VGG-conv.pdf Graphic file (type pdf)
+<use VGG-conv.pdf>
+Package pdftex.def Info: VGG-conv.pdf  used on input line 1. on input line 1.
+Package pdftex.def Info: Requested size: 24.9923pt x 12.04448pt on input line 1
+.
+File: VGG-conv.pdf Graphic file (type pdf)
+<use VGG-conv.pdf>
+Package pdftex.def Info: VGG-conv.pdf  used on input line 1. on input line 1.
+Package pdftex.def Info: Requested size: 24.9923pt x 12.04448pt on input line 1
+.
+) [103
+
+
+
+] [104
+
+
+]
+LaTeX Font Info:    Try loading font information for T1+lmtt on input line 37.
+ ("C:\Program Files\MiKTeX 2.9\tex\latex\lm\t1lmtt.fd"
+File: t1lmtt.fd 2009/10/30 v1.6 Font defs for Latin Modern
+)
+Overfull \hbox (28.9916pt too wide) in paragraph at lines 38--38
+\T1/pplx/m/n/12 (Oct. 2000), pp. 24512471. \T1/pplx/m/sc/12 issn\T1/pplx/m/n/1
+2 : 0899-7667. \T1/pplx/m/sc/12 doi\T1/pplx/m/n/12 : [][]$\T1/lmtt/m/n/12 10 . 
+1162 / 089976600300015015$[][]\T1/pplx/m/n/12 .
+ []
+
+[105]
+Overfull \hbox (2.55717pt too wide) in paragraph at lines 38--38
+[]\T1/pplx/b/n/12 Jiuxiang Gu et al. \T1/pplx/m/n/12   Re-cent Ad-vances in Co
+n-vo-lu-tional Neu-ral Net-works.
+ []
+
+Package minitoc Info: I0009
+(minitoc)             Listing minitoc auxiliary files. 
+(minitoc)             Creating the White_book.maf file.
+\openout3 = `White_book.maf'.
+
+Package minitoc(hints) Info: I0053
+(minitoc(hints))             You have loaded the float package; 
+(minitoc(hints))             please be aware that the minitoc package 
+(minitoc(hints))             facilities can not be used for new types 
+(minitoc(hints))             of floats defined by the float package.
+
+Package minitoc(hints) Warning: W0024
+(minitoc(hints))                Some hints have been written 
+(minitoc(hints))                in the White_book.log file.
+
+[106]
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 38.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 38.
+ (White_book.aux (Preface.aux) (Acknowledgements.aux) (Introduction.aux)
+(chapter1.aux) (chapter2.aux) (chapter3.aux) (Conclusion.aux))
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 38.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 38.
+Package rerunfilecheck Info: File `White_book.out' has not changed.
+(rerunfilecheck)             Checksum: FBE147162002248CC916ADF98FB3BA06;3548.
+
+
+LaTeX Font Warning: Some font shapes were not available, defaults substituted.
+
+Package logreq Info: Writing requests to 'White_book.run.xml'.
+\openout1 = `White_book.run.xml'.
+
+Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 38.
+ )
+(\end occurred inside a group at level 1)
+
+### simple group (level 1) entered at line 1061 ({)
+### bottom level 
+Here is how much of TeX's memory you used:
+ 42717 strings out of 493314
+ 935751 string characters out of 3138856
+ 1488448 words of memory out of 3000000
+ 44539 multiletter control sequences out of 15000+200000
+ 85392 words of font info for 190 fonts, out of 3000000 for 9000
+ 1141 hyphenation exceptions out of 8191
+ 66i,17n,98p,1373b,5620s stack positions out of 5000i,500n,10000p,200000b,50000s
+pdfTeX warning (dest): name{Hfootnote.1} has been referenced bu
+t does not exist, replaced by a fixed one
+
+{C:/Program Files/MiKTeX 2.9/fonts/enc/dvips/lm/lm-ec.enc}{C:/Program Files/MiK
+TeX 2.9/fonts/enc/dvips/base/8r.enc}<C:/Program Files/MiKTeX 2.9/fonts/type1/pu
+blic/initials/Kramer.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfon
+ts/cm/cmex10.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cm
+mi10.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmr10.pfb>
+<C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmsy10.pfb><C:/Prog
+ram Files/MiKTeX 2.9/fonts/type1/public/mathpazo/fplmbb.pfb><C:/Program Files/M
+iKTeX 2.9/fonts/type1/public/mathpazo/fplmr.pfb><C:/Program Files/MiKTeX 2.9/fo
+nts/type1/public/mathpazo/fplmri.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/p
+ublic/fpl/fplrc8a.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/lm/lmtt12
+.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/hoekwater/stmary10.pfb><C:
+/Program Files/MiKTeX 2.9/fonts/type1/urw/palatino/uplb8a.pfb><C:/Program Files
+/MiKTeX 2.9/fonts/type1/urw/palatino/uplr8a.pfb><C:/Program Files/MiKTeX 2.9/fo
+nts/type1/urw/palatino/uplri8a.pfb>
+Output written on White_book.pdf (106 pages, 2555551 bytes).
+PDF statistics:
+ 2490 PDF objects out of 2984 (max. 8388607)
+ 603 named destinations out of 1000 (max. 500000)
+ 699 words of extra memory for PDF output out of 10000 (max. 10000000)
+
