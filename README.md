@@ -6,7 +6,7 @@ For each network, their fundamental building blocks are detailed. The forward pa
 
 The pdf of the whole document can be download directly: White_book.pdf.
 
-Otherwise, all the figures contained in the note are joined in this repo, as well as the tex files. 
+Otherwise, all the figures contained in the note are joined in this repo, as well as the tex files needed for compilation. 
 
 Hope it can help others!
 
