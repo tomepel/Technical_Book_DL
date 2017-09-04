@@ -9,3 +9,5 @@ The pdf of the whole document can be download directly: White_book.pdf.
 Otherwise, all the figures contained in the note are joined in this repo, as well as the tex files. 
 
 Hope it can help others!
+
+Ps: If you detect any typo, error (as I am sure that there unfortunately still are) or feel that I forgot to cite an important source, don't hesitate to email me:  thomas.epelbaum@mediamobile.com 
