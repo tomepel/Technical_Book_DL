@@ -1,4 +1,4 @@
-# Technical_Book_DL
+# Technical Book on Deep Learning
 
 This note presents in a technical though hopefully pedagogical way the three most common forms of neural network architectures: Feedforward, Convolutional and Recurrent.
 
@@ -32,5 +32,6 @@ Thanks to Jean-Michel Loubes and Fabrice Gamboa, from whom I learned a great dea
 
 I end this list with my employer, Mediamobile, which has been kind enough to let me work on this topic with complete freedom. A special thanks to Philippe, who supervized me with the perfect balance of feedback and freedom! 
 
+# Contact
 
-Ps: If you detect any typo, error (as I am sure that there unfortunately still are) or feel that I forgot to cite an important source, don't hesitate to email me:  thomas.epelbaum@mediamobile.com 
+If you detect any typo, error (as I am sure that there unfortunately still are) or feel that I forgot to cite an important source, don't hesitate to email me:  thomas.epelbaum@mediamobile.com 
