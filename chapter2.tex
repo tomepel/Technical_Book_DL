@@ -103,7 +103,7 @@ a_{f\,l\,m}^{(t)(\nu)}&=\sum^{F_\nu-1}_{\nu=0}\sum^{R_C-1}_{j=0}\sum^{R_C-1}_{k=
 where $o$ characterizes the $o+1$ convolution in the network. Here $\nu$ denotes the $\nu$'th hidden layer of the network (and thus belongs to $\llbracket0,N-1 \rrbracket$), and $f\in\llbracket0,F_{\nu+1}-1\rrbracket$, $l\in\llbracket0,N_{\nu+1}-1 \rrbracket$ and $m\in\llbracket0,T_{\nu+1}-1 \rrbracket$. Thus $S_Cl+j\in\llbracket0,N_\nu-1 \rrbracket$ and $S_Cl+j\in\llbracket0,T_\nu-1 \rrbracket$. One then obtains the hidden units via a ReLU (or other, see chapter \ref{sec:chapterFNN}) activation function application. Taking padding into account, it reads
 \begin{align}
 h_{f\,l+P\,m+P}^{(t)(\nu+1)}&=g\left(a_{f\,l\,m}^{(t)(\nu)}\right)\;.
-\end{align} 
+\end{align}
 
 
 \subsection{Pooling}
@@ -128,7 +128,7 @@ while the max pooling reads
 \begin{align}
 a_{f\,l\,m}^{(t)(\nu)}&=\max^{R_P-1}_{j,k=0} h_{f\,S_P l+j+P\,S_Pm+k+P}^{(t)(\nu)}\;.
 \end{align}
-Here $\nu$ denotes the $\nu$'th hidden layer of the network (and thus belongs to $\llbracket0,N-1 \rrbracket$), and $f\in\llbracket0,F_{\nu+1}-1\rrbracket$, $l\in\llbracket0,N_{\nu+1}-1 \rrbracket$ and $m\in\llbracket0,T_{\nu+1}-1 \rrbracket$. Thus $S_Pl+j\in\llbracket0,N_\nu-1 \rrbracket$ and $S_Pl+j\in\llbracket0,T_\nu-1 \rrbracket$. Max pooling is extensively used in the literature, and we will therefore adopt it in all the following. Denoting $j^{(t)(p)}_{_{flm}},\,k^{(t)(p)}_{_{flm}}$ the indices at which the $l,m$ maximum  of the $f$ feature map of the $t$'th batch sample is reached, we have
+Here $\nu$ denotes the $\nu$'th hidden layer of the network (and thus belongs to $\llbracket0,N-1 \rrbracket$), and $f\in\llbracket0,F_{\nu+1}-1\rrbracket$, $l\in\llbracket0,N_{\nu+1}-1 \rrbracket$ and $m\in\llbracket0,T_{\nu+1}-1 \rrbracket$. Thus $S_Pl+j\in\llbracket0,N_\nu-1 \rrbracket$ and $S_Pl+j\in\llbracket0,T_\nu-1 \rrbracket$. Max pooling is extensively used in the literature, and we will therefore adopt it in all the following. Denoting $j^{(t)(p)}_{_{flm}},\,k^{(t)(p)}_{_{flm}}$ the indices at which the $l,m$ maximum of the $f$ feature map of the $t$'th batch sample is reached, we have
 \begin{align}
 h_{f\,l+P\,m+P}^{(t)(\nu+1)}&=a_{f\,l\,m}^{(t)(\nu)}=
 %
@@ -188,12 +188,12 @@ a_{f}^{(t)(N-1)}&=\sum^{F_{N}-1}_{f'=0}\Theta^{(o)f}_{f'}h^{(t)(N-1)}_{f'}\;,
 &
 h_{f}^{(t)(N)}&=o\left(a_{f}^{(t)(N-1)}\right)\;,
 \end{align}
-where as in a FNN, $o$ is either the L2 or the cross-entropy loss function (see chapter \ref{sec:chapterFNN}). 
+where as in a FNN, $o$ is either the L2 or the cross-entropy loss function (see chapter \ref{sec:chapterFNN}).
 
 \section{Modification to Batch Normalization}
 
 
-In a CNN, Batch normalization is modified in the following way (here, contrary to a regular FNN, not all the hidden layers need to be Batch normalized. Indeed this operation is not performed on the output of the pooling layers. We will hence use different names $\nu$ and $n$ for the regular and batch normalized hidden layers) 
+In a CNN, Batch normalization is modified in the following way (here, contrary to a regular FNN, not all the hidden layers need to be Batch normalized. Indeed this operation is not performed on the output of the pooling layers. We will hence use different names $\nu$ and $n$ for the regular and batch normalized hidden layers)
 \begin{align}
 \tilde{h}_{f\,l\,m}^{(t)(n)}&=\frac{h_{f\,l\,m}^{(t)(\nu)}-\hat{h}_{f}^{(n)}}
 %
@@ -209,7 +209,7 @@ with
 %
 \sum^{N_n-1}_{l=0}\sum^{T_n-1}_{m=0}\left(h_{f\,l\,m}^{(t)(\nu)}-\hat{h}_{f}^{(n)}\right)^2\;.
 \end{align}
-The identity transform can be implemented thanks to the two additional parameters $(\gamma_f,\beta_f)$ 
+The identity transform can be implemented thanks to the two additional parameters $(\gamma_f,\beta_f)$
 \begin{align}
 y^{(t)(n)}_{f\,l\,m}&=\gamma^{(n)}_f\,\tilde{h}_{f\,l\,m}^{(t)(n)}+\beta^{(n)}_f\;.
 \end{align}
@@ -237,7 +237,7 @@ We will now review the standard CNN architectures that have been used in the lit
 \end{tikzpicture}&=
 %
 \begin{tikzpicture}[baseline=-0pt]
-\draw (0,-1) rectangle (0+0.3,1); 
+\draw (0,-1) rectangle (0+0.3,1);
 \node[align=center,scale = 0.65] at (0+0.15,0) {I \\ n \\ p \\ u \\ t};
 \end{tikzpicture}\;,&
 %
@@ -246,7 +246,7 @@ We will now review the standard CNN architectures that have been used in the lit
 \end{tikzpicture}&=
 %
 \begin{tikzpicture}[baseline=-0pt]
-\filldraw[fill=blue!30!white] (0,-1) rectangle (0+0.3,1); 
+\filldraw[fill=blue!30!white] (0,-1) rectangle (0+0.3,1);
 \node[align=center,scale = 0.65] at (0+0.15,0) {C \\ o \\ n \\ v};
 \end{tikzpicture}\;,\notag\\
 %
@@ -255,7 +255,7 @@ We will now review the standard CNN architectures that have been used in the lit
 \end{tikzpicture}&=
 %
 \begin{tikzpicture}[baseline=-0pt]
-\filldraw[fill=red!30!white] (0,-1) rectangle (0+0.3,1); 
+\filldraw[fill=red!30!white] (0,-1) rectangle (0+0.3,1);
 \node[align=center,scale = 0.65] at (0+0.15,0) {P \\ o \\ o \\ l};
 \end{tikzpicture}\;,&
 %
@@ -264,7 +264,7 @@ We will now review the standard CNN architectures that have been used in the lit
 \end{tikzpicture}&=
 %
 \begin{tikzpicture}[baseline=-0pt]
-\filldraw[fill=green!30!white] (0,-1) rectangle (0+0.3,1); 
+\filldraw[fill=green!30!white] (0,-1) rectangle (0+0.3,1);
 \node[align=center,scale = 0.65] at (0+0.15,0) {F \\ u \\ l \\ l};
 \end{tikzpicture}
 \end{align*}
@@ -299,7 +299,7 @@ We will adopt the simplified right hand side representation, keeping in mind tha
 
 \subsection{LeNet}
 
-The LeNet\cite{Lecun98gradient-basedlearning} (end of the 90's) network is formed by an input, followed by two conv-pool layers and then a fully-connected layer before the final output. It can be seen in figure \ref{fig:lenet-CNN} 
+The LeNet\cite{Lecun98gradient-basedlearning} (end of the 90's) network is formed by an input, followed by two conv-pool layers and then a fully-connected layer before the final output. It can be seen in figure \ref{fig:lenet-CNN}
 \begin{figure}[H]
 \begin{center}
 \begin{tikzpicture}
@@ -339,7 +339,7 @@ The VGG\cite{DBLP:journals/corr/SimonyanZ14a} network (2014) adopted a simple cr
 \end{center}
 \end{figure}
 
-This network is the standard one in most of the deep learning packages dealing with CNN. It is no longer the state of the art though, as a design innovation has taken place since its creation. 
+This network is the standard one in most of the deep learning packages dealing with CNN. It is no longer the state of the art though, as a design innovation has taken place since its creation.
 
 \subsection{GoogleNet}
 
@@ -419,7 +419,7 @@ h^{(t)(4)}_{flm}&=h^{(t)(0)}_{flm}+g\left(
 %
 &=h^{(t)(0)}_{flm}+\delta h^{(t)(0)}_{flm}\;.
 \end{align}
-Instead of trying to fit the input, one is trying to fit a tiny modification of the input, hence the name residual. This allows the network to minimally modify the input when necessary, contrary to traditional architectures. Secondly, if the number of feature maps is important, a $3\times 3$ convolution with stride 1 could be very costly in term of execution time and prone to overfit (large number of parameters). This is the reason of the presence of the $1 \times 1$ convolution, whose aim is just to prepare the input to the $3\times 3$ conv to reduce the number of feature maps, number which is then restored with the final $1\times 1$ conv of the Residual module. The first $1\times 1$ convolution thus reads as a weight averaging operation 
+Instead of trying to fit the input, one is trying to fit a tiny modification of the input, hence the name residual. This allows the network to minimally modify the input when necessary, contrary to traditional architectures. Secondly, if the number of feature maps is important, a $3\times 3$ convolution with stride 1 could be very costly in term of execution time and prone to overfit (large number of parameters). This is the reason of the presence of the $1 \times 1$ convolution, whose aim is just to prepare the input to the $3\times 3$ conv to reduce the number of feature maps, number which is then restored with the final $1\times 1$ conv of the Residual module. The first $1\times 1$ convolution thus reads as a weight averaging operation
 \begin{align}
 h^{(t)(1)}_{fl+Pm+P}&=
 %
@@ -454,7 +454,7 @@ In a FNN, one just has to compute two kind of backpropagations : from output to 
 
 \subsection{Backpropagate through Batch Normalization} \label{sec:BackpropbatchnormCNN}
 
-As in FNN, backpropagation introduces a new gradient 
+As in FNN, backpropagation introduces a new gradient
 \begin{align}
 \delta^f_{f'}J^{(tt')(n)}_{fll'mm'}&=
 %
@@ -466,7 +466,7 @@ J^{(tt')(n)}_{fll'mm'}&=\tilde{\gamma}^{(n)}_f \left[\delta^{t'}_t\delta^{l'}_l\
 %
 \frac{1+\tilde{h}_{f\,l'\,m'}^{(t')(n)}\tilde{h}_{f\,l\,m}^{(t)(n)}}{T_{{\rm mb}}N_nT_n}\right]\;,
 \end{align}
-while we find the FNN result as expected for fc layers 
+while we find the FNN result as expected for fc layers
 \begin{align}
 J^{(tt')(n)}_{f}&=\tilde{\gamma}^{(n)}_f \left[\delta^{t'}_t-
 %
@@ -488,10 +488,10 @@ Backpropagate from output to fc is schematically illustrated on the following pl
 \begin{figure}[H]
 \begin{center}
 \begin{tikzpicture}[baseline=-0pt]
-\draw (0.8,-1) rectangle (0.8+0.3,1); 
+\draw (0.8,-1) rectangle (0.8+0.3,1);
 \node[align=center,scale = 0.65] at (0.8+0.15,0) {O \\ u \\ t \\ p \\ u \\ t};
-\draw[-stealth]  (0.8,0) -- (0+0.3,0);
-\filldraw[fill=green!30!white] (0,-1) rectangle (0+0.3,1); 
+\draw[-stealth] (0.8,0) -- (0+0.3,0);
+\filldraw[fill=green!30!white] (0,-1) rectangle (0+0.3,1);
 \node[align=center,scale = 0.65] at (0+0.15,0) {F \\ u \\ l \\ l};
 \end{tikzpicture}
 \caption{Backpropagate from output to fc.}
@@ -513,10 +513,10 @@ Backpropagate from fc to fc is schematically illustrated on the following plot
 \begin{figure}[H]
 \begin{center}
 \begin{tikzpicture}[baseline=-0pt]
-\filldraw[fill=green!30!white] (0.8,-1) rectangle (0.8+0.3,1); 
+\filldraw[fill=green!30!white] (0.8,-1) rectangle (0.8+0.3,1);
 \node[align=center,scale = 0.65] at (0.8+0.15,0) {F \\ u \\ l \\ l};
-\draw[-stealth]  (0.8,0) -- (0+0.3,0);
-\filldraw[fill=green!30!white] (0,-1) rectangle (0+0.3,1); 
+\draw[-stealth] (0.8,0) -- (0+0.3,0);
+\filldraw[fill=green!30!white] (0,-1) rectangle (0+0.3,1);
 \node[align=center,scale = 0.65] at (0+0.15,0) {F \\ u \\ l \\ l};
 \end{tikzpicture}
 \caption{Backpropagate from fc to fc.}
@@ -536,10 +536,10 @@ Backpropagate from fc to pool is schematically illustrated on the following plot
 \begin{figure}[H]
 \begin{center}
 \begin{tikzpicture}[baseline=-0pt]
-\filldraw[fill=green!30!white] (0.8,-1) rectangle (0.8+0.3,1); 
+\filldraw[fill=green!30!white] (0.8,-1) rectangle (0.8+0.3,1);
 \node[align=center,scale = 0.65] at (0.8+0.15,0) {F \\ u \\ l \\ l};
-\draw[-stealth]  (0.8,0) -- (0+0.3,0);
-\filldraw[fill=red!30!white] (0,-1) rectangle (0+0.3,1); 
+\draw[-stealth] (0.8,0) -- (0+0.3,0);
+\filldraw[fill=red!30!white] (0,-1) rectangle (0+0.3,1);
 \node[align=center,scale = 0.65] at (0+0.15,0) {P \\ o \\ o \\ l};
 \end{tikzpicture}
 \caption{Backpropagate from fc to pool.}
@@ -557,10 +557,10 @@ Backpropagate from pool to conv is schematically illustrated on the following pl
 \begin{figure}[H]
 \begin{center}
 \begin{tikzpicture}[baseline=-0pt]
-\filldraw[fill=red!30!white] (0.8,-1) rectangle (0.8+0.3,1); 
+\filldraw[fill=red!30!white] (0.8,-1) rectangle (0.8+0.3,1);
 \node[align=center,scale = 0.65] at (0.8+0.15,0) {P \\ o \\ o \\ l};
-\draw[-stealth]  (0.8,0) -- (0+0.3,0);
-\filldraw[fill=blue!30!white] (0,-1) rectangle (0+0.3,1); 
+\draw[-stealth] (0.8,0) -- (0+0.3,0);
+\filldraw[fill=blue!30!white] (0,-1) rectangle (0+0.3,1);
 \node[align=center,scale = 0.65] at (0+0.15,0) {C \\ o \\ n \\ v};
 \end{tikzpicture}
 \caption{Backpropagate from pool to conv.}
@@ -583,10 +583,10 @@ Backpropagate from conv to conv is schematically illustrated on the following pl
 \begin{figure}[H]
 \begin{center}
 \begin{tikzpicture}[baseline=-0pt]
-\filldraw[fill=blue!30!white] (0.8,-1) rectangle (0.8+0.3,1); 
-\node[align=center,scale = 0.65] at (0.8+0.15,0)  {C \\ o \\ n \\ v};
-\draw[-stealth]  (0.8,0) -- (0+0.3,0);
-\filldraw[fill=blue!30!white] (0,-1) rectangle (0+0.3,1); 
+\filldraw[fill=blue!30!white] (0.8,-1) rectangle (0.8+0.3,1);
+\node[align=center,scale = 0.65] at (0.8+0.15,0) {C \\ o \\ n \\ v};
+\draw[-stealth] (0.8,0) -- (0+0.3,0);
+\filldraw[fill=blue!30!white] (0,-1) rectangle (0+0.3,1);
 \node[align=center,scale = 0.65] at (0+0.15,0) {C \\ o \\ n \\ v};
 \end{tikzpicture}
 \caption{Backpropagate from conv to conv.}
@@ -611,10 +611,10 @@ Backpropagate from conv to pool is schematically illustrated on the following pl
 \begin{figure}[H]
 \begin{center}
 \begin{tikzpicture}[baseline=-0pt]
-\filldraw[fill=blue!30!white] (0.8,-1) rectangle (0.8+0.3,1); 
-\node[align=center,scale = 0.65] at (0.8+0.15,0)  {C \\ o \\ n \\ v};
-\draw[-stealth]  (0.8,0) -- (0+0.3,0);
-\filldraw[fill=red!30!white] (0,-1) rectangle (0+0.3,1); 
+\filldraw[fill=blue!30!white] (0.8,-1) rectangle (0.8+0.3,1);
+\node[align=center,scale = 0.65] at (0.8+0.15,0) {C \\ o \\ n \\ v};
+\draw[-stealth] (0.8,0) -- (0+0.3,0);
+\filldraw[fill=red!30!white] (0,-1) rectangle (0+0.3,1);
 \node[align=center,scale = 0.65] at (0+0.15,0) {P \\ o \\ o \\ l};
 \end{tikzpicture}
 \caption{Backpropagate from conv to pool.}
@@ -631,7 +631,7 @@ We show in appendix \ref{sec:appenderrorrate} that this induces the following er
 
 \subsection{Weight update}
 
-For the weight updates, we will also consider separately the weights between  fc  to fc layer, fc to pool, conv to conv, conv to pool and conv to input.
+For the weight updates, we will also consider separately the weights between fc to fc layer, fc to pool, conv to conv, conv to pool and conv to input.
 
 \subsubsection{Weight update from fc to fc}
 
@@ -640,10 +640,10 @@ For the two layer interactions
 \begin{figure}[H]
 \begin{center}
 \begin{tikzpicture}[baseline=-0pt]
-\filldraw[fill=green!30!white] (0.8,-1) rectangle (0.8+0.3,1); 
+\filldraw[fill=green!30!white] (0.8,-1) rectangle (0.8+0.3,1);
 \node[align=center,scale = 0.65] at (0.8+0.15,0) {F \\ u \\ l \\ l};
-\draw[-stealth]  (0.8,0) -- (0+0.3,0);
-\filldraw[fill=green!30!white] (0,-1) rectangle (0+0.3,1); 
+\draw[-stealth] (0.8,0) -- (0+0.3,0);
+\filldraw[fill=green!30!white] (0,-1) rectangle (0+0.3,1);
 \node[align=center,scale = 0.65] at (0+0.15,0) {F \\ u \\ l \\ l};
 \end{tikzpicture}
 \caption{Weight update between two fc layers.}
@@ -664,10 +664,10 @@ For the two layer interactions
 \begin{figure}[H]
 \begin{center}
 \begin{tikzpicture}[baseline=-0pt]
-\filldraw[fill=green!30!white] (0.8,-1) rectangle (0.8+0.3,1); 
+\filldraw[fill=green!30!white] (0.8,-1) rectangle (0.8+0.3,1);
 \node[align=center,scale = 0.65] at (0.8+0.15,0) {F \\ u \\ l \\ l};
-\draw[-stealth]  (0.8,0) -- (0+0.3,0);
-\filldraw[fill=red!30!white] (0,-1) rectangle (0+0.3,1); 
+\draw[-stealth] (0.8,0) -- (0+0.3,0);
+\filldraw[fill=red!30!white] (0,-1) rectangle (0+0.3,1);
 \node[align=center,scale = 0.65] at (0+0.15,0) {P \\ o \\ o \\ l};
 \end{tikzpicture}
 \caption{Weight update between a fc layer and a pool layer.}
@@ -686,10 +686,10 @@ For the two layer interactions
 \begin{figure}[H]
 \begin{center}
 \begin{tikzpicture}[baseline=-0pt]
-\filldraw[fill=blue!30!white] (0.8,-1) rectangle (0.8+0.3,1); 
-\node[align=center,scale = 0.65] at (0.8+0.15,0)  {C \\ o \\ n \\ v};
-\draw[-stealth]  (0.8,0) -- (0+0.3,0);
-\filldraw[fill=blue!30!white] (0,-1) rectangle (0+0.3,1); 
+\filldraw[fill=blue!30!white] (0.8,-1) rectangle (0.8+0.3,1);
+\node[align=center,scale = 0.65] at (0.8+0.15,0) {C \\ o \\ n \\ v};
+\draw[-stealth] (0.8,0) -- (0+0.3,0);
+\filldraw[fill=blue!30!white] (0,-1) rectangle (0+0.3,1);
 \node[align=center,scale = 0.65] at (0+0.15,0) {C \\ o \\ n \\ v};
 \end{tikzpicture}
 \caption{Weight update between two conv layers.}
@@ -710,16 +710,16 @@ For the two layer interactions
 \begin{figure}[H]
 \begin{center}
 \begin{tikzpicture}[baseline=-0pt]
-\filldraw[fill=blue!30!white] (0.8,-1) rectangle (0.8+0.3,1); 
-\node[align=center,scale = 0.65] at (0.8+0.15,0)  {C \\ o \\ n \\ v};
-\draw[-stealth]  (0.8,0) -- (0+0.3,0);
-\filldraw[fill=red!30!white] (0,-1) rectangle (0+0.3,1); 
+\filldraw[fill=blue!30!white] (0.8,-1) rectangle (0.8+0.3,1);
+\node[align=center,scale = 0.65] at (0.8+0.15,0) {C \\ o \\ n \\ v};
+\draw[-stealth] (0.8,0) -- (0+0.3,0);
+\filldraw[fill=red!30!white] (0,-1) rectangle (0+0.3,1);
 \node[align=center,scale = 0.65] at (0+0.15,0) {P \\ o \\ o \\ l};
 %
-\filldraw[fill=blue!30!white] (2.8,-1) rectangle (2.8+0.3,1); 
-\node[align=center,scale = 0.65] at (2.8+0.15,0)  {C \\ o \\ n \\ v};
-\draw[-stealth]  (2.8,0) -- (2+0.3,0);
-\draw (2,-1) rectangle (2+0.3,1); 
+\filldraw[fill=blue!30!white] (2.8,-1) rectangle (2.8+0.3,1);
+\node[align=center,scale = 0.65] at (2.8+0.15,0) {C \\ o \\ n \\ v};
+\draw[-stealth] (2.8,0) -- (2+0.3,0);
+\draw (2,-1) rectangle (2+0.3,1);
 \node[align=center,scale = 0.65] at (2+0.15,0) {I \\ n \\ p \\ u \\ t};
 \end{tikzpicture}
 \caption{Weight update between a conv and a pool layer, as well as between a conv and the input layer.}
@@ -735,7 +735,7 @@ h^{(t)(\nu)}_{f'\,l+j\,m+k}\delta_{f\,l+P\,m+P}^{(t)(\nu)}
 \subsection{Coefficient update}
 
 
-For the Coefficient updates, we will also consider separately the weights between  fc to fc layer, fc to pool, cont to pool and conv to conv.
+For the Coefficient updates, we will also consider separately the weights between fc to fc layer, fc to pool, cont to pool and conv to conv.
 
 \subsubsection{Coefficient update from fc to fc}
 
@@ -744,10 +744,10 @@ For the two layer interactions
 \begin{figure}[H]
 \begin{center}
 \begin{tikzpicture}[baseline=-0pt]
-\filldraw[fill=green!30!white] (0.8,-1) rectangle (0.8+0.3,1); 
+\filldraw[fill=green!30!white] (0.8,-1) rectangle (0.8+0.3,1);
 \node[align=center,scale = 0.65] at (0.8+0.15,0) {F \\ u \\ l \\ l};
-\draw[-stealth]  (0.8,0) -- (0+0.3,0);
-\filldraw[fill=green!30!white] (0,-1) rectangle (0+0.3,1); 
+\draw[-stealth] (0.8,0) -- (0+0.3,0);
+\filldraw[fill=green!30!white] (0,-1) rectangle (0+0.3,1);
 \node[align=center,scale = 0.65] at (0+0.15,0) {F \\ u \\ l \\ l};
 \end{tikzpicture}
 \caption{Coefficient update between two fc layers.}
@@ -773,16 +773,16 @@ For the two layer interactions
 \begin{figure}[H]
 \begin{center}
 \begin{tikzpicture}[baseline=-0pt]
-\filldraw[fill=green!30!white] (0.8,-1) rectangle (0.8+0.3,1); 
+\filldraw[fill=green!30!white] (0.8,-1) rectangle (0.8+0.3,1);
 \node[align=center,scale = 0.65] at (0.8+0.15,0) {F \\ u \\ l \\ l};
-\draw[-stealth]  (0.8,0) -- (0+0.3,0);
-\filldraw[fill=red!30!white] (0,-1) rectangle (0+0.3,1); 
+\draw[-stealth] (0.8,0) -- (0+0.3,0);
+\filldraw[fill=red!30!white] (0,-1) rectangle (0+0.3,1);
 \node[align=center,scale = 0.65] at (0+0.15,0) {P \\ o \\ o \\ l};
 %
-\filldraw[fill=blue!30!white] (2.8,-1) rectangle (2.8+0.3,1); 
-\node[align=center,scale = 0.65] at (2.8+0.15,0)  {C \\ o \\ n \\ v};
-\draw[-stealth]  (2.8,0) -- (2+0.3,0);
-\filldraw[fill=red!30!white] (2,-1) rectangle (2+0.3,1); 
+\filldraw[fill=blue!30!white] (2.8,-1) rectangle (2.8+0.3,1);
+\node[align=center,scale = 0.65] at (2.8+0.15,0) {C \\ o \\ n \\ v};
+\draw[-stealth] (2.8,0) -- (2+0.3,0);
+\filldraw[fill=red!30!white] (2,-1) rectangle (2+0.3,1);
 \node[align=center,scale = 0.65] at (2+0.15,0) {P \\ o \\ o \\ l};
 \end{tikzpicture}
 \caption{Coefficient update between a fc layer and a pool as well as a conv and a pool layer.}
@@ -809,10 +809,10 @@ For the two layer interactions
 \begin{figure}[H]
 \begin{center}
 \begin{tikzpicture}[baseline=-0pt]
-\filldraw[fill=blue!30!white] (0.8,-1) rectangle (0.8+0.3,1); 
-\node[align=center,scale = 0.65] at (0.8+0.15,0)  {C \\ o \\ n \\ v};
-\draw[-stealth]  (0.8,0) -- (0+0.3,0);
-\filldraw[fill=blue!30!white] (0,-1) rectangle (0+0.3,1); 
+\filldraw[fill=blue!30!white] (0.8,-1) rectangle (0.8+0.3,1);
+\node[align=center,scale = 0.65] at (0.8+0.15,0) {C \\ o \\ n \\ v};
+\draw[-stealth] (0.8,0) -- (0+0.3,0);
+\filldraw[fill=blue!30!white] (0,-1) rectangle (0+0.3,1);
 \node[align=center,scale = 0.65] at (0+0.15,0) {C \\ o \\ n \\ v};
 \end{tikzpicture}
 \caption{Coefficient update between two conv layers.}
@@ -838,13 +838,13 @@ We have
 \sum_{j=0}^{R_C-1}\sum_{k=0}^{R_C-1}\Theta^{(o)f'}_{fjk}\delta^{(t)(\nu)}_{f'\,l+P\,m+P}\;.
 \end{align}
 
-Let us now demonstrate all these formulas! 
+Let us now demonstrate all these formulas!
 
 \begin{subappendices}
 \section{Backprop through BatchNorm} \label{sec:appenbatchnorm-vgg}
 
 
-For Backpropagation, we will need 
+For Backpropagation, we will need
 \begin{align}
 \frac{\partial y^{(t')(n)}_{f'\,l'\,m'}}{\partial h_{f\,l\,m}^{(t)(\nu)}}&=
 %
@@ -908,17 +908,17 @@ so that
 
 We have for backpropagation from fc to pool
 \begin{align}
-\delta^{(t)(\nu)}_{flm}&= \frac{\partial }{\partial  a_{flm}^{(t)(\nu)}}J^{(t)}(\Theta)=
+\delta^{(t)(\nu)}_{flm}&= \frac{\partial }{\partial a_{flm}^{(t)(\nu)}}J^{(t)}(\Theta)=
 %
 \sum_{t'=0}^{T_{{\rm mb}}-1}\sum_{f'=0}^{F_{\nu+1}-1}
 %
- \frac{\partial  a_{f'}^{(t')(\nu+1)}}{\partial  a_{flm}^{(t)(\nu)}} \delta^{(t')(\nu+1)}_{f'}\notag\\
+ \frac{\partial a_{f'}^{(t')(\nu+1)}}{\partial a_{flm}^{(t)(\nu)}} \delta^{(t')(\nu+1)}_{f'}\notag\\
 %
 &=\sum_{t'=0}^{T_{{\rm mb}}-1}\sum_{f'=0}^{F_{\nu+1}-1}\sum^{F_\nu-1}_{f''=0}
 %
 \sum^{N_{\nu+1}}_{j=0}\sum^{T_{\nu+1}}_{k=0}\Theta^{(o)f'}_{f''\,j\,k}
 %
-\frac{\partial h^{(t)(\nu+1)}_{f''j+Pk+P} }{\partial  h_{fl+Pm+P}^{(t)(\nu+1)}} \delta^{(t')(\nu+1)}_{f'}\notag\\
+\frac{\partial h^{(t)(\nu+1)}_{f''j+Pk+P} }{\partial h_{fl+Pm+P}^{(t)(\nu+1)}} \delta^{(t')(\nu+1)}_{f'}\notag\\
 %
 &=\sum_{f'=0}^{F_{\nu+1}-1}\Theta^{(o)f'}_{f\,l\,m} \delta^{(t)(\nu+1)}_{f'}\;,
 \end{align}
@@ -974,7 +974,7 @@ For backpropagation from conv to conv
 %
 \Theta^{(o)f'}_{f''\,j\,k}\notag\\
 %
-&\times\frac{\partial  y^{(t')(n)}_{f''\,l'+j\,m'+k}}{\partial h_{f\,l+P\,m+P}^{(t)(\nu+1)}}
+&\times\frac{\partial y^{(t')(n)}_{f''\,l'+j\,m'+k}}{\partial h_{f\,l+P\,m+P}^{(t)(\nu+1)}}
 %
 g'\left(a_{f\,l\,m}^{(t)(\nu)}\right)\delta_{f'l'+Pm'+P}^{(t')(\nu+1)}\;,
 \end{align}
@@ -1016,7 +1016,7 @@ and for backpropagation from conv to pool (taking the stride equal to 1 to simpl
 %
 \Theta^{(o)f'}_{f''\,j\,k}
 %
-\frac{\partial  h^{(t')(\nu+1)}_{f''\,l'+j\,m'+k}}{\partial h_{f\,l+P\,m+P}^{(t)(\nu+1)}}
+\frac{\partial h^{(t')(\nu+1)}_{f''\,l'+j\,m'+k}}{\partial h_{f\,l+P\,m+P}^{(t)(\nu+1)}}
 %
 \delta_{f'l'+Pm'+P}^{(t')(\nu+1)}\notag\\
 %
@@ -1132,7 +1132,7 @@ conv to conv
 
 \section{Practical Simplification} \label{sec:pracsimpl}
 
-When implementing a CNN, it turns out that some of the error rate computation can be very costly (in term of execution time) if naively encoded. In this section, we sketch some improvement that can be performed on the pool to conv, conv to conv  error rate implementation, as well as ones on coefficient updates.
+When implementing a CNN, it turns out that some of the error rate computation can be very costly (in term of execution time) if naively encoded. In this section, we sketch some improvement that can be performed on the pool to conv, conv to conv error rate implementation, as well as ones on coefficient updates.
 
 \subsection{pool to conv Simplification}
 
@@ -1218,7 +1218,7 @@ Finally, we compute
 %
 \Theta^{(o)f'}_{f\,j\,k}\lambda^{(5)}_{ff'jk}\;.
 \end{align}
-$\lambda^{(6)}_{f}$ only requires four loops, and $\lambda^{(5)}_{ff'jk}$ is the  most expensive operation. But it is also a convolution operation that implies two of the smallest loops (those on $R_C$). With all these newly introduced $\lambda$, we obtain
+$\lambda^{(6)}_{f}$ only requires four loops, and $\lambda^{(5)}_{ff'jk}$ is the most expensive operation. But it is also a convolution operation that implies two of the smallest loops (those on $R_C$). With all these newly introduced $\lambda$, we obtain
 \begin{align}
 \delta^{(t)(\nu)}_{flm}&=\tilde{\gamma}^{(n)}_fg'\left(a_{f\,l\,m}^{(t)(\nu)}\right)\left\{
 %
@@ -1281,7 +1281,7 @@ For pedagogical reasons, we introduced the ResNet structure without "breaking" t
 \end{center}
 \end{figure}
 
-Batchpropagation through this ResNet module presents no particular difficulty. Indeed, the update rules imply the usual conv to conv backpropagation derived in the main part of this note. The only novelty is the error rate update of the input layer of the ResNet, as it now reads (assuming that the input of  this ResNet module is the output of another one)
+Batchpropagation through this ResNet module presents no particular difficulty. Indeed, the update rules imply the usual conv to conv backpropagation derived in the main part of this note. The only novelty is the error rate update of the input layer of the ResNet, as it now reads (assuming that the input of this ResNet module is the output of another one)
 
 \begin{align}
 \delta^{(t)(\nu)}_{fl+Pm+P}&=

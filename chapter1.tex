@@ -22,15 +22,15 @@
     \foreach \name / \y in {1}
        	\pgfmathtruncatemacro{\m}{int(\y-1)}
     % This is the same as writing \foreach \name / \y in {1/1,2/2,3/3,4/4}
-        \node[input neuron, pin=left:Bias] (I-\name) at (0,-\y) {$h_{\m}^{(0)}$};    
-    
-    
+        \node[input neuron, pin=left:Bias] (I-\name) at (0,-\y) {$h_{\m}^{(0)}$};
+
+
     \foreach \name / \y in {2,...,6}
        	\pgfmathtruncatemacro{\m}{int(\y-1)}
     % This is the same as writing \foreach \name / \y in {1/1,2/2,3/3,4/4}
         \node[input neuron, pin=left:Input \#\y] (I-\name) at (0,-\y) {$h_{\m}^{(0)}$};
 
-    % Draw the hidden layer 1 nodes 
+    % Draw the hidden layer 1 nodes
     \foreach \name / \y in {1,...,7}
     	\pgfmathtruncatemacro{\m}{int(\y-1)}
         \path[yshift=0.5cm]
@@ -40,8 +40,8 @@
     \foreach \name / \y in {1,...,6}
         \pgfmathtruncatemacro{\m}{int(\y-1)}
         \path[yshift=0.0cm]
-            node[hidden neuron] (H2-\name) at (2*\layersep,-\y cm) {$h_{\m}^{(\nu)}$};      
-	
+            node[hidden neuron] (H2-\name) at (2*\layersep,-\y cm) {$h_{\m}^{(\nu)}$};
+
     % Draw the output layer node
     \foreach \name / \y in {1,...,5}
         \path[yshift=-0.5cm]
@@ -52,7 +52,7 @@
     \foreach \source in {1,...,6}
         \foreach \dest in {2,...,7}
             \path (I-\source) edge (H1-\dest);
-            
+
      \foreach \source in {1,...,7}
        \foreach \dest in {2,...,6}
            \path (H1-\source) edge (H2-\dest);
@@ -67,9 +67,9 @@
     \node[annot,left of=hl] {Input layer};
     \node[annot,right of=hl] (hm) {Hidden layer $\nu$};
     \node[annot,right of=hm] {Output layer};
-    
-    \node at ((1.5*\layersep,-3.5 cm) {$\bullet\bullet\bullet$};  
-    \node at ((2.5*\layersep,-3.5 cm) {$\bullet\bullet\bullet$};  
+
+    \node at ((1.5*\layersep,-3.5 cm) {$\bullet\bullet\bullet$};
+    \node at ((2.5*\layersep,-3.5 cm) {$\bullet\bullet\bullet$};
 \end{tikzpicture}
 \caption{\label{fig:1}Neural Network with $N+1$ layers ($N-1$ hidden layers). For simplicity of notations, the index referencing the training set has not been indicated. Shallow architectures use only one hidden layer. Deep learning amounts to take several hidden layers, usually containing the same number of hidden neurons. This number should be on the ballpark of the average of the number of input and output variables.}
 \end{center}
@@ -83,13 +83,13 @@ In the following, we will call
 \begin{itemize}
 \item[$\bullet$] $N$ the number of layers (not counting the input) in the Neural Network.
 \item[$\bullet$] $T_{{\rm train}}$ the number of training examples in the training set.
-\item[$\bullet$] $T_{{\rm mb}}$ the number of training examples in a mini-batch (see section \ref{sec:FNNlossfunction}). 
+\item[$\bullet$] $T_{{\rm mb}}$ the number of training examples in a mini-batch (see section \ref{sec:FNNlossfunction}).
 \item[$\bullet$] $t \in \llbracket0,T_{{\rm mb}}-1\rrbracket$ the mini-batch training instance index.
-\item[$\bullet$] $\nu\in\llbracket0,N\rrbracket$ the number of layers in the FNN.  
+\item[$\bullet$] $\nu\in\llbracket0,N\rrbracket$ the number of layers in the FNN.
 \item[$\bullet$] $F_\nu$ the number of neurons in the $\nu$'th layer.
-\item[$\bullet$] $X^{(t)}_f=h_{f}^{(0)(t)}$ where $f\in\llbracket0,F_0-1\rrbracket$ the input variables. 
-\item[$\bullet$] $y^{(t)}_f$ where  $f\in[0,F_N-1]$ the output variables (to be predicted). 
-\item[$\bullet$] $\hat{y}^{(t)}_f$ where  $f\in[0,F_N-1]$ the output of the network. 
+\item[$\bullet$] $X^{(t)}_f=h_{f}^{(0)(t)}$ where $f\in\llbracket0,F_0-1\rrbracket$ the input variables.
+\item[$\bullet$] $y^{(t)}_f$ where $f\in[0,F_N-1]$ the output variables (to be predicted).
+\item[$\bullet$] $\hat{y}^{(t)}_f$ where $f\in[0,F_N-1]$ the output of the network.
 \item[$\bullet$] $\Theta_{f}^{(\nu)f'}$ for $f\in [0,F_{\nu}-1]$, $f'\in [0,F_{\nu+1}-1]$ and $\nu\in[0,N-1]$ the weights matrices
 \item[$\bullet$] A bias term can be included. In practice, we will see when talking about the batch-normalization procedure that we can omit it.
 \end{itemize}
@@ -115,15 +115,15 @@ One of the two main components of a FNN is a weight averaging procedure, which a
     \foreach \name / \y in {1}
        	\pgfmathtruncatemacro{\m}{int(\y-1)}
     % This is the same as writing \foreach \name / \y in {1/1,2/2,3/3,4/4}
-        \node[input neuron] (I-\name) at (0,-\y) {$h_{\m}^{(0)}$};    
-    
-    
+        \node[input neuron] (I-\name) at (0,-\y) {$h_{\m}^{(0)}$};
+
+
     \foreach \name / \y in {2,...,6}
        	\pgfmathtruncatemacro{\m}{int(\y-1)}
     % This is the same as writing \foreach \name / \y in {1/1,2/2,3/3,4/4}
         \node[input neuron] (I-\name) at (0,-\y) {$h_{\m}^{(0)}$};
 
-    % Draw the hidden layer 1 nodes 
+    % Draw the hidden layer 1 nodes
     \foreach \name / \y in {4}
     	\pgfmathtruncatemacro{\m}{int(\y-1)}
         \path[yshift=0.5cm]
@@ -148,7 +148,7 @@ Formally, the weight averaging procedure reads:
 \begin{align}
 a_{f}^{(t)(\nu)}&=\sum^{F_\nu-1+\epsilon}_{f'=0}\Theta^{(\nu)f}_{\,f'}h^{(t)(\nu)}_{f'}\;,
 \end{align}
-where $\nu\in\llbracket 0,N-1\rrbracket$,  $t \in \llbracket0,T_{{\rm mb}}-1\rrbracket$ and $f\in \llbracket 0,F_{\nu+1}-1\rrbracket$. The $\epsilon$ is here to include or exclude a bias term. In practice, as we will be using batch-normalization, we can safely omit it ($\epsilon=0$ in all the following).
+where $\nu\in\llbracket 0,N-1\rrbracket$, $t \in \llbracket0,T_{{\rm mb}}-1\rrbracket$ and $f\in \llbracket 0,F_{\nu+1}-1\rrbracket$. The $\epsilon$ is here to include or exclude a bias term. In practice, as we will be using batch-normalization, we can safely omit it ($\epsilon=0$ in all the following).
 
 \section{Activation function}
 
@@ -156,7 +156,7 @@ The hidden neuron of each layer is defined as
 \begin{align}
 h_{f}^{(t)(\nu+1)}&=g\left(a_{f}^{(t)(\nu)}\right)\;,
 \end{align}
-where $\nu\in\llbracket 0,N-2\rrbracket$, $f\in \llbracket 0,F_{\nu+1}-1\rrbracket$ and as usual $t \in \llbracket0,T_{{\rm mb}}-1\rrbracket$. Here $g$ is an activation function -- the second main ingredient of a FNN -- whose non-linearity allow to predict arbitrary output data. In practice, $g$ is usually taken to be one of the functions described in the following subsections. 
+where $\nu\in\llbracket 0,N-2\rrbracket$, $f\in \llbracket 0,F_{\nu+1}-1\rrbracket$ and as usual $t \in \llbracket0,T_{{\rm mb}}-1\rrbracket$. Here $g$ is an activation function -- the second main ingredient of a FNN -- whose non-linearity allow to predict arbitrary output data. In practice, $g$ is usually taken to be one of the functions described in the following subsections.
 
 
 \subsection{The sigmoid function}
@@ -208,16 +208,16 @@ It is nevertherless still used in the standard formulation of the RNN-LSTM model
 
 The ReLU -- for Rectified Linear Unit -- function takes its value in $[0,+\infty[$ and reads
 \begin{align}
-g(x)&={\rm ReLU}(x)=\begin{cases} 
+g(x)&={\rm ReLU}(x)=\begin{cases}
       x & x\geq 0 \\
-      0& x<0 
+      0& x<0
    \end{cases}\;.
 \end{align}
 Its derivative is
 \begin{align}
-{\rm ReLU}'(x)&=\begin{cases} 
+{\rm ReLU}'(x)&=\begin{cases}
       1 & x\geq 0 \\
-      0 & x<0 
+      0 & x<0
    \end{cases}\;.
 \end{align}
 
@@ -240,16 +240,16 @@ This activation function is the most extensively used nowadays. Two of its more 
 
 The leaky-ReLU --for Linear Rectified Linear Unit -- function takes its value in $]-\infty,+\infty[$ and is a slight modification of the ReLU that allows non-zero value for the hidden neuron whatever the $x$ value. It reads
 \begin{align}
-g(x)&={\rm l-ReLU}(x)=\begin{cases} 
+g(x)&={\rm l-ReLU}(x)=\begin{cases}
       x & x\geq 0 \\
-      0.01\,x & x<0 
+      0.01\,x & x<0
    \end{cases}\;.
 \end{align}
 Its derivative is
 \begin{align}
-{\rm l-ReLU}'(x)&=\begin{cases} 
+{\rm l-ReLU}'(x)&=\begin{cases}
       1 & x\geq 0 \\
-      0.01 & x<0 
+      0.01 & x<0
    \end{cases}\;.
 \end{align}
 
@@ -265,16 +265,16 @@ Its derivative is
 A variant of the leaky-ReLU can also be found in the literature : the Parametric-ReLU, where the arbitrary $0.01$ in the definition of the leaky-ReLU is replaced by an $\alpha$ coefficient, that can be
 computed via backpropagation.
 \begin{align}
-g(x)&={\rm Parametric-ReLU}(x)=\begin{cases} 
+g(x)&={\rm Parametric-ReLU}(x)=\begin{cases}
       x & x\geq 0 \\
-      \alpha\,x & x<0 
+      \alpha\,x & x<0
    \end{cases}\;.
 \end{align}
 Its derivative is
 \begin{align}
-{\rm Parametric-ReLU}'(x)&=\begin{cases} 
+{\rm Parametric-ReLU}'(x)&=\begin{cases}
       1 & x\geq 0 \\
-      \alpha & x<0 
+      \alpha & x<0
    \end{cases}\;.
 \end{align}
 
@@ -282,16 +282,16 @@ Its derivative is
 
 The ELU --for Exponential Linear Unit -- function takes its value between $]-1,+\infty[$ and is inspired by the leaky-ReLU philosophy: non-zero values for all $x$'s. But it presents the advantage of being $\mathcal{C}^1$.
 \begin{align}
-g(x)&={\rm ELU}(x)=\begin{cases} 
+g(x)&={\rm ELU}(x)=\begin{cases}
       x & x\geq 0 \\
-      e^x-1 & x<0 
+      e^x-1 & x<0
    \end{cases}\;.
 \end{align}
 Its derivative is
 \begin{align}
-{\rm ELU}'(x)&=\begin{cases} 
+{\rm ELU}'(x)&=\begin{cases}
       1 & x\geq 0 \\
-      e^x & x<0 
+      e^x & x<0
    \end{cases}\;.
 \end{align}
 
@@ -305,7 +305,7 @@ Its derivative is
 \caption{\label{fig:elu} the ELU function and its derivative.}
 \end{figure}
 
-% From my experience, leay-relu is more than enough. 
+% From my experience, leay-relu is more than enough.
 
 
 \section{FNN layers}
@@ -319,7 +319,7 @@ As illustrated in figure \ref{fig:1}, a regular FNN is composed by several speci
 The input layer is one of the two places where the data at disposal for the problem at hand come into place. In this chapter, we will be considering a input of size $F_0$, denoted $X^{(t)}_{f}$, with\footnote{
 To train the FNN, we jointly compute the forward and backward pass for $T_{{\rm mb}}$ samples of the training set, with $T_{{\rm mb}}\ll T_{{\rm train}}$. In the following we will thus have $t\in \llbracket 0, T_{{\rm mb}}-1\rrbracket$.
 }
- $t\in \llbracket 0, T_{{\rm mb}}-1\rrbracket$ (size of the  mini-batch, more on that when we will be talking about gradient descent techniques), and $f \in \llbracket 0, F_0-1\rrbracket$. Given the problem at hand, a common procedure could be to center the input following the procedure
+ $t\in \llbracket 0, T_{{\rm mb}}-1\rrbracket$ (size of the mini-batch, more on that when we will be talking about gradient descent techniques), and $f \in \llbracket 0, F_0-1\rrbracket$. Given the problem at hand, a common procedure could be to center the input following the procedure
 \begin{align}
 \tilde{X}^{(t)}_{f}&=X^{(t)}_{f}-\mu_{f}\;,
 \end{align}
@@ -332,7 +332,7 @@ This correspond to compute the mean per data types over the training set. Follow
 X^{(t)}_{f}&=h^{(t)(0)}_{f}\;.
 \end{align}
 
-\subsection{Fully connected  layer}
+\subsection{Fully connected layer}
 
 The fully connected operation is just the conjunction of the weight averaging and the activation procedure. Namely, $\forall \nu\in \llbracket 0,N-1 \rrbracket$
 \begin{align}
@@ -372,7 +372,7 @@ J(\Theta)&=-\frac{1}{T_{{\rm mb}}}\sum_{t=0}^{T_{{\rm mb}}-1}\sum_{f=0}^{F_N-1}
 %
 \delta^f_{y^{(t)}}\ln h_{f}^{(t)(N)}\;,
 \end{align}
-and for a regression problem transformed into a classification one, calling $C$ the number of bins leads to 
+and for a regression problem transformed into a classification one, calling $C$ the number of bins leads to
 \begin{align}
 J(\Theta)&=-\frac{1}{T_{{\rm mb}}}\sum_{t=0}^{T_{{\rm mb}}-1}\sum_{f=0}^{F_N-1}\sum_{c=0}^{C-1}
 %
@@ -437,7 +437,7 @@ and the last term is exactly the L2 regulator for a given $nu$ value (see formul
 
 \subsection{L1 regularization}
 
-L1 regularization amounts to replace the L2 norm by the L1 one in the L2 regularization technique 
+L1 regularization amounts to replace the L2 norm by the L1 one in the L2 regularization technique
 \begin{align}
 J_{{\rm L1}}(\Theta)&=\lambda_{{\rm L1}} \sum_{\nu=0}^{N-1}\left\|\Theta^{(\nu)}\right\|_{{\rm L1}}
 %
@@ -451,7 +451,7 @@ It can be used in conjunction with L2 regularization, but again these techniques
 %
 \frac{\lambda_{{\rm L1}}}{2}e^{-\lambda_{{\rm L1}}\left|\Theta^{(\nu)f}_{f'}\right|}\;.
 \end{align}
- 
+
 \subsection{Clipping}
 
 Clipping forbids the L2 norm of the weights to go beyond a pre-determined threshold $C$. Namely after having computed the update rules for the weights, if their L2 norm goes above $C$, it is pushed back to $C$
@@ -460,13 +460,13 @@ Clipping forbids the L2 norm of the weights to go beyond a pre-determined thresh
 %
 \Theta^{(\nu)f}_{f'} \times \frac{C}{\left\|\Theta^{(\nu)}\right\|_{{\rm L2}}}\;.
 \end{align}
- 
-This regularization technique avoids the so-called exploding gradient problem, and is mainly used in RNN-LSTM networks. A typical value of $C$ is in the range $10^{0}-10^{1}$. Let us now turn to the most efficient regularization techniques for a FNN: dropout and Batch-normalization. 
- 
- 
+
+This regularization technique avoids the so-called exploding gradient problem, and is mainly used in RNN-LSTM networks. A typical value of $C$ is in the range $10^{0}-10^{1}$. Let us now turn to the most efficient regularization techniques for a FNN: dropout and Batch-normalization.
+
+
 \subsection{Dropout}
 
-A simple procedure allows for better backpropagation performance for classification tasks: it amounts to stochastically drop some of the hidden units (and in some instances even some of the input variables) for each training example. 
+A simple procedure allows for better backpropagation performance for classification tasks: it amounts to stochastically drop some of the hidden units (and in some instances even some of the input variables) for each training example.
 
 \begin{figure}[H]
 \begin{center}
@@ -483,26 +483,26 @@ A simple procedure allows for better backpropagation performance for classificat
     \foreach \name / \y in {1}
        	\pgfmathtruncatemacro{\m}{int(\y-1)}
     % This is the same as writing \foreach \name / \y in {1/1,2/2,3/3,4/4}
-        \node[input neuron, pin=left:Bias] (I-\name) at (0,-\y) {$h_{\m}^{(0)}$};    
-    
-    
+        \node[input neuron, pin=left:Bias] (I-\name) at (0,-\y) {$h_{\m}^{(0)}$};
+
+
     \foreach \name / \y in {2,3,4,6}
        	\pgfmathtruncatemacro{\m}{int(\y-1)}
     % This is the same as writing \foreach \name / \y in {1/1,2/2,3/3,4/4}
         \node[input neuron, pin=left:Input \#\y] (I-\name) at (0,-\y) {$h_{\m}^{(0)}$};
-        
+
         \foreach \name / \y in {5}
        	\pgfmathtruncatemacro{\m}{int(\y-1)}
     % This is the same as writing \foreach \name / \y in {1/1,2/2,3/3,4/4}
         \node[dropout neuron] (I-\name) at (0,-\y) {$h_{\m}^{(0)}$};
 
-    % Draw the hidden layer 1 nodes 
+    % Draw the hidden layer 1 nodes
     \foreach \name / \y in {1,2,3,5}
     	\pgfmathtruncatemacro{\m}{int(\y-1)}
         \path[yshift=0.5cm]
             node[hidden neuron] (H1-\name) at (\layersep,-\y cm) {$h_{\m}^{(1)}$};
-            
-    % Draw the hidden layer 1 nodes 
+
+    % Draw the hidden layer 1 nodes
     \foreach \name / \y in {4,6,7}
     	\pgfmathtruncatemacro{\m}{int(\y-1)}
         \path[yshift=0.5cm]
@@ -512,14 +512,14 @@ A simple procedure allows for better backpropagation performance for classificat
     \foreach \name / \y in {1,3,5}
         \pgfmathtruncatemacro{\m}{int(\y-1)}
         \path[yshift=0.0cm]
-            node[hidden neuron] (H2-\name) at (2*\layersep,-\y cm) {$h_{\m}^{(\nu)}$};    
-            
+            node[hidden neuron] (H2-\name) at (2*\layersep,-\y cm) {$h_{\m}^{(\nu)}$};
+
     % Draw the hidden layer 1 node
     \foreach \name / \y in {2,4,6}
         \pgfmathtruncatemacro{\m}{int(\y-1)}
         \path[yshift=0.0cm]
-            node[dropout neuron] (H2-\name) at (2*\layersep,-\y cm) {$h_{\m}^{(\nu)}$};   
-	
+            node[dropout neuron] (H2-\name) at (2*\layersep,-\y cm) {$h_{\m}^{(\nu)}$};
+
     % Draw the output layer node
     \foreach \name / \y in {1,...,5}
         \path[yshift=-0.5cm]
@@ -530,7 +530,7 @@ A simple procedure allows for better backpropagation performance for classificat
     \foreach \source in {1,2,3,4,6}
         \foreach \dest in {2,3,5}
             \path (I-\source) edge (H1-\dest);
-            
+
      \foreach \source in {1,2,3,5}
        \foreach \dest in {3,5}
            \path (H1-\source) edge (H2-\dest);
@@ -545,9 +545,9 @@ A simple procedure allows for better backpropagation performance for classificat
     \node[annot,left of=hl] {Input layer};
     \node[annot,right of=hl] (hm) {Hidden layer $\nu$};
     \node[annot,right of=hm] {Output layer};
-    
-    \node at ((1.5*\layersep,-3.5 cm) {$\bullet\bullet\bullet$};  
-    \node at ((2.5*\layersep,-3.5 cm) {$\bullet\bullet\bullet$};  
+
+    \node at ((1.5*\layersep,-3.5 cm) {$\bullet\bullet\bullet$};
+    \node at ((2.5*\layersep,-3.5 cm) {$\bullet\bullet\bullet$};
 \end{tikzpicture}
 \caption{\label{fig:2}The neural network of figure \ref{fig:1} with dropout taken into account for both the hidden layers and the input. Usually, a different (lower) probability for turning off a neuron is adopted for the input than the one adopted for the hidden layers.}
 \end{center}
@@ -558,7 +558,7 @@ This amounts to do the following change: for $\nu\in \llbracket 1,N-1\rrbracket$
 \begin{align}
 h^{(\nu)}_{f}=\null&m_f^{(\nu)} g\left(a_f^{(\nu)}\right)
 \end{align}
-with $m_f^{(i)}$ following a $p$ Bernoulli distribution with usually $p=\frac15$ for the mask of the input layer and $p=\frac12$ otherwise. Dropout\cite{Srivastava:2014:DSW:2627435.2670313} has been the most successful regularization technique until the appearance of Batch Normalization. 
+with $m_f^{(i)}$ following a $p$ Bernoulli distribution with usually $p=\frac15$ for the mask of the input layer and $p=\frac12$ otherwise. Dropout\cite{Srivastava:2014:DSW:2627435.2670313} has been the most successful regularization technique until the appearance of Batch Normalization.
 
 \subsection{Batch Normalization}
 
@@ -583,7 +583,7 @@ y^{(t)(\nu)}_{f}&=\gamma^{(\nu)}_f\,\tilde{h}_{f}^{(t)(\nu)}+\beta^{(\nu)}_f
 %
 =\tilde{\gamma}^{(\nu)}_f\,h_{f}^{(t)(\nu)}+\tilde{\beta}^{(\nu)}_f\;.
 \end{align}
-The presence of the $\beta^{(\nu)}_f$ coefficient is what pushed us to get rid of the bias term, as it is naturally included in batchnorm. During training, one must compute a running sum for the mean and the variance, that will serve for the evaluation of the cross-validation and the test set (calling $e$ the number of iterations/epochs) 
+The presence of the $\beta^{(\nu)}_f$ coefficient is what pushed us to get rid of the bias term, as it is naturally included in batchnorm. During training, one must compute a running sum for the mean and the variance, that will serve for the evaluation of the cross-validation and the test set (calling $e$ the number of iterations/epochs)
 \begin{align}
 \mathbb{E}\left[h_{f}^{(t)(\nu+1)}\right]_{e+1} &=
 %
@@ -601,7 +601,7 @@ and what will be used at test time is
 %
 \frac{T_{{\rm mb}}}{T_{{\rm mb}}-1}\mathbb{V}ar\left[h_{f}^{(t)(\nu)}\right]\;.
 \end{align}
-so that at test time 
+so that at test time
 \begin{align}
 y^{(t)(\nu)}_{f}&=\gamma^{(\nu)}_f\,\frac{h_{f}^{(t)(\nu)}-E[h_{f}^{(t)(\nu)}]}{\sqrt{Var\left[h_{f}^{(t)(\nu)}\right]+\epsilon}}+\beta^{(\nu)}_f\;.
 \end{align}
@@ -615,7 +615,7 @@ Backpropagation\cite{LeCun:1998:EB:645754.668382} is the standard technique to d
 
 \subsection{Backpropagate through Batch Normalization} \label{sec:Backpropbatchnorm}
 
-Backpropagation introduces a new gradient 
+Backpropagation introduces a new gradient
 \begin{align}
 \delta^f_{f'}J^{(tt')(\nu)}_{f}&=\frac{\partial y^{(t')(\nu)}_{f'}}{\partial h_{f}^{(t)(\nu+1)}}\;.
 \end{align}
@@ -632,7 +632,7 @@ J^{(tt')(\nu)}_{f}&=\tilde{\gamma}^{(\nu)}_f\ \left[\delta^{t'}_t-
 
 To backpropagate the loss error through the FNN, it is very useful to compute a so-called error rate
 \begin{align}
-\delta^{(t)(\nu)}_f&= \frac{\partial }{\partial  a_{f}^{(t)(\nu)}}J(\Theta)\;,
+\delta^{(t)(\nu)}_f&= \frac{\partial }{\partial a_{f}^{(t)(\nu)}}J(\Theta)\;,
 \end{align}
 We show in Appendix \ref{sec:appenbplayers} that $\forall \nu \in \llbracket 0,N-2\rrbracket$
 \begin{align}
@@ -648,11 +648,11 @@ and for the cross entropy loss function
 \begin{align}
 \delta^{(t)(N-1)}_{f}&= \frac{1}{T_{{\rm mb}}}\left(h_{f}^{(t)(N)}-\delta^f_{y^{(t)}}\right)\;.
 \end{align}
-To unite the notation of chapters \ref{sec:chapterFNN}, \ref{sec:chapterCNN} and \ref{sec:chapterRNN}, we will call 
+To unite the notation of chapters \ref{sec:chapterFNN}, \ref{sec:chapterCNN} and \ref{sec:chapterRNN}, we will call
 \begin{align}
 \mathcal{H}^{(t)(\nu+1)}_{ff'}&=g'\left(a_{f}^{(t)(\nu)}\right)\Theta^{(\nu+1)f'}_{f}\;,
 \end{align}
-so that the update rule for the error rate reads 
+so that the update rule for the error rate reads
 \begin{align}
 \delta^{(t)(\nu)}_f&=
 %
@@ -671,7 +671,7 @@ Thanks to the computation of the error rates, the derivation of the error rate i
 %
 =\sum_{t=0}^{T_{{\rm mb}}-1}\delta^{(t)(\nu)}_f y^{(t)(\nu-1)}_{f'}\;.
 \end{align}
-and 
+and
 \begin{align}
 \Delta^{\Theta(0)f}_{f'}&=\sum_{t=0}^{T_{{\rm mb}}-1}\delta^{(t)(0)}_f h^{(t)(0)}_{f'}\;.
 \end{align}
@@ -726,7 +726,7 @@ All the calculations in this note have been performed using this gradient descen
 
 \section{Gradient optimization techniques}
 
-Once the gradients for backpropagation have been computed, the question of how to add them to the existing weights arise. The most natural choice would be to take 
+Once the gradients for backpropagation have been computed, the question of how to add them to the existing weights arise. The most natural choice would be to take
 \begin{align}
 \Theta^{(\nu)f}_{f'}&=\Theta^{(\nu)f}_{f'}-\eta\Delta^{\Theta(i)f}_{f'}\;.
 \end{align}
@@ -751,7 +751,7 @@ Nesterov accelerated gradient\cite{nesterov1983method} is a slight modification 
 \begin{align}
 v_{{\rm e}}&=\gamma v_{{\rm e-1}}+\eta \Delta^{\Theta-\gamma v_{{\rm e-1}}}\;,
 \end{align}
-and then  again
+and then again
 \begin{align}
 \Theta_e&=\Theta_{e-1}-v_{{\rm e}}\;.
 \end{align}
@@ -806,7 +806,7 @@ with $\beta_1$ and $\beta_2$ parameters usually respectively set to $0.9$ and $0
 \begin{align}
 \hat{m}_{{\rm e}}&= \frac{m_{{\rm e}}}{1-\beta_1^{e}}\;,&
 %
-\hat{v}_{{\rm e}}&=  \frac{v_{{\rm e}}}{1-\beta_2^{e}}\;.
+\hat{v}_{{\rm e}}&= \frac{v_{{\rm e}}}{1-\beta_2^{e}}\;.
 \end{align}
 before entering into the update rule
 \begin{align}
@@ -820,7 +820,7 @@ $\alpha_0$ determined by cross-validation, and $\eta_0$ usually initialized in t
 
 \section{Weight initialization}
 
-Without any regularization, training a neural network can be a daunting task because of the fine-tuning of the weight initial conditions. This is one of the reasons why neural networks have experienced out of mode periods. Since dropout and Batch normalization, this issue is less pronounced, but one should not initialize the weight in a symmetric fashion (all zero for instance), nor should one initialize them too large. A good heuristic is 
+Without any regularization, training a neural network can be a daunting task because of the fine-tuning of the weight initial conditions. This is one of the reasons why neural networks have experienced out of mode periods. Since dropout and Batch normalization, this issue is less pronounced, but one should not initialize the weight in a symmetric fashion (all zero for instance), nor should one initialize them too large. A good heuristic is
 \begin{align}
 \left[\Theta^{(\nu)f'}_f\right]_{{\rm init}}&=\sqrt{\frac{6}{F_i+F_{i+1}}}\times\mathcal{N}(0,1)\;.
 \end{align}
@@ -841,21 +841,21 @@ we instantaneously get
 Things are more complicated for the cross-entropy loss function of a regression problem transformed into a multi-classification task.
 Assuming that we have $C$ classes for all the values that we are trying to predict, we get
 \begin{align}
-\delta^{(t)(N-1)}_{fc}&= \frac{\partial }{\partial  a_{fc}^{(t)(N-1)}}J(\Theta)
+\delta^{(t)(N-1)}_{fc}&= \frac{\partial }{\partial a_{fc}^{(t)(N-1)}}J(\Theta)
 %
 =\sum_{t'=0}^{T_{{\rm mb}}-1}\sum_{f'=0}^{F_N-1}\sum_{d=0}^{C-1}
 %
-\frac{\partial  h_{f'd}^{(t')(N)}}{\partial  a_{fc}^{(t)(N-1)}}
+\frac{\partial h_{f'd}^{(t')(N)}}{\partial a_{fc}^{(t)(N-1)}}
 %
- \frac{\partial }{\partial  h_{f'd}^{(t')(N)}}J(\Theta)\;.
+ \frac{\partial }{\partial h_{f'd}^{(t')(N)}}J(\Theta)\;.
 \end{align}
 Now
 \begin{align}
- \frac{\partial }{\partial  h_{f'd}^{(t')(N)}}J(\Theta)&=-\frac{\delta^{d}_{ y_{f'}^{(t')}}}{T_{{\rm mb}} h_{f'd}^{(t')(N)}}\;,
+ \frac{\partial }{\partial h_{f'd}^{(t')(N)}}J(\Theta)&=-\frac{\delta^{d}_{ y_{f'}^{(t')}}}{T_{{\rm mb}} h_{f'd}^{(t')(N)}}\;,
 \end{align}
 and
 \begin{align}
-\frac{\partial  h_{f'd}^{(t')(N)}}{\partial  a_{fc}^{(t)(N-1)}}&=
+\frac{\partial h_{f'd}^{(t')(N)}}{\partial a_{fc}^{(t)(N-1)}}&=
 %
 \delta^f_{f'}\delta^{t}_{t'} \left(\delta^c_d h_{fc}^{(t)(N)}- h_{fc}^{(t)(N)} h_{fd}^{(t)(N)}\right)\;,
 \end{align}
@@ -872,23 +872,23 @@ For a true classification problem, we easily deduce
 \delta^{(t)(N-1)}_{fc}&=\frac{1}{T_{{\rm mb}}}\left( h_{f}^{(t)(N)}-\delta^{f}_{ y^{(t)}}\right)\;.
 \end{align}
 
-\section{Backprop through hidden layers}  \label{sec:appenbplayers}
+\section{Backprop through hidden layers} \label{sec:appenbplayers}
 
 To go further we need
 \begin{align}
-\delta^{(t)(\nu)}_f&= \frac{\partial }{\partial  a_{f}^{(t)(\nu)}}J^{(t)}(\Theta)=
+\delta^{(t)(\nu)}_f&= \frac{\partial }{\partial a_{f}^{(t)(\nu)}}J^{(t)}(\Theta)=
 %
 \sum_{t'=0}^{T_{{\rm mb}}-1}\sum_{f'=0}^{F_{\nu+1}-1}
 %
- \frac{\partial  a_{f'}^{(t')(\nu+1)}}{\partial  a_{f}^{(t)(\nu)}} \delta^{(t')(\nu+1)}_{f'}\notag\\
+ \frac{\partial a_{f'}^{(t')(\nu+1)}}{\partial a_{f}^{(t)(\nu)}} \delta^{(t')(\nu+1)}_{f'}\notag\\
 %
 &=\sum_{t'=0}^{T_{{\rm mb}}-1}\sum_{f'=0}^{F_{\nu+1}-1}\sum^{F_\nu}_{f''=0}\Theta^{(\nu+1)f'}_{f''}
 %
-\frac{\partial y^{(t')(\nu)}_{f''} }{\partial  a_{f}^{(t)(\nu)}} \delta^{(t')(\nu+1)}_{f'}\notag\\
+\frac{\partial y^{(t')(\nu)}_{f''} }{\partial a_{f}^{(t)(\nu)}} \delta^{(t')(\nu+1)}_{f'}\notag\\
 %
 &=\sum_{t'=0}^{T_{{\rm mb}}-1}\sum_{f'=0}^{F_{\nu+1}-1}\sum^{F_\nu}_{f''=0}\Theta^{(\nu+1)f'}_{f''}
 %
-\frac{\partial y^{(t')(\nu)}_{f''} }{\partial  h_{f}^{(t)(\nu+1)}}
+\frac{\partial y^{(t')(\nu)}_{f''} }{\partial h_{f}^{(t)(\nu+1)}}
 %
 g'\left(a_{f}^{(t)(\nu)}\right) \delta^{(t')(\nu+1)}_{f'}\;,
 \end{align}
@@ -909,7 +909,7 @@ We saw in section \ref{sec:Backpropbatchnorm} that batch normalization implies a
 %
 \gamma^{(\nu)}_f\frac{\partial \tilde{h}_{f'}^{(t)(\nu)}}{\partial h_{f}^{(t)(\nu+1)}}\;.
 \end{align}
-We propose to do just that in this section. Firstly 
+We propose to do just that in this section. Firstly
 \begin{align}
 \frac{\partial h^{(t')(\nu+1)}_{f'}}{\partial h_{f}^{(t)(\nu+1)}}&=\delta^{t'}_t\delta^{f'}_f\;,&
 %
@@ -998,7 +998,7 @@ as well as $h^{(t)(\nu+2)}_f=g\left(a_{f}^{(t)(\nu+1)}\right)$ and $h^{(t)(\nu+1
 \begin{align}
 y_{f}^{(t)(\nu+1)}&=\gamma_f^{(\nu+1)}\tilde{h}_f^{\nu+2}+\beta_f^{(\nu+1)}+y^{(t)(\nu-1)}_{f}\;.
 \end{align}
-The choice of skipping two and not just one layer has become a standard for empirical reasons, so as the decision not to weight the two paths (the trivial skip one and the two FNN layer one) by a parameter to be learned by backpropagation 
+The choice of skipping two and not just one layer has become a standard for empirical reasons, so as the decision not to weight the two paths (the trivial skip one and the two FNN layer one) by a parameter to be learned by backpropagation
 \begin{align}
 y_{f}^{(t)(\nu+1)}&=\alpha\left(\gamma_f^{(\nu+1)}\tilde{h}_f^{(t)(\nu+2)}+\beta_f^{(\nu+1)}\right)
 %
@@ -1010,19 +1010,19 @@ This choice is called highway nets\cite{citeulike:14070430}, and it remains to b
 %
 \sum_{t'=0}^{T_{{\rm mb}}-1}\sum_{f'=0}^{F_{\nu}-1}
 %
- \frac{\partial  a_{f'}^{(t')(\nu)}}{\partial  a_{f}^{(t)(\nu-1)}} \delta^{(t')(\nu)}_{f'}
+ \frac{\partial a_{f'}^{(t')(\nu)}}{\partial a_{f}^{(t)(\nu-1)}} \delta^{(t')(\nu)}_{f'}
  %
 +\sum_{t'=0}^{T_{{\rm mb}}-1}\sum_{f'=0}^{F_{\nu+2}-1}
 %
- \frac{\partial  a_{f'}^{(t')(\nu+2)}}{\partial  a_{f}^{(t)(\nu-1)}} \delta^{(t')(\nu+2)}_{f'}\notag\\
+ \frac{\partial a_{f'}^{(t')(\nu+2)}}{\partial a_{f}^{(t)(\nu-1)}} \delta^{(t')(\nu+2)}_{f'}\notag\\
 %
 &=\sum_{t'=0}^{T_{{\rm mb}}-1}\sum_{f'=0}^{F_{\nu}-1}\sum^{F_{\nu-1}-1}_{f''=0}\Theta^{(\nu)f'}_{f''}
 %
-\frac{\partial y^{(t')(\nu-1)}_{f''} }{\partial  a_{f}^{(t)(\nu-1)}} \delta^{(t')(\nu)}_{f'}\notag\\
+\frac{\partial y^{(t')(\nu-1)}_{f''} }{\partial a_{f}^{(t)(\nu-1)}} \delta^{(t')(\nu)}_{f'}\notag\\
 %
 &+\sum_{t'=0}^{T_{{\rm mb}}-1}\sum_{f'=0}^{F_{\nu+2}-1}\sum^{F_{\nu-1}-1}_{f''=0}\Theta^{(\nu+2)f'}_{f''}
 %
-\frac{\partial y^{(t')(\nu+1)}_{f''} }{\partial  a_{f}^{(t)(\nu-1)}} \delta^{(t')(\nu+2)}_{f'}\notag\\
+\frac{\partial y^{(t')(\nu+1)}_{f''} }{\partial a_{f}^{(t)(\nu-1)}} \delta^{(t')(\nu+2)}_{f'}\notag\\
 %
 &=g'\left(a_{f}^{(t)(\nu-1)}\right)
 %
@@ -1047,7 +1047,7 @@ so that
 \sum_{f'=0}^{F_{\nu+2}-1}\Theta^{(\nu+2)f'}_{f''}\delta^{(t')(\nu+2)}_{f'}\right]\;.
 \end{align}
 
-This formulation has one advantage: it totally preserves the usual FNN layer structure of a weight averaging (WA) followed by an activation function (AF) and then a batch normalization operation (BN). It nevertheless has one disadvantage: the backpropagation gradient does not really flow smoothly from one error rate to the other. In the following section we will present the standard ResNet formulation of that takes the problem the other way around : it allows the gradient to flow smoothly at the cost of "breaking" the natural FNN building block. 
+This formulation has one advantage: it totally preserves the usual FNN layer structure of a weight averaging (WA) followed by an activation function (AF) and then a batch normalization operation (BN). It nevertheless has one disadvantage: the backpropagation gradient does not really flow smoothly from one error rate to the other. In the following section we will present the standard ResNet formulation of that takes the problem the other way around : it allows the gradient to flow smoothly at the cost of "breaking" the natural FNN building block.
 
 \section{FNN ResNet (more standard presentation)} \label{sec:ResnetFNN2}
 
@@ -1076,7 +1076,7 @@ and the updated error rate reads
 
 \section{Matrix formulation}
 
-In all this chapter, we adopted an "index" formulation of the FNN. This has upsides and downsides. On the positive side, one can take the formula as written here and go implement them. On the downside, they can be quite cumbersome to read. 
+In all this chapter, we adopted an "index" formulation of the FNN. This has upsides and downsides. On the positive side, one can take the formula as written here and go implement them. On the downside, they can be quite cumbersome to read.
 
 \vspace{0.2cm}
 
