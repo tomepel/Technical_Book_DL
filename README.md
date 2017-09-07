@@ -34,4 +34,4 @@ I end this list with my employer, Mediamobile, which has been kind enough to let
 
 # Contact
 
-If you detect any typo, error (as I am sure that there unfortunately still are) or feel that I forgot to cite an important source, don't hesitate to email me:  thomas.epelbaum@mediamobile.com 
+If you detect any typo, error (as I am sure that there unfortunately still are), or feel that I forgot to cite an important source, don't hesitate to email me:  thomas.epelbaum@mediamobile.com 
