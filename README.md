@@ -4,7 +4,7 @@ This note presents in a technical though hopefully pedagogical way the three mos
 
 For each network, their fundamental building blocks are detailed. The forward pass and the update rules for the backpropagation algorithm are then derived in full.
 
-The pdf of the whole document can be download directly: White_book.pdf.
+The pdf of the whole document can be downloaded directly: [White_book.pdf](https://github.com/tomepel/Technical_Book_DL/raw/master/White_book.pdf).
 
 Otherwise, all the figures contained in the note are joined in this repo, as well as the tex files needed for compilation. Just don't forget to cite the source if you use any of this material! :)
 
