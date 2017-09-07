@@ -71,7 +71,7 @@
     \node at ((1.5*\layersep,-3.5 cm) {$\bullet\bullet\bullet$};  
     \node at ((2.5*\layersep,-3.5 cm) {$\bullet\bullet\bullet$};  
 \end{tikzpicture}
-\caption{\label{fig:1}Neural Network with $N+1$ layers ($N-1$ hidden layers). for simplicity of notations, the index referencing the training set has not been indicated. Shallow architectures use only one hidden layer. Deep learning amounts to take several hidden layers, usually containing the same number of hidden neurons. This number should be on the ballpark of the average of the number of input and output variables.}
+\caption{\label{fig:1}Neural Network with $N+1$ layers ($N-1$ hidden layers). For simplicity of notations, the index referencing the training set has not been indicated. Shallow architectures use only one hidden layer. Deep learning amounts to take several hidden layers, usually containing the same number of hidden neurons. This number should be on the ballpark of the average of the number of input and output variables.}
 \end{center}
 \end{figure}
 
@@ -161,7 +161,7 @@ where $\nu\in\llbracket 0,N-2\rrbracket$, $f\in \llbracket 0,F_{\nu+1}-1\rrbrack
 
 \subsection{The sigmoid function}
 
-the sigmoid function takes its value in $]0,1[$ and reads
+The sigmoid function takes its value in $]0,1[$ and reads
 \begin{align}
 g(x)&=\sigma(x)=\frac{1}{1+e^{-x}}\;.
 \end{align}
@@ -182,7 +182,7 @@ This activation function is not much used nowadays (except in RNN-LSTM networks 
 
 \subsection{The tanh function}
 
-the tanh function takes its value in $]-1,1[$ and reads
+The tanh function takes its value in $]-1,1[$ and reads
 \begin{align}
 g(x)&=\tanh(x)=\frac{1-e^{-2x}}{1+e^{-2x}}\;.
 \end{align}
@@ -206,7 +206,7 @@ It is nevertherless still used in the standard formulation of the RNN-LSTM model
 \subsection{The ReLU function}
 
 
-the ReLU --for Rectified Linear Unit -- function takes its value in $[0,+\infty[$ and reads
+The ReLU -- for Rectified Linear Unit -- function takes its value in $[0,+\infty[$ and reads
 \begin{align}
 g(x)&={\rm ReLU}(x)=\begin{cases} 
       x & x\geq 0 \\
@@ -238,7 +238,7 @@ This activation function is the most extensively used nowadays. Two of its more 
 \subsection{The leaky-ReLU function}
 
 
-the  leaky-ReLU --for Linear Rectified Linear Unit -- function takes its value in $]-\infty,+\infty[$ and is a slight modification of the ReLU that allows non-zero value for the hidden neuron whatever the $x$ value. It reads
+The leaky-ReLU --for Linear Rectified Linear Unit -- function takes its value in $]-\infty,+\infty[$ and is a slight modification of the ReLU that allows non-zero value for the hidden neuron whatever the $x$ value. It reads
 \begin{align}
 g(x)&={\rm l-ReLU}(x)=\begin{cases} 
       x & x\geq 0 \\
@@ -262,7 +262,8 @@ Its derivative is
 \caption{\label{fig:lrelu} the leaky-ReLU function and its derivative.}
 \end{figure}
 
-A variant of the leaky-ReLU can also be found in the litterature : the Parametric-ReLU, where the arbirtrary $0.01$ in the definition of the leaky-ReLU is replaced by an $\alpha$ coefficient, that can be computed via backpropagation
+A variant of the leaky-ReLU can also be found in the literature : the Parametric-ReLU, where the arbitrary $0.01$ in the definition of the leaky-ReLU is replaced by an $\alpha$ coefficient, that can be
+computed via backpropagation.
 \begin{align}
 g(x)&={\rm Parametric-ReLU}(x)=\begin{cases} 
       x & x\geq 0 \\
@@ -318,7 +319,7 @@ As illustrated in figure \ref{fig:1}, a regular FNN is composed by several speci
 The input layer is one of the two places where the data at disposal for the problem at hand come into place. In this chapter, we will be considering a input of size $F_0$, denoted $X^{(t)}_{f}$, with\footnote{
 To train the FNN, we jointly compute the forward and backward pass for $T_{{\rm mb}}$ samples of the training set, with $T_{{\rm mb}}\ll T_{{\rm train}}$. In the following we will thus have $t\in \llbracket 0, T_{{\rm mb}}-1\rrbracket$.
 }
- $t\in \llbracket 0, T_{{\rm mb}}-1\rrbracket$ (size of the  mini-batch, more on that when we will be talking about gradient descent techniques), and $f \in \llbracket 0, F_0-1\rrbracket$. Given the problem at hand, a common procedure could be to center the input following the  procedure
+ $t\in \llbracket 0, T_{{\rm mb}}-1\rrbracket$ (size of the  mini-batch, more on that when we will be talking about gradient descent techniques), and $f \in \llbracket 0, F_0-1\rrbracket$. Given the problem at hand, a common procedure could be to center the input following the procedure
 \begin{align}
 \tilde{X}^{(t)}_{f}&=X^{(t)}_{f}-\mu_{f}\;,
 \end{align}
@@ -333,7 +334,7 @@ X^{(t)}_{f}&=h^{(t)(0)}_{f}\;.
 
 \subsection{Fully connected  layer}
 
-The fully connected operation is just the conjonction of the weight averaging and the activation procedure. Namely, $\forall \nu\in \llbracket 0,N-1 \rrbracket$
+The fully connected operation is just the conjunction of the weight averaging and the activation procedure. Namely, $\forall \nu\in \llbracket 0,N-1 \rrbracket$
 \begin{align}
 a_{f}^{(t)(\nu)}&=\sum^{F_\nu-1}_{f'=0}\Theta^{(\nu)f}_{f'}h^{(t)(\nu)}_{f'}\;.\label{eq:Weightavg}
 \end{align}
@@ -347,11 +348,11 @@ for the case where $\nu=N-1$, the activation function is replaced by an output f
 
 \subsection{Output layer}
 
-The ouput of the FNN reads
+The output of the FNN reads
  \begin{align}
 h_{f}^{(t)(N)}&=o(a_{f}^{(t)(N-1)})\;,
 \end{align}
-where $o$ is called the output function. In the case of the Euclidean loss function, the output function is just the identity. In a classification task, $o$ is the softmax function
+where $o$ is called the output function. In the case of the Euclidean loss function, the output function is just the identity. In a classification task, $o$ is the softmax function.
 \begin{align}
 o\left(a^{(t)(N-1)}_f\right)&=\frac{e^{a^{(t)(N-1)}_f}}{\sum\limits^{F_{N-1}-1}_{f'=0}e^{a^{(t)(N-1)}_{f'}}}
 \end{align}
@@ -388,7 +389,7 @@ On of the main difficulties when dealing with deep learning techniques is to get
 
 \subsection{L2 regularization}
 
-L2 regularization is the most common regularization technique that on can find in the litterature. It amounts to add a regularizing term to the loss function in the following way
+L2 regularization is the most common regularization technique that on can find in the literature. It amounts to add a regularizing term to the loss function in the following way
 \begin{align}
 J_{{\rm L2}}(\Theta)&=\lambda_{{\rm L2}} \sum_{\nu=0}^{N-1}\left\|\Theta^{(\nu)}\right\|^2_{{\rm L2}}
 %
@@ -444,7 +445,7 @@ J_{{\rm L1}}(\Theta)&=\lambda_{{\rm L1}} \sum_{\nu=0}^{N-1}\left\|\Theta^{(\nu)}
 %
 \left|\Theta^{(\nu)f}_{f'}\right|\;.
 \end{align}
-It can be used in conjonction with L2 regularization, but again these techniques are not sufficient on their own. A typical value of $\lambda_{{\rm L1}}$ is in the range $10^{-4}-10^{-2}$. Following the same line as in the previous section, one can show that L1 regularization is equivalent to Bayesian inference with a Laplacian prior on the weights
+It can be used in conjunction with L2 regularization, but again these techniques are not sufficient on their own. A typical value of $\lambda_{{\rm L1}}$ is in the range $10^{-4}-10^{-2}$. Following the same line as in the previous section, one can show that L1 regularization is equivalent to Bayesian inference with a Laplacian prior on the weights
 \begin{align}
 \mathcal{F}\left(\Theta^{(\nu)f}_{f'}\middle| 0,\lambda_{{\rm L1}}^{-1}\right)&=
 %
@@ -548,7 +549,7 @@ A simple procedure allows for better backpropagation performance for classificat
     \node at ((1.5*\layersep,-3.5 cm) {$\bullet\bullet\bullet$};  
     \node at ((2.5*\layersep,-3.5 cm) {$\bullet\bullet\bullet$};  
 \end{tikzpicture}
-\caption{\label{fig:2}The neural network of figure \ref{fig:1} with dropout taken into account for both the hidden layers and the input. Usually, a different (lower) propability for turning off a neuron is adopted for the input thanthe one adopted for the hidden layers.}
+\caption{\label{fig:2}The neural network of figure \ref{fig:1} with dropout taken into account for both the hidden layers and the input. Usually, a different (lower) probability for turning off a neuron is adopted for the input than the one adopted for the hidden layers.}
 \end{center}
 \end{figure}
 
@@ -557,11 +558,11 @@ This amounts to do the following change: for $\nu\in \llbracket 1,N-1\rrbracket$
 \begin{align}
 h^{(\nu)}_{f}=\null&m_f^{(\nu)} g\left(a_f^{(\nu)}\right)
 \end{align}
-with $m_f^{(i)}$ following a $p$ Bernouilli distribution with usually $p=\frac15$ for the mask of the input layer and $p=\frac12$ otherwise. Dropout\cite{Srivastava:2014:DSW:2627435.2670313} has been the most succesful regularization technique until the appearance of Batch Normalization. 
+with $m_f^{(i)}$ following a $p$ Bernoulli distribution with usually $p=\frac15$ for the mask of the input layer and $p=\frac12$ otherwise. Dropout\cite{Srivastava:2014:DSW:2627435.2670313} has been the most successful regularization technique until the appearance of Batch Normalization. 
 
 \subsection{Batch Normalization}
 
-Batch normalization\cite{Ioffe2015} amounts to joinlty normalize the mini-batch set per data types, and does so at each input of a FNN layer. In the original paper, the authors argued that this step should be done after the convolutional layers, but in practice it has been shown to be more efficient after the non-linear step. In our case, we will thus consider $\forall i \in \llbracket 0,N-2\rrbracket$
+Batch normalization\cite{Ioffe2015} amounts to jointly normalize the mini-batch set per data types, and does so at each input of a FNN layer. In the original paper, the authors argued that this step should be done after the convolutional layers, but in practice it has been shown to be more efficient after the non-linear step. In our case, we will thus consider $\forall i \in \llbracket 0,N-2\rrbracket$
 \begin{align}
 \tilde{h}_{f}^{(t)(\nu)}&=\frac{h_{f}^{(t)(\nu+1)}-\hat{h}_{f}^{(\nu)}}
 %
@@ -660,7 +661,7 @@ so that the update rule for the error rate reads
 
 \subsection{Weight update}
 
-Thanks to the computation of the error rates, the derivation of the error rate is straghtforward. We indeed get $\forall \nu \in \llbracket 1,N-1\rrbracket$
+Thanks to the computation of the error rates, the derivation of the error rate is straightforward. We indeed get $\forall \nu \in \llbracket 1,N-1\rrbracket$
 \begin{align}
 \Delta^{\Theta(\nu)f}_{f'}&=\frac{1}{T_{{\rm mb}}}\sum_{t=0}^{T_{{\rm mb}}-1}
 %
@@ -697,7 +698,7 @@ The update rule for the Batchnorm coefficient can easily be computed thanks to t
 
 \section{Which data sample to use for gradient descent?}
 
-From the beginning we have denoted $T_{{\rm mb}}$ the sample of the data from which we train our model. This procedure is repeated a large number of time (each time is called an epoch). But in the litterature there exists three way to sample from the data: Full-batch, Stochastic and Mini-batch gradient descent. We explicit these terms in the following sections.
+From the beginning we have denoted $T_{{\rm mb}}$ the sample of the data from which we train our model. This procedure is repeated a large number of time (each time is called an epoch). But in the literature there exists three way to sample from the data: Full-batch, Stochastic and Mini-batch gradient descent. We explicit these terms in the following sections.
 
 \subsection{Full-batch}
 
@@ -705,7 +706,7 @@ Full-batch takes the whole training set at each epoch, such that the loss functi
 \begin{align}
 J(\Theta)&=\sum_{t=0}^{T_{{\rm train}}-1}J_{{\rm train}}(\Theta)\;.
 \end{align}
-This choice has the advantage to be numerically stable, but it so coslty in computation time that it is rarely if ever used.
+This choice has the advantage to be numerically stable, but it so costly in computation time that it is rarely if ever used.
 
 \subsection{Stochastic Gradient Descent (SGD)}
 
@@ -792,7 +793,7 @@ and the new update rule for the weights reads
 \begin{align}
 \Theta_e&=\Theta_{e-1}-\frac{\sqrt{m_{{\rm e-1}}+\epsilon}}{\sqrt{v_{{\rm e}}+\epsilon}}\Delta^{\Theta}_{e}\;.
 \end{align}
-The learning rate has been completely eliminated from the update rule, but the procedure for doing so is add hoc. The next and last optimization technique presented seems more natural and is the default choice on a number of deep learning algorithms.
+The learning rate has been completely eliminated from the update rule, but the procedure for doing so is ad hoc. The next and last optimization technique presented seems more natural and is the default choice on a number of deep learning algorithms.
 \subsection{Adam}
 
 Adam\cite{Kingma2014} keeps track of both the gradient and its square via two epoch dependent vectors
@@ -815,11 +816,11 @@ This is the optimization technique implicitly used throughout this note, alongsi
 \begin{align}
 \eta_e&=e^{-\alpha_0}\eta_{e-1}\;,
 \end{align}
-$\alpha_0$ determinde by cross-validation, and $\eta_0$ usually initialized in the range $10^{-3}-10^{-2}$.
+$\alpha_0$ determined by cross-validation, and $\eta_0$ usually initialized in the range $10^{-3}-10^{-2}$.
 
 \section{Weight initialization}
 
-Without any regularization, training a neural network can be a daunting task because of the fine-tuning of the weight initial conditions. This is one of the reasons why neural networks have experienced out of mode periods. Since dropout and Batch normalization, this issue is less pronounced, but one should not initialize the weigt in a symmetric fashion (all zero for instance), nor should one intialize them too large. A good heuristic is 
+Without any regularization, training a neural network can be a daunting task because of the fine-tuning of the weight initial conditions. This is one of the reasons why neural networks have experienced out of mode periods. Since dropout and Batch normalization, this issue is less pronounced, but one should not initialize the weight in a symmetric fashion (all zero for instance), nor should one initialize them too large. A good heuristic is 
 \begin{align}
 \left[\Theta^{(\nu)f'}_f\right]_{{\rm init}}&=\sqrt{\frac{6}{F_i+F_{i+1}}}\times\mathcal{N}(0,1)\;.
 \end{align}
@@ -902,7 +903,7 @@ so that
 \section{Backprop through BatchNorm} \label{sec:appenbatchnorm}
 
 
-We saw in section \ref{sec:Backpropbatchnorm} that batch normalization implies among other things to compute the follwowing gradient.
+We saw in section \ref{sec:Backpropbatchnorm} that batch normalization implies among other things to compute the following gradient.
 \begin{align}
 \frac{\partial y^{(t')(\nu)}_{f'}}{\partial h_{f}^{(t)(\nu+1)}}&=
 %
@@ -1003,7 +1004,7 @@ y_{f}^{(t)(\nu+1)}&=\alpha\left(\gamma_f^{(\nu+1)}\tilde{h}_f^{(t)(\nu+2)}+\beta
 %
 +\left( 1-\alpha\right)y^{(t)(\nu-1)}_{f'}\;.
 \end{align}
-This choice is called highway nets\cite{citeulike:14070430}, and it remains to be theoretically understood why it leads to worse perfomance than ResNet, as the latter is a particular instance of the former. Going back to the ResNet backpropagation algorithm, this changes the gradient through the skip connection in the following way
+This choice is called highway nets\cite{citeulike:14070430}, and it remains to be theoretically understood why it leads to worse performance than ResNet, as the latter is a particular instance of the former. Going back to the ResNet backpropagation algorithm, this changes the gradient through the skip connection in the following way
 \begin{align}
 \delta^{(t)(\nu-1)}_f&=
 %
@@ -1046,7 +1047,7 @@ so that
 \sum_{f'=0}^{F_{\nu+2}-1}\Theta^{(\nu+2)f'}_{f''}\delta^{(t')(\nu+2)}_{f'}\right]\;.
 \end{align}
 
-This formulation has one advantage: it totally preserves the usual FNN layer structure of a weight averaging (WA) followed by an activation function (AF) and then a batch normalization operation (BN). It nevertheless has one disadvantage: the backpropagation gradient does not really flow smootly from one error rate to the other. In the following section we will present the standard ResNet formulation of that takes the problem the other way around : it allows the gradient to flow smoothly at the cost of "breaking" the natural FNN building block. 
+This formulation has one advantage: it totally preserves the usual FNN layer structure of a weight averaging (WA) followed by an activation function (AF) and then a batch normalization operation (BN). It nevertheless has one disadvantage: the backpropagation gradient does not really flow smoothly from one error rate to the other. In the following section we will present the standard ResNet formulation of that takes the problem the other way around : it allows the gradient to flow smoothly at the cost of "breaking" the natural FNN building block. 
 
 \section{FNN ResNet (more standard presentation)} \label{sec:ResnetFNN2}
 
@@ -1087,5 +1088,5 @@ In this case the weight averaging procedure (\ref{eq:Weightavg}) can be written 
 \begin{align}
 a_f^{(t)(\nu)}=\sum_{f'=0}^{F_\nu-1}\Theta^{(\nu)f}_{f'}h^{(\nu)}_{f't}&\mapsto a^{(\nu)}=\Theta^{(\nu)}h^{(\nu)}\;.
 \end{align}
-The upsides and downsides of this formulation are the exact opposite of the index one: what we gained in readibility, we lost in terms of direct implementation in low level programming languages (C for instance). For FNN, one can use a high level programming language (like python), but this will get quite intractable when we talk about Convolutional networks. Since the whole point of the present work was to introduce the index notation, and as one can easily find numerous derivation of the backpropagation update rules in matrix form, we will stick with the index notation in all the following, and now turn our attention to convolutional networks.
+The upsides and downsides of this formulation are the exact opposite of the index one: what we gained in readability, we lost in terms of direct implementation in low level programming languages (C for instance). For FNN, one can use a high level programming language (like python), but this will get quite intractable when we talk about Convolutional networks. Since the whole point of the present work was to introduce the index notation, and as one can easily find numerous derivation of the backpropagation update rules in matrix form, we will stick with the index notation in all the following, and now turn our attention to convolutional networks.
 \end{subappendices}
