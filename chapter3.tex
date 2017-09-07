@@ -140,7 +140,7 @@ In figure \ref{fig:1}, we present the RNN architecture in a schematic way
 \end{center}
 \end{figure}
 
-The real novelty of this type of neural network is that the fact that we are trying to predict a time serie is encoded in the very architecture of the network. RNN have first been introduced mostly to predict the next words in a sentance (classification task), hence the notion of ordering in time of the prediction. But this kind of network architecture can also be applied to regression problems. Among others things one can think of stock prices evolution, or temperature forecasting. In contrast to the precedent neural networks that we introduced, where we defined (denoting $\nu$ as in previous chapters the layer index in the spatial direction)
+The real novelty of this type of neural network is that the fact that we are trying to predict a time series is encoded in the very architecture of the network. RNN have first been introduced mostly to predict the next words in a sentence (classification task), hence the notion of ordering in time of the prediction. But this kind of network architecture can also be applied to regression problems. Among others things one can think of stock prices evolution, or temperature forecasting. In contrast to the precedent neural networks that we introduced, where we defined (denoting $\nu$ as in previous chapters the layer index in the spatial direction)
 \begin{align}
 a^{(t)(\nu)}_{f}&= \text{ Weight Averaging } \left(h^{(t)(\nu)}_{f}\right)\;,\notag\\
 %
@@ -155,7 +155,7 @@ h^{(t)(\nu\tau)}_{f}&= \text{ Activation function } \left(c^{(t)(\nu \tau)}_{f}\
 
 \subsection{Backward pass in a RNN-LSTM}
 
-The backward pass in a RNN-LSTM has to respect a certain time order, as illustrated in the following figure
+The backward pass in a RNN-LSTM has to respect a certain time order, as illustrated in the following figure.
 
 \begin{figure}[H]
 \begin{center}
@@ -286,7 +286,7 @@ These part of the RNN-LSTM networks just experiences trivial modifications. Let 
 
 \subsection{Input layer}
 
-In a RNN-LSTM, the input layer is recursively defined as 
+In a RNN-LSTM, the input layer is recursively defined as
 \begin{align}
 h^{(t)(0\tau+1)}_{f}&=\left(\tilde{h}^{(t)(0\tau)}_{f},h^{(t)(N-1\tau)}_{f}\right)\;.
 \end{align}
@@ -312,7 +312,7 @@ and for a classification task
 \begin{align}
 J(\Theta)&=-\frac{1}{T_{{\rm mb}}}\sum_{t=0}^{T_{{\rm mb}}-1}\sum_{\tau=0}^{T-1}\sum_{c=0}^{C-1}
 %
-\delta^{c}_{y^{(t)(\tau)}_c}  \ln \left(h^{(t)( N\tau)}_f\right)\;.
+\delta^{c}_{y^{(t)(\tau)}_c} \ln \left(h^{(t)( N\tau)}_f\right)\;.
 \end{align}
 
 
@@ -343,12 +343,12 @@ And here is how the output of the hidden layer represented in \ref{fig:RNN hidde
 \end{figure}
 
 
-Lest us now mathematically express what is reprensented in figures \ref{fig:RNN hidden unit} and \ref{fig:RNN interaction}.
+Lest us now mathematically express what is represented in figures \ref{fig:RNN hidden unit} and \ref{fig:RNN interaction}.
 
 \subsection{Forward pass in a RNN}
 
  In a RNN, the update rules read for the first time slice (spatial layer at the extreme left of figure \ref{fig:RNN architecture})
- 
+
 \begin{align}
 h^{(t)(\nu\tau)}_f&=\tanh\left(\sum_{f'=0}^{F_{{\nu-1}}-1}\Theta^{\nu(\nu)f}_{f'}
 %
@@ -367,7 +367,7 @@ h^{(t)(\nu\tau-1)}_{f'}\right)\;.
 
 \subsection{Backpropagation in a RNN}
 
-The backpropagation philosophy will remain unchanged : find the error rate updates, from which one can deduce the weight updates. But as for the hidden layers, the $\delta$ now have both a spatial and a temporal component. We will thus have to compute 
+The backpropagation philosophy will remain unchanged : find the error rate updates, from which one can deduce the weight updates. But as for the hidden layers, the $\delta$ now have both a spatial and a temporal component. We will thus have to compute
 \begin{align}
 \delta^{(t)( \nu\tau)}_f&=\frac{\delta}{\delta h^{(t)( \nu+1\tau)}_f }J(\Theta)\;,
 \end{align}
@@ -375,7 +375,7 @@ to deduce
 \begin{align}
 \Delta^{\Theta{\rm index}f}_{f'}&=\frac{\delta}{\delta \Delta^{\Theta{\rm index}f}_{f'} }J(\Theta)\;,
 \end{align}
-where the index can either be nothing (weights of the ouput layers), $\nu(\nu)$ (weights between two spatially connected layers) or  $\tau(\nu)$ (weights between two temporally connected layers). First, it is easy to compute (in the same way as in chapter 1 for FNN) for the MSE loss function
+where the index can either be nothing (weights of the output layers), $\nu(\nu)$ (weights between two spatially connected layers) or $\tau(\nu)$ (weights between two temporally connected layers). First, it is easy to compute (in the same way as in chapter 1 for FNN) for the MSE loss function
 \begin{align}
 \delta^{(t)(N-1\tau)}_f&= \frac{1}{T_{{\rm mb}}}\left(h_{f}^{(t)(N\tau)}-y_f^{(t)(\tau)}\right)\;,
 \end{align}
@@ -383,7 +383,7 @@ and for the cross entropy loss function
 \begin{align}
 \delta^{(t)(N-1)}_{f}&= \frac{1}{T_{{\rm mb}}}\left(h_{f}^{(t)(N\tau)}-\delta^f_{y^{(t)(\tau)}}\right)\;.
 \end{align}
-Calling 
+Calling
 \begin{align}
 \mathcal{T}_{f}^{(t)(\nu\tau)}&=1-\left(h_{f}^{(t)(\nu\tau)}\right)^2\;,
 \end{align}
@@ -393,7 +393,7 @@ and
 \end{align}
 we show in appendix \ref{sec:rnnappenderrorrate} that (if $\tau+1$ exists, otherwise the second term is absent)
 \begin{align}
-\delta^{(t)(\nu-1\tau)}_f&= 
+\delta^{(t)(\nu-1\tau)}_f&=
 %
 \sum_{t'=0}^{T_{{\rm mb}}}J^{(tt')(\nu\tau)}_f\sum_{\epsilon=0}^{1}\sum_{f'=0}^{F_{\nu+1-\epsilon}-1}
 %
@@ -445,7 +445,7 @@ We show in appendix \ref{sec:rnncoefficient} that
 \subsection{LSTM structure}
 
 
-In a Long Short Term Memory Neural Network\cite{Gers:2000:LFC:1121912.1121915}, the state of a given unit is not directly determined by its left and bottom neighbours. Instead, a cell state is updated for each hidden unit, and the output of this unit is a probe of the cell state. This formulation might seem puzzling at first, but it is philosophically similar to the ResNet approach that we briefly encounter in the appendix of chapter \ref{sec:chapterFNN}: instead of trying to fit an input with a complicated function, we try to fit tiny variation of the input, hence allowing the gradient to flow in a smoother manner in the network. In the LSTM network, several gates are thus introduced : the input gate $i^{(t)(\nu\tau)}_f$ determines if we allow new information $g^{(t)(\nu\tau)}_f$ to enter into the cell state. The  output gate $o^{(t)(\nu\tau)}_f$ determines if we set or not the output hidden value to $0$, or really probes the current cell state. Finally, the forget state $f^{(t)(\nu\tau)}_f$ determines if we forget or not the past cell state. All theses concepts are illustrated on the figure \ref{fig:Lstm1}, which is the LSTM counterpart of the RNN structure of section \ref{sec:rnnstructure}. This diagram will be explained in details in the next section.
+In a Long Short Term Memory Neural Network\cite{Gers:2000:LFC:1121912.1121915}, the state of a given unit is not directly determined by its left and bottom neighbours. Instead, a cell state is updated for each hidden unit, and the output of this unit is a probe of the cell state. This formulation might seem puzzling at first, but it is philosophically similar to the ResNet approach that we briefly encounter in the appendix of chapter \ref{sec:chapterFNN}: instead of trying to fit an input with a complicated function, we try to fit tiny variation of the input, hence allowing the gradient to flow in a smoother manner in the network. In the LSTM network, several gates are thus introduced : the input gate $i^{(t)(\nu\tau)}_f$ determines if we allow new information $g^{(t)(\nu\tau)}_f$ to enter into the cell state. The output gate $o^{(t)(\nu\tau)}_f$ determines if we set or not the output hidden value to $0$, or really probes the current cell state. Finally, the forget state $f^{(t)(\nu\tau)}_f$ determines if we forget or not the past cell state. All theses concepts are illustrated on the figure \ref{fig:Lstm1}, which is the LSTM counterpart of the RNN structure of section \ref{sec:rnnstructure}. This diagram will be explained in details in the next section.
 
 \begin{figure}[H]
 \begin{center}
@@ -508,7 +508,7 @@ and as announced, hidden state update is just a probe of the current cell state
 h^{(t)(\nu\tau)}_{f}&=o^{(t)(\nu\tau)}_{f}\tanh \left(c^{(t)(\nu\tau)}_{f}\right)\;.
 \end{align}
 
-These formula singularly complicates the feed forward and especially the backpropagation procedure. For completeness, we will us nevertheless carefully derive it. Let us mention in passing that recent studies tried to replace the tanh activation function of the hidden state $h^{(t)(\nu\tau)}_{f}$ and the cell update $g^{(t)(\nu\tau)}_f$ by Rectified Linear Units, and seems to report better results with a proper initialization of all the weight matrices, argued to be diagonal
+These formula singularly complicates the feed forward and especially the backpropagation procedure. For completeness, we will us nevertheless carefully derive it. Let us mention in passing that recent studies tried to replace the $\tanh$ activation function of the hidden state $h^{(t)(\nu\tau)}_{f}$ and the cell update $g^{(t)(\nu\tau)}_f$ by Rectified Linear Units, and seems to report better results with a proper initialization of all the weight matrices, argued to be diagonal
 \begin{align}
 \Theta^f_{f'}(\text{init})&=\frac12\delta^f_{f'}\left(+\sqrt{\frac{6}{F_{\rm in}+F_{\rm out}}}\right)\;,
 \end{align}
@@ -561,7 +561,7 @@ and
 %
 -\hat{h}^{(\nu\tau)}_{f}\right)^2\;.
 \end{align}
-It is important to compute a running sum for the mean and the variance, that will serve for the evaluation of the cross-validation and the test set (calling $e$ the number of iterations/epochs) 
+It is important to compute a running sum for the mean and the variance, that will serve for the evaluation of the cross-validation and the test set (calling $e$ the number of iterations/epochs)
 \begin{align}
 \mathbb{E}\left[h_{f}^{(t)(\nu\tau)}\right]_{e+1} &=
 %
@@ -578,14 +578,14 @@ and what will be used at the end is $\mathbb{E}\left[h_{f}^{(t)(\nu\tau)}\right]
 \subsection{Backpropagation in a LSTM} \label{sec:appendbackproplstm}
 
 
-The backpropagation In a LSTM keeps the same structure as in a RNN, namely 
+The backpropagation in a LSTM keeps the same structure as in a RNN, namely
 
 \begin{align}
 \delta^{(t)(N-1\tau)}_f&= \frac{1}{T_{{\rm mb}}}\left(h_{f}^{(t)(N\tau)}-y_f^{(t)(\tau)}\right)\;,
 \end{align}
 and (shown in appendix \ref{sec:ARNNLSTMerror_rates})
 \begin{align}
-\delta^{(t)(\nu-1\tau)}_f&= 
+\delta^{(t)(\nu-1\tau)}_f&=
 %
 \sum_{t'=0}^{T_{{\rm mb}}}J^{(tt')(\nu\tau)}_f\sum_{\epsilon=0}^{1}\sum_{f'=0}^{F_{\nu+1-\epsilon}-1}
 %
@@ -664,7 +664,7 @@ and
 
 \section{Backpropagation trough Batch Normalization}
 
-For Backpropagation, we will need 
+For Backpropagation, we will need
 
 \begin{align}
 \frac{\partial y^{(t')(\nu\tau)}_{f'}}{\partial h_{f}^{(t)(\nu\tau)}}&=
@@ -759,7 +759,7 @@ Now since (taking Batch Normalization into account)
 h^{(t)(N\tau)}_{f}&=o\left(\sum_{f'=0}^{F_{N-1}-1}\Theta^f_{f'} y^{(t)(N-1\tau)}_{f}\right)\;,
 \end{align}
 
-and 
+and
 
 \begin{align}
 h^{(t)(\nu\tau)}_f&=\tanh\left(\sum_{f'=0}^{F_{{\nu-1}}-1}\Theta^{\nu(\nu)f}_{f'}
@@ -769,7 +769,7 @@ y^{(t)(\nu-1\tau)}_{f'}+\sum_{f'=0}^{F_{{\nu}}-1}\Theta^{\tau(\nu)f}_{f'}
 y^{(t)(\nu\tau-1)}_{f'}\right)\;,
 \end{align}
 
-we get for 
+we get for
 
 \begin{align}
 \delta^{(t)(N-2\tau)}_f&= \sum_{t'=0}^{T_{{\rm mb}}}\left[\sum_{f'=0}^{F_{N}-1}
@@ -821,7 +821,7 @@ Here we adopted the convention that the $\delta^{(t')(N-2\tau+1)}$'s are $0$ if 
 &\left.+\sum_{f'=0}^{F_{\nu}-1}\mathcal{T}^{(t')(\nu\tau+1)}_{f'}\Theta^{\tau(\nu)f'}_{f}\,\delta^{(t')(\nu-1\tau+1)}_{f'}\right]\;.
 \end{align}
 
-Defining 
+Defining
 
 \begin{align}
 \mathcal{T}^{(t')(N\tau)}_{f'}&=1\;,&
@@ -829,7 +829,7 @@ Defining
 \Theta^{\nu(N)f'}_{f}&=\Theta^{f'}_{f}\;,
 \end{align}
 
-the previous $ \delta^{(t)(\nu-1\tau)}_f$ formula extends to the case $\nu  =N-1$. To unite the RNN and the LSTM formulas, let us finally define (with $a$ either $\tau$ or $\nu$
+the previous $ \delta^{(t)(\nu-1\tau)}_f$ formula extends to the case $\nu =N-1$. To unite the RNN and the LSTM formulas, let us finally define (with $a$ either $\tau$ or $\nu$
 
 \begin{align}
 \mathcal{H}^{(t')(\nu\tau)_a}_{ff'}&=\mathcal{T}^{(t')(\nu+1\tau)}_{f'}\Theta^{a(\nu+1)f'}_{f}\;,
@@ -838,7 +838,7 @@ the previous $ \delta^{(t)(\nu-1\tau)}_f$ formula extends to the case $\nu  =N-1
 thus (defining $b_0=\nu$ and $b_1=\tau$)
 
 \begin{align}
-\delta^{(t)(\nu-1\tau)}_f&= 
+\delta^{(t)(\nu-1\tau)}_f&=
 %
 \sum_{t'=0}^{T_{{\rm mb}}}J^{(tt')(\nu\tau)}_f\sum_{\epsilon=0}^{1}\sum_{f'=0}^{F_{\nu+1-\epsilon}-1}
 %
@@ -848,7 +848,7 @@ thus (defining $b_0=\nu$ and $b_1=\tau$)
 
 \subsection{RNN Weight and coefficient updates: details} \label{sec:rnncoefficient}
 
-We want here to derive 
+We want here to derive
 
 \begin{align}
 \Delta^{\nu(\nu)f}_{f'}&=\frac{\partial}{\partial \Theta^{\nu(\nu)f}_{f'}} J(\Theta)&
@@ -975,7 +975,7 @@ which we can rewrite as
 
 \subsection{LSTM Error rate updates: details} \label{sec:ARNNLSTMerror_rates}
 
-As for the RNN 
+As for the RNN
 
 \begin{align}
 \delta^{(t)(N-1\tau)}_{f}&
@@ -983,7 +983,7 @@ As for the RNN
 =\frac{1}{T_{{\rm mb}}}\left(h^{(t)(N\tau)}_{f}-y^{(t)(\tau)}_{f}\right)\;.
 \end{align}
 
-Before  going any further, it will be useful to define 
+Before going any further, it will be useful to define
 
 \begin{align}
 \mathcal{O}^{(t)(\nu\tau)}_{f}&=h^{(t)(\nu\tau)}_{f}
@@ -1015,7 +1015,7 @@ H^{(t)(\nu\tau)_a}_{ff'}&=\Theta^{o_a(\nu+1)f'}_{f}\mathcal{O}^{(t)(\nu+1\tau)}_
 +\Theta^{i_a(\nu+1)f'}_{f}\mathcal{I}^{(t)(\nu+1\tau)}_{f'}\;.
 \end{align}
 
-As for RNN, we will start off by looking at 
+As for RNN, we will start off by looking at
 
 \begin{align}
 \delta^{(t)(N-2\tau)}_f&= \sum_{t'=0}^{T_{{\rm mb}}}\left[\sum_{f'=0}^{F_{N}-1}
@@ -1044,11 +1044,11 @@ which involves to study in details
 \begin{align}
 \frac{\delta h^{(t')(\nu+1\tau)}_{f'}}{\delta h^{(t)(\nu\tau)}_f }&=
 %
-\frac{\delta o^{(t')(\nu+1\tau)}_{f'}}{\delta h^{(t)(\nu\tau)}_f }\tanh  c^{(t')(\nu+1\tau)}_{f'}\notag\\
+\frac{\delta o^{(t')(\nu+1\tau)}_{f'}}{\delta h^{(t)(\nu\tau)}_f }\tanh c^{(t')(\nu+1\tau)}_{f'}\notag\\
 %
 &+\frac{\delta c^{(t')(\nu+1\tau)}_{f'}}{\delta h^{(t)(\nu\tau)}_f } o^{(t')(\nu+1\tau)}_{f'}
 %
-\left[1-\tanh^2  c^{(t')(\nu+1\tau)}_{f'}\right]\;.
+\left[1-\tanh^2 c^{(t')(\nu+1\tau)}_{f'}\right]\;.
 \end{align}
 Now
 \begin{align}
@@ -1078,19 +1078,19 @@ We continue our journey
 \begin{align}
 \frac{\delta i^{(t')(\nu+1\tau)}_{f'}}{\delta h^{(t)(\nu\tau)}_f }&=
 %
- i^{(t')(\nu+1\tau)}_{f'}\left[1-  i^{(t')(\nu+1\tau)}_{f'}\right]\Theta^{i_\nu(\nu+1)f'}_{f}
+ i^{(t')(\nu+1\tau)}_{f'}\left[1- i^{(t')(\nu+1\tau)}_{f'}\right]\Theta^{i_\nu(\nu+1)f'}_{f}
 %
 J^{(tt')(\nu\tau)}_f\;,\notag\\
 %
 \frac{\delta f^{(t')(\nu+1\tau)}_{f'}}{\delta h^{(t)(\nu\tau)}_f }&=
 %
- f^{(t')(\nu+1\tau)}_{f'}\left[1-  f^{(t')(\nu+1\tau)}_{f'}\right]\Theta^{f_\nu(\nu+1)f'}_{f}
+ f^{(t')(\nu+1\tau)}_{f'}\left[1- f^{(t')(\nu+1\tau)}_{f'}\right]\Theta^{f_\nu(\nu+1)f'}_{f}
 %
 J^{(tt')(\nu\tau)}_f\;,\notag\\
 %
 \frac{\delta g^{(t')(\nu+1\tau)}_{f'}}{\delta h^{(t)(\nu\tau)}_f }&=
 %
-\left[1-  \left(g^{(t')(\nu+1\tau)}_{f'}\right)^2\right]\Theta^{g_\nu(\nu+1)f'}_{f}
+\left[1- \left(g^{(t')(\nu+1\tau)}_{f'}\right)^2\right]\Theta^{g_\nu(\nu+1)f'}_{f}
 %
 J^{(tt')(\nu\tau)}_f\;,
 \end{align}
@@ -1112,24 +1112,24 @@ H^{(t)(\nu\tau)_\nu}_{ff'}\delta^{(t')(\nu\tau)}_{f'}\right.\notag\\
 \end{align}
 and as in the RNN case, we re-express it as (defining $b_0=\nu$ and $b_1=\tau$)
 \begin{align}
-\delta^{(t)(\nu-1\tau)}_f&= 
+\delta^{(t)(\nu-1\tau)}_f&=
 %
 \sum_{t'=0}^{T_{{\rm mb}}}J^{(tt')(\nu\tau)}_f\sum_{\epsilon=0}^{1}\sum_{f'=0}^{F_{\nu+1-\epsilon}-1}
 %
 \mathcal{H}^{(t')(\nu-\epsilon\tau+\epsilon)_{b_\epsilon}}_{ff'}\delta^{(t')(\nu-\epsilon\tau+\epsilon)}_{f'}\;.
 \end{align}
-This formula is also valid for $\nu  =N-1$ if we define as for the RNN case
+This formula is also valid for $\nu =N-1$ if we define as for the RNN case
 \begin{align}
 \mathcal{H}^{(t')(N\tau)}_{f'}&=1\;,&
 %
 \Theta^{\nu(N)f'}_{f}&=\Theta^{f'}_{f}\;,
 \end{align}
- 
+
 
 
 \subsection{LSTM Weight and coefficient updates: details}
 
-We want to compute 
+We want to compute
 
 \begin{align}
 \Delta^{\rho_{_\nu}(\nu)f}_{f'}&=\frac{\partial}{\partial \Theta^{\rho_{_\nu}(\nu)f}_{f'}} J(\Theta)&
@@ -1181,7 +1181,7 @@ We will now need to compute
 \Delta^{\gamma(\nu\tau)}_{f}&=\frac{\partial}{\partial \gamma^{(\nu\tau)}_f} J(\Theta)\;.
 \end{align}
 
-For that we need to look at 
+For that we need to look at
 
 \begin{align}
 \Delta^{\beta(\nu\tau)}_{f}&=\sum_{f'=0}^{F_{\nu+1}-1}\sum_{t'=0}^{T_{{\rm mb}}-1}
@@ -1196,7 +1196,7 @@ For that we need to look at
 %
 H^{(t)(\nu\tau)}_{ff'}\delta^{(t)(\nu\tau)}_{f'}
 %
-+\sum_{f'=0}^{F_{\nu}-1}H^{(t)(\nu-1\tau+1)}_{ff'}\delta^{(t)(\nu\tau+1)}_{f'}\right\}\;. 
++\sum_{f'=0}^{F_{\nu}-1}H^{(t)(\nu-1\tau+1)}_{ff'}\delta^{(t)(\nu\tau+1)}_{f'}\right\}\;.
 \end{align}
 
 and
