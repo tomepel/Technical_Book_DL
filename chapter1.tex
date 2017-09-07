@@ -206,7 +206,7 @@ It is nevertherless still used in the standard formulation of the RNN-LSTM model
 \subsection{The ReLU function}
 
 
-the ReLU --for Rectified Linear Unit -- function takes its value in $[0,+\infty$ and reads
+the ReLU --for Rectified Linear Unit -- function takes its value in $[0,+\infty[$ and reads
 \begin{align}
 g(x)&={\rm ReLU}(x)=\begin{cases} 
       x & x\geq 0 \\
@@ -279,7 +279,7 @@ Its derivative is
 
 \subsection{The ELU function}
 
-The ELU --for Exponential Linear Unit -- function takes its value between $]-\infty,+\infty[$ and is inspired by the leaky-ReLU philosophy: non-zero values for all $x$'s. But it presents the advantage of being $\mathcal{C}^1$.
+The ELU --for Exponential Linear Unit -- function takes its value between $]-1,+\infty[$ and is inspired by the leaky-ReLU philosophy: non-zero values for all $x$'s. But it presents the advantage of being $\mathcal{C}^1$.
 \begin{align}
 g(x)&={\rm ELU}(x)=\begin{cases} 
       x & x\geq 0 \\
