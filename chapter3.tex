@@ -140,7 +140,7 @@ In figure \ref{fig:1}, we present the RNN architecture in a schematic way
 \end{center}
 \end{figure}
 
-The real novelty of this type of neural network is that the fact that we are trying to predict a time serie is encoded in the very architecture of the network. RNN have first been introduced mostly to predict the next words in a sentance (classification task), hence the notion of ordering in time of the prediction. But this kind of network architecture can also be applied to regression problems. Among others things one can think of stock prices evolution, or temperature forecasting. In contrast to the precedent neural networks that we introduced, where we defined (denoting $\nu$ as in previous chapters the layer index in the spatial direction)
+The real novelty of this type of neural network is that the fact that we are trying to predict a time series is encoded in the very architecture of the network. RNN have first been introduced mostly to predict the next words in a sentence (classification task), hence the notion of ordering in time of the prediction. But this kind of network architecture can also be applied to regression problems. Among others things one can think of stock prices evolution, or temperature forecasting. In contrast to the precedent neural networks that we introduced, where we defined (denoting $\nu$ as in previous chapters the layer index in the spatial direction)
 \begin{align}
 a^{(t)(\nu)}_{f}&= \text{ Weight Averaging } \left(h^{(t)(\nu)}_{f}\right)\;,\notag\\
 %
@@ -155,7 +155,7 @@ h^{(t)(\nu\tau)}_{f}&= \text{ Activation function } \left(c^{(t)(\nu \tau)}_{f}\
 
 \subsection{Backward pass in a RNN-LSTM}
 
-The backward pass in a RNN-LSTM has to respect a certain time order, as illustrated in the following figure
+The backward pass in a RNN-LSTM has to respect a certain time order, as illustrated in the following figure.
 
 \begin{figure}[H]
 \begin{center}
@@ -343,7 +343,7 @@ And here is how the output of the hidden layer represented in \ref{fig:RNN hidde
 \end{figure}
 
 
-Lest us now mathematically express what is reprensented in figures \ref{fig:RNN hidden unit} and \ref{fig:RNN interaction}.
+Lest us now mathematically express what is represented in figures \ref{fig:RNN hidden unit} and \ref{fig:RNN interaction}.
 
 \subsection{Forward pass in a RNN}
 
@@ -375,7 +375,7 @@ to deduce
 \begin{align}
 \Delta^{\Theta{\rm index}f}_{f'}&=\frac{\delta}{\delta \Delta^{\Theta{\rm index}f}_{f'} }J(\Theta)\;,
 \end{align}
-where the index can either be nothing (weights of the ouput layers), $\nu(\nu)$ (weights between two spatially connected layers) or  $\tau(\nu)$ (weights between two temporally connected layers). First, it is easy to compute (in the same way as in chapter 1 for FNN) for the MSE loss function
+where the index can either be nothing (weights of the output layers), $\nu(\nu)$ (weights between two spatially connected layers) or  $\tau(\nu)$ (weights between two temporally connected layers). First, it is easy to compute (in the same way as in chapter 1 for FNN) for the MSE loss function
 \begin{align}
 \delta^{(t)(N-1\tau)}_f&= \frac{1}{T_{{\rm mb}}}\left(h_{f}^{(t)(N\tau)}-y_f^{(t)(\tau)}\right)\;,
 \end{align}
@@ -508,7 +508,7 @@ and as announced, hidden state update is just a probe of the current cell state
 h^{(t)(\nu\tau)}_{f}&=o^{(t)(\nu\tau)}_{f}\tanh \left(c^{(t)(\nu\tau)}_{f}\right)\;.
 \end{align}
 
-These formula singularly complicates the feed forward and especially the backpropagation procedure. For completeness, we will us nevertheless carefully derive it. Let us mention in passing that recent studies tried to replace the tanh activation function of the hidden state $h^{(t)(\nu\tau)}_{f}$ and the cell update $g^{(t)(\nu\tau)}_f$ by Rectified Linear Units, and seems to report better results with a proper initialization of all the weight matrices, argued to be diagonal
+These formula singularly complicates the feed forward and especially the backpropagation procedure. For completeness, we will us nevertheless carefully derive it. Let us mention in passing that recent studies tried to replace the $\tanh$ activation function of the hidden state $h^{(t)(\nu\tau)}_{f}$ and the cell update $g^{(t)(\nu\tau)}_f$ by Rectified Linear Units, and seems to report better results with a proper initialization of all the weight matrices, argued to be diagonal
 \begin{align}
 \Theta^f_{f'}(\text{init})&=\frac12\delta^f_{f'}\left(+\sqrt{\frac{6}{F_{\rm in}+F_{\rm out}}}\right)\;,
 \end{align}
@@ -578,7 +578,7 @@ and what will be used at the end is $\mathbb{E}\left[h_{f}^{(t)(\nu\tau)}\right]
 \subsection{Backpropagation in a LSTM} \label{sec:appendbackproplstm}
 
 
-The backpropagation In a LSTM keeps the same structure as in a RNN, namely 
+The backpropagation in a LSTM keeps the same structure as in a RNN, namely 
 
 \begin{align}
 \delta^{(t)(N-1\tau)}_f&= \frac{1}{T_{{\rm mb}}}\left(h_{f}^{(t)(N\tau)}-y_f^{(t)(\tau)}\right)\;,
