@@ -96,9 +96,9 @@ P&=\frac{R_C-1}{2}\;.
 \end{align}
 For a given layer $n$, the convolution operation mathematically reads (similar in spirit to the weight averaging procedure of a FNN)
 \begin{align}
-a_{f\,l\,m}^{(t)(\nu)}&=\sum^{F_\nu-1}_{\nu=0}\sum^{R_C-1}_{j=0}\sum^{R_C-1}_{k=0}
+a_{f\,l\,m}^{(t)(\nu)}&=\sum^{F_\nu-1}_{f'=0}\sum^{R_C-1}_{j=0}\sum^{R_C-1}_{k=0}
 %
-\Theta^{(o)f}_{f\,j\,k}h^{(t)(\nu)}_{f\,S_Cl+j\,S_Cm+k}\;,
+\Theta^{(o)f}_{f'\,j\,k}h^{(t)(\nu)}_{f'\,S_Cl+j\,S_Cm+k}\;,
 \end{align}
 where $o$ characterizes the $o+1$ convolution in the network. Here $\nu$ denotes the $\nu$'th hidden layer of the network (and thus belongs to $\llbracket0,N-1 \rrbracket$), and $f\in\llbracket0,F_{\nu+1}-1\rrbracket$, $l\in\llbracket0,N_{\nu+1}-1 \rrbracket$ and $m\in\llbracket0,T_{\nu+1}-1 \rrbracket$. Thus $S_Cl+j\in\llbracket0,N_\nu-1 \rrbracket$ and $S_Cl+j\in\llbracket0,T_\nu-1 \rrbracket$. One then obtains the hidden units via a ReLU (or other, see chapter \ref{sec:chapterFNN}) activation function application. Taking padding into account, it reads
 \begin{align}
