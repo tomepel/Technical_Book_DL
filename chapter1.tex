@@ -822,7 +822,7 @@ $\alpha_0$ determined by cross-validation, and $\eta_0$ usually initialized in t
 
 Without any regularization, training a neural network can be a daunting task because of the fine-tuning of the weight initial conditions. This is one of the reasons why neural networks have experienced out of mode periods. Since dropout and Batch normalization, this issue is less pronounced, but one should not initialize the weight in a symmetric fashion (all zero for instance), nor should one initialize them too large. A good heuristic is
 \begin{align}
-\left[\Theta^{(\nu)f'}_f\right]_{{\rm init}}&=\sqrt{\frac{6}{F_i+F_{i+1}}}\times\mathcal{N}(0,1)\;.
+\left[\Theta^{(\nu)f'}_f\right]_{{\rm init}}&=\sqrt{\frac{6}{F_\nu+F_{\nu+1}}}\times\mathcal{N}(0,1)\;.
 \end{align}
 
 \begin{subappendices}
