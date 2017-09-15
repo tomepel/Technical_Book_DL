@@ -240,14 +240,14 @@ This activation function is the most extensively used nowadays. Two of its more 
 
 The leaky-ReLU --for Linear Rectified Linear Unit -- function takes its value in $]-\infty,+\infty[$ and is a slight modification of the ReLU that allows non-zero value for the hidden neuron whatever the $x$ value. It reads
 \begin{align}
-g(x)&={\rm lealy-ReLU}(x)=\begin{cases}
+g(x)&= \text{leaky-ReLU}(x)=\begin{cases}
       x & x\geq 0 \\
       0.01\,x & x<0
    \end{cases}\;.
 \end{align}
 Its derivative is
 \begin{align}
-{\rm leaky-ReLU}'(x)&=\begin{cases}
+\text{leaky-ReLU}'(x)&=\begin{cases}
       1 & x\geq 0 \\
       0.01 & x<0
    \end{cases}\;.
