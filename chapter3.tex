@@ -510,7 +510,7 @@ h^{(t)(\nu\tau)}_{f}&=o^{(t)(\nu\tau)}_{f}\tanh \left(c^{(t)(\nu\tau)}_{f}\right
 
 These formula singularly complicates the feed forward and especially the backpropagation procedure. For completeness, we will us nevertheless carefully derive it. Let us mention in passing that recent studies tried to replace the tanh activation function of the hidden state $h^{(t)(\nu\tau)}_{f}$ and the cell update $g^{(t)(\nu\tau)}_f$ by Rectified Linear Units, and seems to report better results with a proper initialization of all the weight matrices, argued to be diagonal
 \begin{align}
-\Theta^f_{f'}(\text{init})&=\frac12\delta^f_{f'}\left(+\sqrt{\frac{6}{F_{\rm in}+F_{\rm out}}}\right)\;,
+\Theta^f_{f'}(\text{init})&=\frac12\left(\delta^f_{f'}+\sqrt{\frac{6}{F_{\rm in}+F_{\rm out}}}\mathcal{N}(0,1)\right)\;,
 \end{align}
 with the bracket term here to possibly (or not) include some randomness into the initialization
 
