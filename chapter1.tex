@@ -611,7 +611,7 @@ In practice, and as advocated in the original paper, on can get rid of dropout w
 
 \section{Backpropagation}
 
-Backpropagation\cite{LeCun:1998:EB:645754.668382} is the standard technique to decrease the loss function error so as to correctly predict what one needs. As it name suggests, it amounts to backpropagate through the FNN the error performed at the output layer, so as to update the weights. In practice, on has to compute a bunch of gradient terms, and this can be a tedious computational task. Nevertheless, if performed correctly, this is the most useful and important task that one can do in a FN. We will therefore detail how to compute each weight (and Batchnorm coefficients) gradients in the following.
+Backpropagation\cite{LeCun:1998:EB:645754.668382} is the standard technique to decrease the loss function error so as to correctly predict what one needs. As it name suggests, it amounts to backpropagate through the FNN the error performed at the output layer, so as to update the weights. In practice, on has to compute a bunch of gradient terms, and this can be a tedious computational task. Nevertheless, if performed correctly, this is the most useful and important task that one can do in a FNN. We will therefore detail how to compute each weight (and Batchnorm coefficients) gradients in the following.
 
 \subsection{Backpropagate through Batch Normalization} \label{sec:Backpropbatchnorm}
 
