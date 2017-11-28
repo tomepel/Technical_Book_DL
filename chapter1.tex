@@ -562,7 +562,7 @@ with $m_f^{(i)}$ following a $p$ Bernoulli distribution with usually $p=\frac15$
 
 \subsection{Batch Normalization}
 
-Batch normalization\cite{Ioffe2015} amounts to jointly normalize the mini-batch set per data types, and does so at each input of a FNN layer. In the original paper, the authors argued that this step should be done after the convolutional layers, but in practice it has been shown to be more efficient after the non-linear step. In our case, we will thus consider $\forall i \in \llbracket 0,N-2\rrbracket$
+Batch normalization\cite{Ioffe2015} amounts to jointly normalize the mini-batch set per data types, and does so at each input of a FNN layer. In the original paper, the authors argued that this step should be done after the convolutional layers, but in practice it has been shown to be more efficient after the non-linear step. In our case, we will thus consider $\forall \nu \in \llbracket 0,N-2\rrbracket$
 \begin{align}
 \tilde{h}_{f}^{(t)(\nu)}&=\frac{h_{f}^{(t)(\nu+1)}-\hat{h}_{f}^{(\nu)}}
 %
